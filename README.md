@@ -9,6 +9,7 @@ Table of Contents
  * Provenance of included code
  * I want to use this!
  * Documentation (not yet complete)
+ * Support credits
 
 # Caveats and Provisions
 This is the public repo for code related to the Infinite Ulysses participatory digital edition, the focus of Amanda Visconti's (@amandavisconti) digital humanities doctoral dissertation. Watch a quick 3-minute video or read more about Infinite Ulysses [here](http://www.literaturegeek.com/digital-dissertation/) or [sign up to beta-test the site](http://goo.gl/qtcy6).
@@ -45,6 +46,8 @@ Initial configuration on a Drupal site is currently a bit involved. Tags can be 
 
 I'm currently using customizations of these two modules graciously provided by a digital humanist working on a related project to solve these issues; that code is not yet shared here, as the collaborator has not yet made their code public (but plans to do so with a FOSS license).
 
+More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here.
+
 ##Future stuff!
 - [ ] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
 - [ ] Beta testing I (individual volunteers; December 2014)
@@ -59,3 +62,6 @@ You can! That is, you will be able to, easily, once the code is polished and doc
 
 ##Documentation (not yet complete)
 This will eventually link you to resources to turn this repo into a participatory digital edition site of your own!
+
+#Support credits
+I'm being supported by the [http://mith.umd.edu](Maryland Institute for Technology in the Humanities') Winnemore Digital Dissertation Fellowship this year as I complete my work on the site. My dissertation work has previously been supported by the UMD English Department (Summer 2014), MITH graduate research assistantships (Webmaster, BitCurator Usability/Documentation), and the Editing Modernism in Canada Ph.D. Fellowship.
