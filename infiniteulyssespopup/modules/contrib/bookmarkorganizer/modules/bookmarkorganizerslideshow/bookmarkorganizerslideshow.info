@@ -1,0 +1,14 @@
+name = "Bookmark Organizer Slideshow"
+description = "Slideshow functionality to organized bookmarks."
+core = "7.x"
+package = "Flags"
+dependencies[] = bookmarkorganizer
+dependencies[] = jcarousel
+project = bookmarkorganizerslideshow
+files[] = page-bookmarkorganizerslideshow.tpl.php
+; Information added by drupal.org packaging script on 2013-02-17
+version = "7.x-1.1"
+core = "7.x"
+project = "bookmarkorganizer"
+datestamp = "1361061857"
+

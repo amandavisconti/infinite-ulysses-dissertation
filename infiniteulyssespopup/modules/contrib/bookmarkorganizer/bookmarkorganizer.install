@@ -1,0 +1,197 @@
+<?php
+
+/**
+ * @file
+ * Bookmark Organizer module install/schema/update hooks.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function bookmarkorganizer_enable() {
+  // disable flag module's bookmarks view if views module is enabled
+  $views_status = variable_get('views_defaults', array());
+  $views_status['flag_bookmarks_tab'] = TRUE; // True is disabled
+  $views_status['flag_bookmarks'] = TRUE; // True is disabled
+  variable_set('views_defaults', $views_status);
+  if (module_exists('views')) {
+    views_invalidate_cache();
+    menu_rebuild();
+  }
+}
+
+/**
+ * Implements hook_install().
+ */
+function bookmarkorganizer_install() {
+  // Set variable defaults
+  if (!variable_get('bookmarkorganizer_enable_folders', NULL)) {
+    variable_set('bookmarkorganizer_enable_folders', TRUE);
+  }
+  if (!variable_get('bookmarkorganizer_enable_preview_pane', NULL)) {
+    variable_set('bookmarkorganizer_enable_preview_pane', TRUE);
+  }
+  if (!variable_get('bookmarkorganizer_remove_sidebars', NULL)) {
+    variable_set('bookmarkorganizer_remove_sidebars', TRUE);
+  }
+  if (!variable_get('bookmarkorganizer_preview_mode', NULL)) {
+    variable_set('bookmarkorganizer_preview_mode', 'node');
+  }
+  if (!variable_get('bookmarkorganizer_default_preview_list', NULL)) {
+    variable_set('bookmarkorganizer_default_preview_list', 'bookmarkorganizer_previews');
+  }
+  if (!variable_get('bookmarkorganizer_enable_folder_publication', NULL)) {
+    variable_set('bookmarkorganizer_enable_folder_publication', FALSE);
+  }
+  // Base module's weight on Flag module's weight
+  $weight = db_query("SELECT weight FROM {system} WHERE type = 'module' AND name = 'flag'")->fetchField();
+  db_query("UPDATE {system} SET weight = :weight WHERE type = 'module' AND name = 'bookmarkorganizer'", array(':weight' => $weight + 1));
+  // Updates
+  bookmarkorganizer_update_7100();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function bookmarkorganizer_uninstall() {
+  // Delete variables
+  variable_del('bookmarkorganizer_enable_folders');
+  variable_del('bookmarkorganizer_enable_preview_pane');
+  variable_del('bookmarkorganizer_remove_sidebars');
+  variable_del('bookmarkorganizer_preview_mode');
+  variable_del('bookmarkorganizer_default_preview_list');
+  variable_del('bookmarkorganizer_enable_folder_publication');
+  variable_del('bookmarkorganizer_flag_name');
+}
+
+/**
+ * Implements hook_schema().
+ */
+function bookmarkorganizer_schema() {
+  $schema = array();
+
+  $schema['bookmarkorganizer_folder'] = array(
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'unsigned' => TRUE,
+      ),
+      'collapsed' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'public' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('id'),
+    'indexes' => array(
+      'bof_name' => array('name'),
+      'bof_uid' => array('uid'),
+      'bof_name_uid' => array('name', 'uid'),
+      'bof_public' => array('public'),
+      'bof_public_uid' => array('public', 'uid'),
+    ),
+  );
+
+  $schema['bookmarkorganizer_item'] = array(
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'content_id' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'unsigned' => TRUE,
+      ),
+      'parent' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'label' => array(
+        'type' => 'varchar',
+        'not null' => FALSE,
+        'default' => NULL,
+        'length' => 255,
+      ),
+      'type' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'weight' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'created' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'disp-size' => 11,
+      ),
+      'updated' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'disp-size' => 11,
+      )
+    ),
+    'primary key' => array('id'),
+    'indexes' => array(
+      'boi_content_id_uid_type' => array('content_id', 'uid', 'type'),
+      'boi_content_id_uid' => array('content_id', 'uid'),
+      'boi_uid_parent' => array('uid', 'parent'),
+      'boi_uid_parent_type' => array('uid', 'parent', 'type'),
+      'boi_content_id' => array('content_id'),
+      'boi_uid' => array('uid'),
+      'boi_parent' => array('parent'),
+      'boi_created' => array('created'),
+      'boi_updated' => array('updated'),
+    ),
+
+  );
+
+  return $schema;
+}
+
+/**
+ * Add bookmarkorganizer_flag_name into variable table.
+ */
+function bookmarkorganizer_update_7100() {
+  if (!variable_get('bookmarkorganizer_flag_name', NULL)) {
+    variable_set('bookmarkorganizer_flag_name', 'bookmarks');
+  }
+}

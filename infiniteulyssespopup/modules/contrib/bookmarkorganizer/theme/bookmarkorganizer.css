@@ -1,0 +1,244 @@
+
+/*
+ * Wrappers
+ */
+.bookmarkorganizer-container {
+  overflow: hidden;
+}
+body.no-sidebars .bookmarkorganizer-container.preview-enabled .bookmarkorganizer-index {
+  float: left;
+  margin-bottom: -10000px;
+  overflow: hidden;
+  padding-bottom: 10000px;
+  width: 40%;
+}
+body.no-sidebars .bookmarkorganizer-container.preview-enabled .bookmarkorganizer-preview {
+  float: left;
+  margin-bottom: -10000px;
+  padding: 0 2% 10000px;
+  width: 56%;
+}
+
+/*
+ * Index table
+ */
+.bookmarkorganizer-index { 
+  background-color: #efefef;
+  margin-bottom: 2em;
+}
+.bookmarkorganizer-index-table-heading {
+  background:none repeat scroll 0 0 #7d7d7d;
+  cursor: pointer;
+}
+
+.bookmarkorganizer-index-table {
+  margin: 0;
+  border-bottom: 1px solid #7d7d7d;
+}
+
+.bookmarkorganizer-index-table tr {
+  background-color: transparent;
+  border: none;
+}
+
+.bookmarkorganizer-index-table td {
+  border: none;
+}
+
+.bookmarkorganizer-index-table .row-label {
+  margin: 0 5px 0 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.bookmarkorganizer-index-table .label {
+  display: block;
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.bookmarkorganizer-index-table .indentation {
+  margin: 0;
+  padding: 0;
+}
+
+.bookmarkorganizer-index-table .folder .label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bookmarkorganizer-index-table .folder .folder-link {
+  height: 22px;
+  width: 20px;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.bookmarkorganizer-index-table .folder.collapsed .folder-link {
+  background: url(images/sprite.png) 0 5px no-repeat;
+}
+
+.bookmarkorganizer-index-table .folder.open .folder-link {
+  background: url(images/sprite.png) 0 -35px no-repeat;
+}
+
+/**
+ * Bookmark related actions
+ */
+.bookmarkorganizer-index-table .row-label .item-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+.bookmarkorganizer-index-table .hover .row-label .item-list {
+  display: block;
+}
+
+.bookmarkorganizer-index-table .row-label.editable .item-list {
+  display: none;
+}
+
+.bookmarkorganizer-index-table tr.odd, .bookmarkorganizer-index-table tr.odd .row-label .item-list {
+  background:none repeat scroll 0 0 #e4e4e4;
+}
+
+.bookmarkorganizer-index-table tr.even, .bookmarkorganizer-index-table tr.even .row-label .item-list {
+  background:none repeat scroll 0 0 #efefef;
+}
+
+.bookmarkorganizer-index-table tr.active-item, .bookmarkorganizer-index-table tr.active-item .row-label .item-list {
+  background:none repeat scroll 0 0 #fff;
+}
+
+.bookmarkorganizer-index-table .row-label .item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bookmarkorganizer-index-table .row-label .item-list ul li {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+.bookmarkorganizer-index-table .row-label .item-list ul li {
+  margin-left: 5px;
+}
+
+.bookmarkorganizer-index-table .row-label .item-list ul li a {
+  color: #000;
+}
+
+/**
+ * Global actions
+ */
+.bookmarkorganizer-actions {
+  padding: 0.5em 1em;
+}
+
+/**
+ * Preview pane
+ */
+#bookmarkorganizer-preview .bookmarkorganizer-preview-headerbar {
+  background: none repeat scroll 0 0 #7D7D7D;
+  height: 26px;
+}
+#bookmarkorganizer-preview .bookmarkorganizer-preview-headerbar h2 {
+  color: #fff;
+  float: left;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 0.857em;
+  font-weight: bold;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 26px;
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+#bookmarkorganizer-preview .bookmarkorganizer-preview-headerbar .item-list {
+  text-align: right;
+  margin-right: 0.2em;
+}
+#bookmarkorganizer-preview .bookmarkorganizer-preview-headerbar .item-list a {
+  color: #fff;
+  line-height: 26px;
+}
+
+/*
+ * Rename form 
+ */
+.bookmarkorganizer-rename-item-form input.form-text {
+  width: 21.3em;
+}
+tr.folder .bookmarkorganizer-rename-item-form input.form-text {
+  width: 19.0em;
+}
+.row-label.indentation-0 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 28.5em;
+}
+tr.folder .row-label.indentation-0 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 26.2em;
+}
+.row-label.indentation-1 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 26.7em;
+}
+tr.folder .row-label.indentation-1 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 24.4em;
+}
+.row-label.indentation-2 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 24.9em;
+}
+tr.folder .row-label.indentation-2 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 22.6em;
+}
+.row-label.indentation-3 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 23.1em;
+}
+tr.folder .row-label.indentation-3 .bookmarkorganizer-rename-item-form input.form-text {
+  width: 20.8em;
+}
+.bookmarkorganizer-rename-item-form input.form-submit {
+  display: none;
+}
+
+/*
+ * Hide show row weight  
+ */
+.bookmarkorganizer-index .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+
+/*
+ * Drag handler
+ */
+.bookmarkorganizer-index .draggable a.tabledrag-handle {
+  height:auto;
+  margin: 0 1em;
+  padding: 0;
+}
+
+/*
+ * Hide index form submit button if javascript is enabled
+ */
+html.js #edit-submit-bookmarkorganizer-index {
+  display:none;
+}
+
+/*
+ * Hide tabledrag messages
+ */
+html.js .warning.tabledrag-changed {
+  display:none;
+}
+
+/*
+ * Add folder popup form
+ */
+.bookmarkorganizer-add-folder-form input.form-text {
+  width: 90%;
+}

@@ -1,0 +1,322 @@
+<?php
+
+/**
+ * @file
+ * The Bookmark Organizer module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function bookmarkorganizer_menu() {
+
+  $items = array();
+
+  // Admin settings callback
+  $items['admin/structure/flags/bookmarkorganizer'] = array(
+    'title' => 'Bookmark Organizer',
+    'description' => 'Settings for user specific Bookmark Organizers.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('bookmarkorganizer_admin_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'bookmarkorganizer.admin.inc',
+    'weight' => 10,
+  );
+
+  // Bookmarks page callback
+  $items['user/%bookmarkorganizer_current_user/bookmarks'] = array(
+    'title' => 'My Bookmarks',
+    'description' => 'Manage your own bookmarks.',
+    'page callback' => 'bookmarkorganizer_main_view',
+    'page arguments' => array(1),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+    'context' => MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/%user/activelist'] = array(
+    'title' => 'My active list',
+    'page callback' => 'bookmarkorganizer_activelist_view_root',
+    'page arguments' => array(1),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(1),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/activelist/%bookmarkorganizer_item'] = array(
+    'title' => 'My active list',
+    'page callback' => 'bookmarkorganizer_activelist_view',
+    'page arguments' => array(2),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(2),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Bookmarks form save by ajax
+  $items['bookmarkorganizer/save/%user'] = array(
+    'page callback' => 'bookmarkorganizer_user_bookmarks_form_ajax_submit',
+    'page arguments' => array(2),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(2),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Add folder item
+  $items['bookmarkorganizer/add/folder/%user'] = array(
+    'page callback' => 'bookmarkorganizer_add_folder_view',
+    'page arguments' => array(3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Add folder item
+  $items['bookmarkorganizer/add/folder/ajax/%user'] = array(
+    'page callback' => 'bookmarkorganizer_add_folder_ajax_submit',
+    'page arguments' => array(4),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(4),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Toggle folder open or closed
+  $items['bookmarkorganizer/toggle/ajax/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_toggle_folder',
+    'page arguments' => array(3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Item delete callbacks
+  $items['bookmarkorganizer/delete/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_item_action',
+    'page arguments' => array(1, 2),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(2),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/delete/ajax/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_delete_item_ajax_submit',
+    'page arguments' => array(3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  // Item rename callbacks
+  $items['bookmarkorganizer/rename/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_item_action',
+    'page arguments' => array(1, 2),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(2),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/rename/ajax/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_rename_item_ajax_submit',
+    'page arguments' => array(3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/folder/publish/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_folder_publication',
+    'page arguments' => array(2, 3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  $items['bookmarkorganizer/folder/unpublish/%bookmarkorganizer_item'] = array(
+    'page callback' => 'bookmarkorganizer_folder_publication',
+    'page arguments' => array(2, 3),
+    'access callback' => 'bookmarkorganizer_access_bookmarks',
+    'access arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'file' => 'bookmarkorganizer.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function bookmarkorganizer_views_api() {
+  return array(
+    'api' => 3.0,
+    'path' => drupal_get_path('module', 'bookmarkorganizer'),
+  );
+}
+
+/**
+ * Check user access to selected user bookmarks.
+ *
+ * @param $object can be either user account or bookmarkorganizer item object
+ */
+function bookmarkorganizer_access_bookmarks($object) {
+  global $user;
+  return (user_access('administer users') || (isset($object->uid) && $user->uid == $object->uid && $object->uid != 0));
+}
+
+/**
+ * Implements hook_flag().
+ *
+ * When content has been flagged, update the flag to use the default weight.
+ */
+function bookmarkorganizer_flag($action, $flag, $content_id, $account) {
+  if ($action == 'flag' && $flag->name == variable_get('bookmarkorganizer_flag_name', 'bookmarks')) {
+
+    // @TODO: Handle other content than nodes too!
+    $content = node_load($content_id);
+    $label = $content ? $content->title : "*$content_id*";
+
+    module_load_include('inc', 'bookmarkorganizer');
+    _bookmarkorganizer_add_item($content_id, $account->uid, $label, $flag->content_type);
+
+  }
+  elseif ($action == 'unflag') {
+
+    module_load_include('inc', 'bookmarkorganizer');
+    $item = bookmarkorganizer_get_item_by_content($content_id, $account->uid, $flag->content_type);
+    // Delete recursively
+    if ($item) {
+      bookmarkorganizer_delete_items_recursively($item->id);
+    }
+  }
+
+}
+
+
+function bookmarkorganizer_item_load($id) {
+  module_load_include('inc', 'bookmarkorganizer');
+  $item = bookmarkorganizer_get_item($id);
+  return $item;
+}
+
+function bookmarkorganizer_current_user_load($uid) {
+  return user_uid_optional_load($uid);
+}
+
+function bookmarkorganizer_current_user_to_arg($arg) {
+  return user_uid_optional_to_arg($arg);
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function bookmarkorganizer_theme() {
+  $path = drupal_get_path('module', 'bookmarkorganizer');
+  return array(
+    // Container
+    'bookmarkorganizer_container' => array(
+      //'variables' => array('index' => NULL, 'preview' => NULL, 'dialog' => NULL),
+      'render element' => 'elements',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc'
+    ),
+    // Index pane
+    'bookmarkorganizer_index' => array(
+      'pattern' => 'bookmarkorganizer_index__',
+      'variables' => array('list' => NULL, 'actions' => NULL),
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    'bookmarkorganizer_actions' => array(
+      'pattern' => 'bookmarkorganizer_actions__',
+      'render element' => 'elements',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    'bookmarkorganizer_user_bookmarks_form' => array(
+      'render element' => 'form',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    'bookmarkorganizer_action_list' => array(
+      'render element' => 'links',
+    ),
+    'link__bookmarkorganizer_action' => array(
+      'render element' => 'element',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    'bookmarkorganizer_addfolder' => array(
+      'render element' => 'element',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    // Preview pane
+    'bookmarkorganizer_preview' => array(
+      'pattern' => 'bookmarkorganizer_preview__',
+      'render element' => 'elements',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    // Popup forms
+    'bookmarkorganizer_add_folder_form' => array(
+      'render element' => 'form',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+    'bookmarkorganizer_delete_item_form' => array(
+      'render element' => 'form',
+      'path' => "$path/theme",
+      'file' => 'bookmarkorganizer.theme.inc',
+    ),
+  );
+}
+
+function bookmarkorganizer_folder_access($display, $account = NULL) {
+  // Get arguments
+  $argument_index = count(explode('/', $display->display_options['path']));
+  $uid = arg($argument_index);
+  $fid = arg($argument_index+1);
+  // Folder is defined
+  if ($fid != 0) {
+    module_load_include('inc', 'bookmarkorganizer');
+    $item = bookmarkorganizer_get_item($fid);
+    return (bookmarkorganizer_access_bookmarks($item) || $item->public);
+  }
+  // Folder is root
+  global $user;
+  if ($user->uid == $uid || user_access('administer users')) {
+    return TRUE;
+  }
+  // User has no access
+  return FALSE;
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function bookmarkorganizer_page_alter(&$page) {
+  // Remove sidebars on Bookmark Organizer page
+  if (variable_get('bookmarkorganizer_remove_sidebars')) {
+    if (isset($_GET['q'])) {
+      $path = explode('/', $_GET['q']);
+      if (count($path) > 2 && $path[0] == 'user' && $path[2] == 'bookmarks') {
+        unset($page['sidebar_first']);
+        unset($page['sidebar_second']);
+      }
+    }
+  }
+}

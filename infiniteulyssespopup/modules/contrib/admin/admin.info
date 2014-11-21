@@ -1,0 +1,21 @@
+; $Id: admin.info,v 1.1.2.2.2.1.2.2 2010/09/16 18:54:27 yhahn Exp $
+name = Admin
+description = UI helpers for Drupal admins and managers.
+package = Administration
+core = 7.x
+
+files[] = admin.admin.inc
+files[] = admin.install
+files[] = admin.module
+files[] = includes/admin.devel.inc
+files[] = includes/admin.theme.inc
+files[] = theme/admin-panes.tpl.php
+files[] = theme/admin-toolbar.tpl.php
+files[] = theme/theme.inc
+
+; Information added by drupal.org packaging script on 2010-12-16
+version = "7.x-2.0-beta3"
+core = "7.x"
+project = "admin"
+datestamp = "1292541646"
+

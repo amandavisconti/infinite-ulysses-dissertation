@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Bookmark Organizer tests.
+ */
+
+/**
+ * File fetcher test class.
+ */
+class BookmarkOrganizerTestCase extends DrupalWebTestCase {
+
+  /**
+   * Describe this test.
+   */
+  public function getInfo() {
+    return array(
+      'name' => t('Bookmark Organizer tests'),
+      'description' => t('Tests for adding folder, renaming and then deleting it.'),
+      'group' => t('Bookmark Organizer'),
+    );
+  }
+
+
+  /**
+   * Set up the test.
+   */
+  function setUp() {
+    // Call parent setup with required modules.
+    parent::setUp('flag', 'bookmarkorganizer');
+  }
+
+  function testAddFolder() {
+
+    // Create user and login.
+    $user = $this->drupalCreateUser(
+      array(
+        'access content',
+      )
+    );
+    $this->drupalLogin($user);
+
+    $this->drupalGet('user/' . $user->uid . '/bookmarks');
+
+    //$this->clickLink(t('Add folder'));
+
+    // Generate folder name
+    $folder_name = base_convert(rand(10e16, 10e20), 10, 36);
+
+    $edit = array(
+      'name' => $folder_name,
+    );
+    $this->drupalPost('bookmarkorganizer/add/folder/' . $user->uid, $edit, t('Add'));
+
+    $this->assertText($folder_name);
+  }
+}

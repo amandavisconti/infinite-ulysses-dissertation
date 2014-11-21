@@ -1,0 +1,4 @@
+name = "highlighted_annos"
+description = "Render view of array of nodes for multiple annos per highlight?"
+core = 7.x
+package = Annotation Functionality

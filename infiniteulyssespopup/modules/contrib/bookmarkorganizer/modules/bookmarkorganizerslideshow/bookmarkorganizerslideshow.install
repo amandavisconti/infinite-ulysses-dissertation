@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Bookmark Organizer Slideshow module install/uninstall hooks.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function bookmarkorganizerslideshow_install() {
+  // Set variable defaults
+  if (!variable_get('bookmarkorganizerslideshow_show_play_link', NULL)) {
+    variable_set('bookmarkorganizerslideshow_show_play_link', TRUE);
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function bookmarkorganizerslideshow_uninstall() {
+  // Delete variables
+  variable_del('bookmarkorganizerslideshow_show_play_link');
+}

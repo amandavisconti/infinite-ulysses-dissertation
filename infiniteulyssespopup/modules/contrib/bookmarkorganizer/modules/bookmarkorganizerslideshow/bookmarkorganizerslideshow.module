@@ -1,0 +1,119 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function bookmarkorganizerslideshow_views_api() {
+  return array(
+    'api' => 2.0,
+    'path' => drupal_get_path('module', 'bookmarkorganizerslideshow'),
+  );
+}
+
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function bookmarkorganizerslideshow_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['bookmarkorganizer'] = array(
+    'title' => t('Bookmark Slideshow'),
+    'file' => 'skins/bookmarkorganizer/jcarousel-bookmarkorganizer.css',
+  );
+
+  return $skins;
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function bookmarkorganizerslideshow_theme($existing, $type, $theme, $path) {
+  return array(
+    'page__bookmarkorganizer' => array(
+      'render element' => 'content',
+      'path' => drupal_get_path('module', 'bookmarkorganizerslideshow'),
+      'template' => 'page--bookmarkorganizer',
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_init().
+ */
+function bookmarkorganizerslideshow_init() {
+  //This script needs to executed after jcarousel scripts. Thus the weight is > 0.
+  drupal_add_js(drupal_get_path('module', 'bookmarkorganizerslideshow') . '/bookmarkorganizerslideshow.js', array('weight' => 1));
+}
+
+
+/**
+ * Implements hook_jcarousel_options_alter().
+ */
+function bookmarkorganizerslideshow_jcarousel_options_alter(&$options, &$class_name) {
+  if ($options['skin'] == 'bookmarkorganizer') {
+    $options['itemVisibleInCallback'] = 'Drupal.bookmarkslideshow.itemVisibleCallback';
+  }
+}
+
+function bookmarkorganizerslideshow_form_bookmarkorganizer_user_bookmarks_form_alter(&$form, &$form_state, $form_id) {
+  if (variable_get('bookmarkorganizerslideshow_show_play_link')) {
+    foreach ($form['bookmarks'] as $key => $bookmark) {
+      if (is_numeric($key)) {
+        if ($bookmark['type']['#value'] == 'folder') {
+          $alt = t('Play slideshow');
+          $play_action = array(
+            '#type' => 'link',
+            '#title' => t('Play'),
+            '#href' => 'bookmarkorganizer/view/' . $form['uid']['#value'] . '/' . $bookmark['id']['#value'],
+            '#attributes' => array('class' => 'action action-play', 'alt' => $alt, 'title' => $alt, 'target' => '_blank'),
+            '#theme' => array('link__bookmarkorganizer_action_play', 'link__bookmarkorganizer_action'),
+          );
+          array_unshift($form['bookmarks'][$key]['actions']['#items'], $play_action);
+        }
+      }
+    }
+  }
+}
+
+
+function bookmarkorganizerslideshow_bookmarkorganizer_preview_alter(&$elements) {
+  $item = isset($elements['#item']) ? $elements['#item'] : NULL;
+  if ($item && $item->type == 'folder' && variable_get('bookmarkorganizerslideshow_show_play_link')) {
+    $alt = t('Play slideshow');
+    $elements['header']['actions']['#items']['play'] = array(
+      '#type' => 'link',
+      '#title' => t('Play'),
+      '#href' => "bookmarkorganizer/view/$item->uid/$item->id",
+      '#attributes' => array('class' => 'action action-play', 'alt' => $alt, 'title' => $alt, 'target' => '_blank'),
+    );
+  }
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function bookmarkorganizerslideshow_page_alter(&$page) {
+  // Remove sidebars on Bookmark Organizer page
+  if (isset($_GET['q'])) {
+    $path = explode('/', $_GET['q']);
+    if (count($path) > 1 && $path[0] == 'bookmarkorganizer' && $path[1] == 'view') {
+      foreach (array_keys($page) as $key) {
+        if (substr($key, 0, 1) != '#' && $key != 'content') {
+          unset($page[$key]);
+        }
+      }
+    }
+  }
+}
+
+function bookmarkorganizerslideshow_form_bookmarkorganizer_admin_form_alter(&$form, &$form_state) {
+  $form['bookmarkorganizer_folder_options']['bookmarkorganizerslideshow_show_play_link'] = array(
+    '#type' => 'checkbox',
+    '#title' => t("Show play slideshow link"),
+    '#description' => t("Display play slideshow link among bookmark actions. Start slideshow about the contents of a folder in a separate browser window."),
+    '#default_value' => variable_get('bookmarkorganizerslideshow_show_play_link'),
+  );
+}
