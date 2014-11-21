@@ -1,4 +1,6 @@
 infinite-ulysses-public
 =======================
 
-Public repo for code related to the Infinite Ulysses participatory digital edition.
+Code status: not ready for use by others
+
+In-progress custom module code and changes to Annotator.js to implement annotation sidebar with social rankings.

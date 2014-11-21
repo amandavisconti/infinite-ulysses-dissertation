@@ -1,4 +1,6 @@
 infinite-ulysses-public
 =======================
 
-Public repo for code related to the Infinite Ulysses participatory digital edition.
+Code status: not ready for use by others
+
+Changes to Annotator.js to reset CSS display and change pop-up behavior to sidebar.
