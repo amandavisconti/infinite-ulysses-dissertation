@@ -18,7 +18,7 @@ This is the public repo for code related to the Infinite Ulysses participatory d
 If you'd like to be notified when an easy-to-use code+documentation package is available, please [use the beta-testing sign up form here](http://goo.gl/qtcy6) and indicate your interest in the comments.
 
 #What's this?
-This repo contains the code you need to make your Drupal installation mimic or build off the behavior of the Infinite Ulysses site; see [http://www.literaturegeek.com/digital-dissertation/](especially this quick 3-minute video about the project) to read more about the eventual site. This repo will eventually offers 3+ Drupal modules and a Javascript library:
+This repo contains the code you need to make your Drupal installation mimic or build off the behavior of the Infinite Ulysses site; see [http://www.literaturegeek.com/digital-dissertation/](especially this quick 3-minute video about the project) to read more about the eventual site. This repo will eventually offer Drupal modules, site theming, documentation, and customizations to Annotator.js:
 
 * Custom code built off [https://drupal.org/project/annotation](Annotation)
 * Custom code built off [https://www.drupal.org/project/annotator](Annotator)
