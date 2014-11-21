@@ -15,7 +15,7 @@ This is the public repo for code related to the Infinite Ulysses participatory d
 
 *WARNING* This repo represents code that is likely to be in-progress, outdated, insecure, strange, silly, or otherwise unwieldy, in an attempt to share the entire building process with the public. I don't currently recommend using any of it, and I cannot currently provide assistance with using any of this code. Please wait for late Spring 2015, when I'll provide clean, concise code and friendly documentation on creating your own participatory digital edition. 
 
-If you'd like to be notified when an easy-to-use code+documentation package is available, please (use the beta-testing sign up form here)[http://goo.gl/qtcy6] and indicate your interest in the comments.
+If you'd like to be notified when an easy-to-use code+documentation package is available, please [use the beta-testing sign up form here](http://goo.gl/qtcy6) and indicate your interest in the comments.
 
 #What's this?
 This repo contains the code you need to make your Drupal installation mimic or build off the behavior of the Infinite Ulysses site; see [http://www.literaturegeek.com/digital-dissertation/](especially this quick 3-minute video about the project) to read more about the eventual site. This repo will eventually offers 3+ Drupal modules and a Javascript library:
