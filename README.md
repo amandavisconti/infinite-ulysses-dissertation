@@ -21,12 +21,12 @@ If you'd like to be notified when an easy-to-use code+documentation package is a
 #What's this?
 This repo contains the code you need to make your Drupal installation mimic or build off the behavior of the Infinite Ulysses site; see [especially this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation/) to read more about the eventual site. This repo will eventually offer Drupal modules, site theming, documentation, and customizations to Annotator.js:
 
-* Custom code built off [Annotation](https://drupal.org/project/annotation)
-* Custom code built off [Annotator](https://www.drupal.org/project/annotator)
-* Annotator.js and CSS (to be stored in /sites/all/libraries): [latest code here](https://github.com/openannotation/annotator/releases), [main website here](http://annotatorjs.org)
+* Custom code built by me off improvements by Michael Widner (@mwidner)/Stanford's Lacuna Stories project to the Drupal  [Annotation](https://drupal.org/project/annotation) module
+* Custom code built by me off improvements by Michael Widner (@mwidner)/Stanford's Lacuna Stories project to the Drupal  [Annotator](https://www.drupal.org/project/annotator) module
+* Custom code built by me off Annotator.js and CSS (to be stored in /sites/all/libraries): [latest code here](https://github.com/openannotation/annotator/releases), [main website here](http://annotatorjs.org)
 
 Plus additional modules to add behavior to the site (e.g. social ranking on the annotations):
-* An in-progress sidebar module for viewing and ranking annotations
+* An in-progress sidebar module for viewing and ranking annotations (included here as the partial highlighted_annos module; requires Views config rendered programmatically before use)
 
 Plus the accessible Drupal theme I'll create to effect the interface of InfiniteUlysses.com.
 * (Theme not yet released to public)
@@ -44,9 +44,9 @@ The current Drupal modules allow Annotator.js to work on Drupal nodes and save t
 * [Annotator](https://www.drupal.org/project/annotator) module: [Contributors](https://www.drupal.org/node/1960282/committers)
 Initial configuration on a Drupal site is currently a bit involved. Tags can be added to annotations, but not saved/stored (they're lost on page refresh). Admins can't interact with the Annotation entity via the Field UI (not fieldable), among other issues with how annotations are set up as entities.
 
-I'm currently using customizations of these two modules graciously provided by a digital humanist working on a related project to solve these issues; that code is not yet shared here, as the collaborator has not yet made their code public (but plans to do so with a FOSS license).
+I'm currently using improved versions of these two modules created by Michael Widner (@mwidner)/Stanford's Lacuna Stories project and graciously shared with me (yay digital humanities community!). That code is not yet shared here, as the Lacuna Stories project has not yet made their code public (but plans to do so).
 
-More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here.
+More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here. When code is a bit more cleaned up, I'll try to label provenance within code as well, so that files representing multiple people's work clearly attribute each piece to its author. I've started to do that locally via comments beginning //Amanda:
 
 ##Future stuff!
 - [ ] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
