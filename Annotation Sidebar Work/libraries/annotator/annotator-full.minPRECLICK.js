@@ -901,8 +901,8 @@ function() {
 		Annotator.prototype.events = {
 			".annotator-adder button click": "onAdderClick",
 			".annotator-adder button mousedown": "onAdderMousedown",
-			".annotator-hl click": "onHighlightClick",
-			//".annotator-hl mouseout": "startViewerHideTimer"
+			".annotator-hl mouseover": "onHighlightMouseover",
+			".annotator-hl mouseout": "startViewerHideTimer"
 		};
 		Annotator.prototype.html = {
 			adder: '<div class="annotator-adder"><button>' + _t("Annotate") + "</button></div>",
@@ -923,7 +923,7 @@ function() {
 			this.onEditAnnotation = __bind(this.onEditAnnotation, this);
 			this.onAdderClick = __bind(this.onAdderClick, this);
 			this.onAdderMousedown = __bind(this.onAdderMousedown, this);
-			this.onHighlightClick = __bind(this.onHighlightClick, this);
+			this.onHighlightMouseover = __bind(this.onHighlightMouseover, this);
 			this.checkForEndSelection = __bind(this.checkForEndSelection, this);
 			this.checkForStartSelection = __bind(this.checkForStartSelection, this);
 			this.clearViewerHideTimer = __bind(this.clearViewerHideTimer, this);
@@ -968,8 +968,8 @@ function() {
 					}
 				} (this)
 			}).element.appendTo(this.wrapper).bind({
-				//mouseover: this.clearViewerHideTimer,
-				//mouseout: this.startViewerHideTimer
+				mouseover: this.clearViewerHideTimer,
+				mouseout: this.startViewerHideTimer
 			});
 			return this
 		};
@@ -990,8 +990,8 @@ function() {
 		};
 		Annotator.prototype._setupDocumentEvents = function() {
 			$(document).bind({
-				//mouseup: this.checkForEndSelection,
-				click: this.checkForStartSelection
+				mouseup: this.checkForEndSelection,
+				mousedown: this.checkForStartSelection
 			});
 			return this
 		};
@@ -1029,8 +1029,8 @@ function() {
 			plugin,
 			_ref1;
 			$(document).unbind({
-				//mouseup: this.checkForEndSelection,
-				click: this.checkForStartSelection
+				mouseup: this.checkForEndSelection,
+				mousedown: this.checkForStartSelection
 			});
 			$("#annotator-dynamic-style").remove();
 			this.adder.remove();
@@ -1333,12 +1333,12 @@ function() {
 		Annotator.prototype.isAnnotator = function(element) {
 			return !! $(element).parents().addBack().filter("[class^=annotator-]").not(this.wrapper).length
 		};
-		Annotator.prototype.onHighlightClick = function(event) {
+		Annotator.prototype.onHighlightMouseover = function(event) {
 			var annotations;
-			//this.clearViewerHideTimer();
-			//if (this.mouseIsDown || this.viewer.isShown()) {
-				//return false
-			//}
+			this.clearViewerHideTimer();
+			if (this.mouseIsDown || this.viewer.isShown()) {
+				return false
+			}
 			annotations = $(event.target).parents(".annotator-hl").addBack().map(function() {
 				return $(this).data("annotation")
 			});
