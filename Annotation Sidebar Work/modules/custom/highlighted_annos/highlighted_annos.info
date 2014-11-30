@@ -1,0 +1,4 @@
+name = "highlighted_annos"
+description = "Update sidebar view of annotation nodes on highlight event. Built by Amanda Visconti. Peter Schuelke's post at http://www.metaltoad.com/blog/passing-multiple-values-through-exposed-filter was especially helpful."
+core = 7.x
+package = Annotation Functionality

@@ -29,7 +29,7 @@
 	background-repeat: no-repeat;
 }
 
-.annotator-hl { background: rgba(255,255,10,0.3); }
+.annotator-hl { background: rgba(255,255,10,0.3); cursor: pointer} /*Amanda*/
 .annotator-hl-temporary { background: rgba(0,124,255,0.3); }
 .annotator-wrapper { position: relative; }
 .annotator-adder,.annotator-outer,.annotator-notice { z-index: 1020; }

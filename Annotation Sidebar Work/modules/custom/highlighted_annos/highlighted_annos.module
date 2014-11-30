@@ -1,0 +1,66 @@
+<?php
+/*
+Built by Amanda Visconti. Peter Schuelke's post at http://www.metaltoad.com/blog/passing-multiple-values-through-exposed-filter was especially helpful.
+*/
+
+/*
+Implementation of hook_views_api(). Not clear this is functionally necessary.
+*/
+function highlighted_annos_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'highlighted_annos') . '/includes/views',
+    'template path' => drupal_get_path('module', 'highlighted_annos') . '/themes',
+  );
+}
+
+function highlighted_annos_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if($form['#id'] == 'views-exposed-form-annosidebar-annosidebar'){
+    $form['nid_1'] = array(
+    '#type' => 'hidden', 
+    '#attributes' => array(
+        'id'=>'edit-nid--2',
+      ),
+    );
+  }
+}
+
+function highlighted_annos_views_query_alter(&$view, &$query) {
+//dpm($view); //verifies exposed_raw_input is in format 66,67
+  if ($view->current_display == 'annosidebar' && $view->exposed_raw_input['nid_1']) {
+    // grab the value from our filter and convert it into an array
+    $nids = explode(',',$view->exposed_raw_input['nid_1']);
+    // loop over the array of values we created from our exposed filter field
+    foreach ($nids as $nid){
+      $query->where[1]['conditions'][1] = array(
+        'field' => 'node.nid',
+        'value' => $nids,
+        'operator' => 'IN',  // Views UI is set to "is equal to"
+      );
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_build() to fix .submit redirecting to another page
+ */
+function highlighted_annos_views_pre_build(&$view) {
+  if ($view->name == 'annosidebar') {
+    // Set the override path to the current page. This will redirect the back view to the current page when submitted in case AJAX fails.
+    $view->override_path = $_GET['q'];
+  }
+}
+
+function highlighted_annos_theme() {
+   return array(
+      'highlighted_annos_javascript' => array(
+         'arguments' => array(),
+      ),
+   );   
+}
+function highlighted_annos_init() {
+  theme('highlighted_annos_javascript');
+}
+function theme_highlighted_annos_javascript() {
+  drupal_add_js(drupal_get_path('module', 'highlighted_annos') . '/highlighted_annos.js');
+}
