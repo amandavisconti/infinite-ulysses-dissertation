@@ -44,6 +44,7 @@ From [the Annotator.js website](http://annotatorjs.org/): "Annotator is an open-
 The current Drupal modules allow Annotator.js to work on Drupal nodes and save to the Drupal database. 
 * [Annotation](https://www.drupal.org/project/annotation]) module: [contributors](https://www.drupal.org/node/3220/committers?sort=desc&order=Commits)
 * [Annotator](https://www.drupal.org/project/annotator) module: [Contributors](https://www.drupal.org/node/1960282/committers)
+
 Initial configuration on a Drupal site is currently a bit involved. Tags can be added to annotations, but not saved/stored (they're lost on page refresh). Admins can't interact with the Annotation entity via the Field UI (not fieldable), among other issues with how annotations are set up as entities.
 
 I'm currently using improved versions of these two modules created by Michael Widner (@mwidner)/Stanford's Lacuna Stories project and graciously shared with me (yay digital humanities community!). That code is not yet shared here, as the Lacuna Stories project has not yet made their code public (but plans to do so).
