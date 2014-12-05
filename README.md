@@ -3,15 +3,17 @@ infinite-ulysses-public
 
 Table of Contents
 ---------------------
- * Caveats and Provisions 
+ * Caveats and provisions 
  * What's this repo about?
  * What's Infinite Ulysses?
  * Provenance of included code
+ * Milestones
+ * Issues queue
  * I want to use this!
  * Documentation (not yet complete)
  * Support credits
 
-# Caveats and Provisions
+# Caveats and provisions
 This is the public repo for code related to the Infinite Ulysses participatory digital edition, the focus of Amanda Visconti's (@amandavisconti) digital humanities doctoral dissertation. Watch a quick 3-minute video or read more about Infinite Ulysses [here](http://www.literaturegeek.com/digital-dissertation/) or [sign up to beta-test the site](http://goo.gl/qtcy6).
 
 *WARNING* This repo represents code that is likely to be in-progress, outdated, insecure, strange, silly, or otherwise unwieldy, in an attempt to share the entire building process with the public. I don't currently recommend using any of it, and I cannot currently provide assistance with using any of this code. Please wait for late Spring 2015, when I'll provide clean, concise code and friendly documentation on creating your own participatory digital edition. 
@@ -48,7 +50,7 @@ I'm currently using improved versions of these two modules created by Michael Wi
 
 More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here. When code is a bit more cleaned up, I'll try to label provenance within code as well, so that files representing multiple people's work clearly attribute each piece to its author. I've started to do that locally via comments beginning //Amanda:
 
-##Future stuff!
+# Milestones
 - [ ] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
 - [ ] Beta testing I (individual volunteers; December 2014)
 - [ ] Beta testing II (groups, classes, book clubs; January 2015 throughout Spring 2015)
@@ -57,6 +59,9 @@ More thorough crediting of FOSS licenses, previous contributors to customized mo
 - [ ] Article draft providing project narrative (text and website; available by May 2015)
 - [ ] Site 1.0 release on Bloomsday 2015
 
+# Issues queue
+You'll notice there's already a bunch of items in [this repo's issue queue](https://github.com/amandavisconti/infinite-ulysses-public/issues); I'm currently keeping most of my tasks private in Basecamp, but I'll be moving any remaining tasks here after I begin beta-testing with members of the public. You can submit issues to tell me about bugs on the site or feature requests, or otherwise contact me about the InfiniteUlysses.com site-part of my dissertation. You might notice issues get tagged with various labels—this helps me do things like prioritize work on anything blocking use/accessibility/inclusion on the site, or keep track of good suggestions and requests that I won't have time to address during the scope of my dissertation. The "out of scope" label doesn't mean your report isn't useful—any feedback is useful! I'll just only be able to do so much while trying to finish my PhD in 2015, which means data clean-up, analysis, and drafting a scholarly article on the project as well as trying to make it a better experience for our reading community.
+
 #I want to use this!
 You can! That is, you will be able to, easily, once the code is polished and documented (and a piece provided by a colleague is published). This is a dissertational project, and some of the work at the end of the tunnel (Spring 2015) will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. They'll be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public).
 
@@ -64,4 +69,4 @@ You can! That is, you will be able to, easily, once the code is polished and doc
 This will eventually link you to resources to turn this repo into a participatory digital edition site of your own!
 
 #Support credits
-I'm being supported by the [http://mith.umd.edu](Maryland Institute for Technology in the Humanities') Winnemore Digital Dissertation Fellowship this year as I complete my work on the site. My dissertation work has previously been supported by the UMD English Department (Summer 2014), MITH graduate research assistantships (Webmaster, BitCurator Usability/Documentation), and the Editing Modernism in Canada Ph.D. Fellowship.
+I'm being supported by the [Maryland Institute for Technology in the Humanities'](http://mith.umd.edu) Winnemore Digital Dissertation Fellowship this year as I complete my work on the site. My dissertation work has previously been supported by the UMD English Department (Summer 2014), MITH graduate research assistantships (Webmaster, BitCurator Usability/Documentation), and the Editing Modernism in Canada Ph.D. Fellowship.
