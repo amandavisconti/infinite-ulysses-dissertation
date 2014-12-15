@@ -52,9 +52,9 @@ I'm currently using improved versions of these two modules created by Michael Wi
 More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here. When code is a bit more cleaned up, I'll try to label provenance within code as well, so that files representing multiple people's work clearly attribute each piece to its author. I've started to do that locally via comments beginning //Amanda:
 
 # Milestones
-- [ ] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
-- [ ] Beta testing I (individual volunteers; December 2014)
-- [ ] Beta testing II (groups, classes, book clubs; January 2015 throughout Spring 2015)
+- [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
+- [ ] Beta testing I (individual volunteers; January 2015)
+- [ ] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
 - [ ] Installation profile for easy set-up of a site with all the above implemented (available by May 2015)
 - [ ] Code/set-up documentation and thoroughly comment code for understanding by others (available by May 2015)
 - [ ] Article draft providing project narrative (text and website; available by May 2015)
