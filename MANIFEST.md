@@ -1,3 +1,4 @@
+# The Manifest
 An ongoing, currently incomplete manifest of artifacts that comprise my dissertation.
 + ? unique research blog posts (not counting crossposted blog posts such as those at HASTAC)
 + ? of those blog posts were highlighted by Digital Humanities Now (x as editor's choice, y as resource posts)
@@ -21,4 +22,5 @@ An ongoing, currently incomplete manifest of artifacts that comprise my disserta
 
 # Thoughts:
 + I'm treating code like chapter-writing in that there's a lot of writing work that doesn't make it into the final product, but is essential to getting the work functioning. I don't think I have a great way of tracking an equivalent of how many total words I wrote (I can get an approximation from infrequent early git commits, perhaps).
++ I count scholarships/fellowships as produced items because of the significant written proposals that led to them (although I didn't count non-successful applications)
 + Using "lines of code" as a measure is a bit weird, but I can't think of a better measurement unit.
