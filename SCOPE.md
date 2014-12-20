@@ -19,17 +19,20 @@ You'll also want to check out my [Manifest file](https://github.com/amandaviscon
 As much as I could work on the site full-time and be happy, I'm designing it as part of a dissertation because I love the research it allows me to pursue—so it's important that I keep a distinction between the website I'm building (InfiniteUlysses.com) and the dissertation I'm conducting through and around that building.
 
 When I discuss the website, I tend to focus on issues related to **reading**: 
+
 + design for a more public humanities conversation
 + analytics for how people move around the site
 + features aimed at first-time readers of Ulysses or people otherwise new to one of its related themes (e.g. Joyce, Modernism, literary studies, the digital humanities, and digital editions) and the commonplaces and tacit knowledge that can get someone up to speed participating in the conversation around a literary text
 
 When I discuss the overall dissertational project, I tend to talk about issues related to **annotation**:
+
 + what makes an "edition"? a "scholarly" edition?
 + "edition literacies" (e.g. how we imagine various meta-structures for scholarly communication with and around a text; think of McGann's discussion of Gabler's synoptic markings of Ulysses as a new language of reading)
 + theory versus analytic data about encounters with "subdued" (hypertextualized, hyperannotated) complex Modernisms
 
 ## The Research Questions
 All my dissertational activity is aimed at exploring the following questions:
+
 1. How can we design digital archives and editions that are not just public, but invite and assist participation from both trained academics and the lay person in our love for the nuances of a text’s materiality, history, and meaning? 
 2. How can we borrow successful social mechanics from existing online communities (things like upvoting and  tagging) to create reading and research experiences that adeptly handle not only issues of user-generated contextual annotation quantity but also quality? 
 3. What happens to complex texts—especially those purposefully authored to be hypertextual, chaotic, and encyclopedic, like Ulysses—when a participatory digital edition places them under heavy and thorough annotation and conversation?
@@ -51,6 +54,7 @@ The scope of this project recognizes that I'm creating a humanities dissertation
 As with any digital tool serving a community, there will always be neat features to add, bugs to fix, and requests to provide a functionality that is essential to someone's use. I'm grateful to everyone that visits my site, and especially to those who take the time to tell me what they thought of it, how they used it, and what changes they'd like to see.
 
 These are the in-scope features of the site:
+
 + readers can highlight pieces of the text and add written annotations that are saved and viewable by all site visitors
 + readers can highlight pieces of the text and ask questions about it
 + readers can tag, upvote (thumbs up/down), and add a comment (single, non-threaded) to any annotation
