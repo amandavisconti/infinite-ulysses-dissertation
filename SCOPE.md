@@ -66,6 +66,7 @@ I'm managing the inexhaustible demands of the website with two approaches: a **d
 
 ## Data collection cap
 Usability and use testers like to say that you can find out 90% (totally anecdatal number) of a site's problems and real in-the-wild usage in the first two weeks of testing. For a study of how people read a complex book—one that often takes months or years to read offline—using a web tool, you really want years of site analytics and user feedback. Because I'd like to defend my dissertation at a reasonable date, I'm balancing these two amounts of time and setting my initial data collection phase as two months long, with the understanding that different patterns of use will emerge as site use grows and reading time passes.
+
 I'll begin user testing at the beginning of January 2015, with group testing (user in book clubs, classes, and other groups) at the end of January 2015. By capping data collection at the end of of February (or beginning of March, if groups take a little longer to get up to speed), I'll have enough initial data to glean some useful findings from the site for my dissertational narrative of the project. Data collection/user testing will, of course, continue after this point, but I won't be waiting on further data to finish my dissertation, and I'll probably switch to less formal methods of data-gathering.
 
 ## Issues Queue
