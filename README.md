@@ -1,6 +1,15 @@
 infinite-ulysses-public
 =======================
 
+Repository Contents
+---------------------
+* Manifest
+* Scope
+* Umbrella
+* Repo Syncing Notes
+* Annotation Sidebar Work
+
+
 Table of Contents
 ---------------------
  * Caveats and provisions 
