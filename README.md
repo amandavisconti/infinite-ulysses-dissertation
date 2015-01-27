@@ -62,8 +62,8 @@ More thorough crediting of FOSS licenses, previous contributors to customized mo
 
 # Milestones
 - [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
-- [ ] Beta testing I (individual volunteers; January 2015)
-- [ ] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
+- [x] Beta testing I (individual volunteers; January 2015)
+- [x] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
 - [ ] Installation profile for easy set-up of a site with all the above implemented (available by May 2015)
 - [ ] Code/set-up documentation and thoroughly comment code for understanding by others (available by May 2015)
 - [ ] Article draft providing project narrative (text and website; available by May 2015)
