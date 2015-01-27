@@ -6,11 +6,15 @@
 * Umbrella website
   * Blog posts
   * Link to this repo
-  * Article
+  * Scholarly article
   * Link to digital edition
   * Warc of umbrella website
   * Warc of blog
   * Warc of digital edition
+* The digital edition as
+  * a hyperlink
+  * WARC archive (included above in umbrella site)
+  * .ZIP of web files and database
 * Official folder
   * IRB Waiver
   * Written consent to dissertation format from: library repository manager, dean of the graduate school, department graduate chair
