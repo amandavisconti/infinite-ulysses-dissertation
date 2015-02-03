@@ -10,6 +10,14 @@ An ongoing, currently incomplete manifest of artifacts that comprise my disserta
 + ? lines of Javascript or jQuery
 + ? lines of PHP
 + ? lines of HTML and CSS/LESS
++ ? CMS installations
++ ? themes
++ ? key stages of book page design
++ ? Google Analytic custom reports (gathering and analyzing data from user visits to the digital edition)
++ ? beta-testers (first round, committee, second round)
++ ? interview/surveys (y completed and return; z follow-up)
++ ? modules installed on digital edition CMS (requiring search, reading documentation and code, testing and configuring on deveopment server)
++ + ? of those modules had code changed by me
 + ? corrections to the Modernist Versions Project digital transcription of the first Ulysses printing
 + ? other changes to the transcription (adding formatting such as indents and centering, and typographical choices such as italicization and all-caps) resulting in
 + 1 digital text file suitable for dropping into a Drupal site or really any HTML page to display Ulysses with correct typography
