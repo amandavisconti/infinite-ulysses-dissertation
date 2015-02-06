@@ -31,8 +31,8 @@ Each Infinite Ulysses design and coding decison involved thinking about
 * **scope**: what could I reasonably accomplish while leaving time for the other parts of my dissertational project?
 * **speculative experiment**: thinking of the site as hosting thousands or millions of users and annotations, how could I build something that would structurally support that weight? how could I parse the noise of a million annotations so that each unique reader was offered just those annotations that suited her background, needs, and desires?
 * **speculative experiment + scope**: how could I mediate between these two desires to support my research but also create something practically useful to a large public humanities audience?
-* **theory** what did my reading in areas such as visual design rhetoric, scholarly editing/textual scholarship, and reading behavior suggest? what did precedents in Joycean scholarship, print and digital editions, and digital humanities projects suggest?
-* **online communities** what did historical successes, working systems, organic uses of official features, and other observed phenomena at existing online communities with heavy user-created textual content suggest?
+* **theory**: what did my reading in areas such as visual design rhetoric, scholarly editing/textual scholarship, and reading behavior suggest? what did precedents in Joycean scholarship, print and digital editions, and digital humanities projects suggest?
+* **online communities**: what did historical successes, working systems, organic uses of official features, and other observed phenomena at existing online communities with heavy user-created textual content (e.g. Reddit) suggest?
 
 ------
 **Item:** Custom Drupal theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
