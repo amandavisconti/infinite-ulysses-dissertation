@@ -9,25 +9,21 @@
 #Table of Contents
 ---------------------
 * What's Infinite Ulysses?
-* 
-..* Milestones
+  * Milestones
 
 * Provenance of included code
-..* Functionality
+  * Functionality
 
-  ** Appearance
+  * Appearance
   
-  ** The Text
+  * The Text
   
-  ** Support credits
+  * Support credits
   
 * I want to use this!
-* 
-  ** Documentation
-
-  ** Issues queue
-  
-  ** Caveat emptor: in-progress code
+  * Documentation
+  * Issues queue
+  * Caveat emptor: in-progress code
 
 #What's Infinite Ulysses?
 This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation/) to learn more about the site and the resarch project behind it. This repo will eventually offer Drupal modules, site theming, documentation, and an installation profile to quickly pop up your own participatory digital edition.
