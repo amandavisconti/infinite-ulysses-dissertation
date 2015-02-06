@@ -1,0 +1,106 @@
+<?php
+
+/**
+ * Implements hook_schema(). This should come before hook_install (which isn't currently implemented).
+ */
+function annotation_schema() {
+	$schema = array();
+	$schema['annotation'] = array(
+		'description' => 'Stores annotations.',
+		'fields' => array(
+			'id' => array(
+				'description' => 'Primary Key: Unique item ID.',
+				'type' => 'serial',
+				'unsigned' => TRUE,
+				'not null' => TRUE,
+			),
+			'type' => array(
+				'description' => 'The type of annotation.',
+				'type' => 'varchar',
+				'length' => 32,
+				'not null' => TRUE,
+				'default' => '',
+			),
+			'created' => array(
+				'description' => 'The creation datetime of the annotation.',
+				'type' => 'int',
+				'not null' => TRUE,
+				'default' => 0,
+			),
+			'updated' => array(
+				'description' => 'The updated datetime of the annotation.',
+				'type' => 'int',
+				'not null' => TRUE,
+				'default' => 0,
+			),
+			'text' => array(
+				'description' => 'content of annotation',
+				'type' => 'text',
+				'size' => 'big',
+				'not null' => FALSE,
+			),
+			'tags' => array(
+				'description' => t('Tags added to the annotation'),
+				'type' => 'int', // TAGWORK need to change to varchar (which REQUIRES length setting eg 2048; may want to indicate serialized string)? Currently shows tagged or not using 0 and 1 and uses 'int'.
+				'not null' => FALSE,
+			),
+			'quote' => array(
+				'description' => 'The text of this annotation.',
+				'type' => 'text',
+				'size' => 'big',
+				'not null' => TRUE,
+			),
+			'uri' => array(
+				'description' => 'Type uri of this annotation.',
+				'type' => 'varchar',
+				'length' => 2048, // Maximum URLs length.
+				'not null' => TRUE,
+				'sortable' => TRUE
+			),
+			'ranges' => array(
+				'description' => 'The ranges of the annotation.',
+				'type' => 'blob',
+				'size' => 'big',
+				'not null' => TRUE,
+				'serialize' => TRUE,
+			),
+			'uid' => array(
+				'description' => t('user id of annotation owner'),
+				'type' => 'int',
+				'not null' => TRUE,
+				'default' => 0,
+			),
+		),
+		'indexes' => array(
+			'uid' => array('uid'),
+			'annotation_updated' => array('updated'),
+			'annotation_created' => array('created'),
+			'annotation_type' => array(array('type', 4)),
+		),
+		'foreign keys' => array(
+			'uid' => array(
+				'table' => 'users',
+				'columns' => array('uid' => 'uid'),
+			),
+		),
+		'primary key' => array('id'),
+	);
+	return $schema;
+}
+
+/** TAGWORK needed, but for entity rather than node
+// Alter to suit entity instead of node
+function annotation_install() {
+		node_types_rebuild();
+		$types = node_type_get_types();
+		node_add_body_field($types['annotation']);
+		add_custom_fields();
+}
+**/
+
+/**
+ * Implements hook_uninstall().
+ */
+function annotation_uninstall() {
+	variable_del('annotator_store');
+}
