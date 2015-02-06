@@ -26,9 +26,14 @@
   * Caveat emptor: in-progress code
 
 #What's Infinite Ulysses?
-This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation/) to learn more about the site and the resarch project behind it. This repo will eventually offer Drupal modules, site theming, documentation, and an installation profile to quickly pop up your own participatory digital edition.
+This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation/) to learn more about the site and the resarch project behind it:
 
-Infinite Ulysses is a dissertational project of designing, building, and user-testing a "participatory digital edition" of James Joyce's difficult but unbelievably rewarding novel Ulysses—a website where you can read the novel, annotate it (highlight words in the text and add comments on them) to ask questions, provide answers and interpretations and definitions, and otherwise collaboratively explore and enrich the novel. Infinite Ulysses builds off of a ton of great FOSS (free and open-source) coding work focusing around the "Annotator.js" tool (see the Provenance for more specific credits), with a focus on packaging these into a Drupal site where existing and custom social modules can act on the annotations (ranking them, tagging them, curating them, etc.). Check out my research blog [literaturegeek.com](http://www.literaturegeek.com) for regular blogging on the project's progress, or see [this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation).
+<a href="http:/player.vimeo.com/video/92430744" target="_blank"><img src="https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-public/master/Miscellaneous/videoscreenshot.png" 
+alt="3-minute video explaining the Infinite Ulysses project" width="500" height="375" border="0" /></a>
+
+This repo will eventually offer Drupal modules, site theming, documentation, and an installation profile to quickly pop up your own participatory digital edition.
+
+Infinite Ulysses is a dissertational project of designing, building, and user-testing a "participatory digital edition" of James Joyce's difficult but unbelievably rewarding novel Ulysses—a website where you can read the novel, annotate it (highlight words in the text and add comments on them) to ask questions, provide answers and interpretations and definitions, and otherwise collaboratively explore and enrich the novel. Infinite Ulysses builds off of a ton of great FOSS (free and open-source) coding work focusing around the "Annotator.js" tool (see the Provenance for more specific credits), with a focus on packaging these into a Drupal site where existing and custom social modules can act on the annotations (ranking them, tagging them, curating them, etc.). Check out my research blog [literaturegeek.com](http://www.literaturegeek.com) for regular blogging on the project's progress.
 
 ##Milestones
 - [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
