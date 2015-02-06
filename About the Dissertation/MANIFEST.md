@@ -55,6 +55,11 @@ The largest amount of research time (thinking, sketching, reading, translating d
 ------
 ##Code
 
+**Item:** [Folder of example modules and other codework that didn't make it into the final website](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/Old%2C%20defunct%20code%20in%20all%20states)
+**What it does (technical, research):** Code I wrote that eventually developed into current code on the website—or didn't, but helped me learn how to create a module, send information from the client- to the server-side, etc.
+
+------
+
 **Item:** Highlighted Anno(tation)s Drupal module
 
 **What it does (technical, research):** "highlighted_annos" is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
@@ -175,3 +180,10 @@ This makes the list of annotations associated with a highlight available to the 
 **Item:** 3 fellowship/scholarships in support of the project received (MITH Winnemore Digital Dissertation Fellowship 2014-2015, Editing Modernism in Canada Ph.D. Fellowship 2013-2014, UMD English Summer Fellowship 2014)
 
 **What it does (technical, research):** I count scholarships/fellowships as produced items because of the significant effort in writing the proposals that led to them (although I didn't count non-successful applications).
+
+------
+**Item:** IRB Exemption
+
+**What it does (technical, research):** Forms filled out, an example user-study survey submitted, and other hoops jumped to achieve a waiver of Institutional Review Board (IRB) oversight for my dissertational user studies.
+
+**Where to find it:** [IRB Waiver](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Miscellaneous/IRBNetDocument.pdf)
