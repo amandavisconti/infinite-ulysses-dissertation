@@ -42,13 +42,13 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):** A research blog with 31 posts (average length: 2,000-3,000 words) plus crosspostings to HASTAC.org plus 2 unique blog posts at mith.umd.edu. Posts are moderately polished; think somewhere between first and final draft level of writing: academic blogging is fast but careful about reaching its scholarly audience.
 
 **Where to find it:** [http://www.literaturegeek.com/category/dissertation/]; [http://www.hastac.org/blogs/amanda-visconti]; [http://mith.umd.edu/invitation-beta-test-infinite-ulysses-digital-edition/] and [http://mith.umd.edu/infinite-ulysses-designing-public-humanities-conversation/]
-======
+
 **Item:** Values statement
 
 **What it does (technical, research):** Written statement of scholarly values as they apply to the dissertation.
 
 **Where to find it:** [http://www.literaturegeek.com/values/]
-======
+
 **Item:** Book proposal on the digital dissertation process with University of Michigan Press [Practices in the Digital Humanities series](http://www.digitalculture.org/books/book-series/practices-in-the-digital-humanities)
 
 **What it does (technical, research):** With co-author Dr. Kathie Gossett, book proposal, book outline, and example chapter thinking through the digital dissertation process from designing your format to fit your research questions through the defense.
