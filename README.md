@@ -3,9 +3,9 @@ Welcome to the infinite-ulysses-public repository!
 
 Repository Contents: Top-Level Folders
 ---------------------
-* About the Project (manifest of work units and rationale, description of formats in final submissions to the dissertation committee and registrar, discussion of project scope)
-* Technical Instructions (e.g. how to install and configure the code)
-* The Code (code allowing Infinite Ulysses' interface look and behavior)
+* *About the Project* ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
+* *[The Code](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)* (code allowing Infinite Ulysses' interface look and behavior)
+* *Technical Instructions* ([notes on syncing multiple repos](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/RepoSyncingNotes.md), [how to install and configure annotation functionality on Drupal](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md))
 
 Table of Contents
 ---------------------
@@ -16,7 +16,7 @@ Table of Contents
  * Milestones
  * Issues queue
  * I want to use this!
- * Documentation (not yet complete)
+ ** Documentation (not yet complete)
  * Support credits
 
 # Caveats and provisions
@@ -77,13 +77,15 @@ The background photograph (on pages except the book pages) was taken by me, cour
 - [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
 - [x] Beta testing I (individual volunteers; January 2015)
 - [x] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
-- [ ] Installation profile for easy set-up of a site with all the above implemented (available by May 2015)
-- [ ] Code/set-up documentation and thoroughly comment code for understanding by others (available by May 2015)
 - [ ] Article draft providing project narrative (text and website; available by May 2015)
-- [ ] Site 1.0 release on Bloomsday 2015
+- [ ] Site 1.0 release on Bloomsday 2015 (June 16, 2015)
+- [ ] Installation profile for easy set-up of a site with all the above implemented (Summer 2015?)
+- [ ] Code/set-up documentation and thoroughly comment code for understanding by others (Summer 2015?)
 
 # Issues queue
-You'll notice there's already a bunch of items in [this repo's issue queue](https://github.com/amandavisconti/infinite-ulysses-public/issues); I'm currently keeping most of my tasks private in Basecamp, but I'll be moving any remaining tasks here after I begin beta-testing with members of the public. You can submit issues to tell me about bugs on the site or feature requests, or otherwise contact me about the InfiniteUlysses.com site-part of my dissertation. You might notice issues get tagged with various labels—this helps me do things like prioritize work on anything blocking use/accessibility/inclusion on the site, or keep track of good suggestions and requests that I won't have time to address during the scope of my dissertation. The "out of scope" label doesn't mean your report isn't useful—any feedback is useful! I'll just only be able to do so much while trying to finish my PhD in 2015, which means data clean-up, analysis, and drafting a scholarly article on the project as well as trying to make it a better experience for our reading community.
+You'll notice there's already a bunch of items in [this repo's issue queue](https://github.com/amandavisconti/infinite-ulysses-public/issues); I'm currently keeping most of my tasks private in Basecamp, but I'll be moving any remaining tasks here after the public site release in June 2015. 
+
+You can submit issues to tell me about bugs on the site or feature requests, or otherwise contact me about the [InfiniteUlysses.com](http://www.InfiniteUlysses.com) part of my dissertation. You might notice issues get tagged with various labels—this helps me do things like prioritize work on anything blocking use/accessibility/inclusion on the site, or keep track of good suggestions and requests that I won't have time to address during the scope of my dissertation. The "out of scope" label doesn't mean your report isn't useful—any feedback is useful! I'll just only be able to do so much while trying to finish my PhD in 2015, which means data clean-up, analysis, and drafting a scholarly article on the project as well as trying to make it a better experience for our reading community. You can check out [this page on the scope of my project](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md) to understand what I'll be working on beforemy dissertation defense.
 
 #I want to use this!
 You can! That is, you will be able to, easily, once the code is polished and documented (and a piece of the code provided by a colleague is made public). This is a dissertational project, and some of the work ater I've successfully defended will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. There will be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public). You may wish to check out [my page on Infinite Ulysses IP & Copyright](http://www.infiniteulysses.com/content/ip-and-copyright) to understand what you can reuse (and how).
