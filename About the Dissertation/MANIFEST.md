@@ -25,20 +25,10 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 ------
 ------
 ##Design/appearance
-**Item:**
-
-**What it does (technical, research):**
-
-**Where to find it:**
 
 ------
 ------
 ##Code
-**Item:**
-
-**What it does (technical, research):**
-
-**Where to find it:**
 
 ------
 ------
