@@ -1,5 +1,5 @@
-#Welcome to the infinite-ulysses-public repository!
-==================================================
+*Welcome to the infinite-ulysses-public repository!*
+
 #Repository Contents: Top-Level Folders
 ---------------------
 1. **About the Project** ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
