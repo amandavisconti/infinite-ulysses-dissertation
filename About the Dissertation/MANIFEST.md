@@ -21,6 +21,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 * [Miscellaneous](#miscellaneous)
 
 # The item manifest
+
 ------
 ------
 ##Design/appearance
@@ -29,6 +30,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):**
 
 **Where to find it:**
+
 ------
 ------
 ##Code
@@ -37,6 +39,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):**
 
 **Where to find it:**
+
 ------
 ------
 ##Research writing
@@ -57,6 +60,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):** With co-author Dr. Kathie Gossett, book proposal, book outline, and example chapter thinking through the digital dissertation process from designing your format to fit your research questions through the defense.
 
 **Where to find it:** More info once proposal accepted.
+
 ------
 ------
 ##Talks and Presentations
@@ -80,6 +84,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):** A three-minute overview of my research project aimed at a public audience. Condenses my research questions and translates their exigence for the public. Combines spoken text and still images.
 
 **Where to find it:** [http://vimeo.com/92430744]
+
 ------
 ------
 ##Miscellaneous
