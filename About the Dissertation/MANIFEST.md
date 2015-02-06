@@ -47,14 +47,14 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 
 **What it does (technical, research):** A research blog with 31 posts (average length: 2,000-3,000 words) plus crosspostings to HASTAC.org plus 2 unique blog posts at mith.umd.edu. Posts are moderately polished; think somewhere between first and final draft level of writing: academic blogging is fast but careful about reaching its scholarly audience.
 
-**Where to find it:** [http://www.literaturegeek.com/category/dissertation/]; [http://www.hastac.org/blogs/amanda-visconti]; [http://mith.umd.edu/invitation-beta-test-infinite-ulysses-digital-edition/] and [http://mith.umd.edu/infinite-ulysses-designing-public-humanities-conversation/]
+**Where to find it:** http://www.literaturegeek.com/category/dissertation/; http://www.hastac.org/blogs/amanda-visconti; http://mith.umd.edu/invitation-beta-test-infinite-ulysses-digital-edition/ and http://mith.umd.edu/infinite-ulysses-designing-public-humanities-conversation/
 
 ------
 **Item:** Values statement
 
 **What it does (technical, research):** Written statement of scholarly values as they apply to the dissertation.
 
-**Where to find it:** [http://www.literaturegeek.com/values/]
+**Where to find it:** http://www.literaturegeek.com/values/
 
 ------
 **Item:** Book proposal on the digital dissertation process with University of Michigan Press [Practices in the Digital Humanities series](http://www.digitalculture.org/books/book-series/practices-in-the-digital-humanities)
@@ -87,7 +87,7 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 
 **What it does (technical, research):** A three-minute overview of my research project aimed at a public audience. Condenses my research questions and translates their exigence for the public. Combines spoken text and still images.
 
-**Where to find it:** [http://vimeo.com/92430744]
+**Where to find it:** http://vimeo.com/92430744
 
 ------
 ------
@@ -95,8 +95,6 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **Item**: This manifest document
 
 **What it does (technical, research):** This manifest took considerable time to create (roughly three work days); tasks included tracking down files I've altered since beginning the dissertation, figuring out how to quantify codework, and translating technical jargon to explanations free from technical vocabulary.
-
-**Where to find it:** right under your nose!
 
 ------
 **Item:** 3 fellowship/scholarships in support of the project received (MITH Winnemore Digital Dissertation Fellowship 2014-2015, Editing Modernism in Canada Ph.D. Fellowship 2013-2014, UMD English Summer Fellowship 2014)
