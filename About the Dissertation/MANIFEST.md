@@ -15,6 +15,8 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 * [Code](#code)
   
 * [Research writing](#research-writing)
+
+* [Scholarly editing](#scholarly-editing)
   
 * [Public humanities](#public-speaking)
   
@@ -52,6 +54,15 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 **What it does (technical, research):** With co-author Dr. Kathie Gossett, book proposal, book outline, and example chapter thinking through the digital dissertation process from designing your format to fit your research questions through the defense.
 
 **Where to find it:** More info once proposal accepted.
+
+------
+------
+##Scholarly Editing
+**Item:** Typographical formatting, proofing and error correction, and data formatting on the digital text of Ulysses
+
+**What it does (technical, research):** This site builds off the digital plaintext transcription of the 1922 first printing of Ulysses, transcribed by Matthew Kochis and Patrick Belk with the Modernist Versions Project (MVP) and offered for public reuse by the MVP under a CC BY SA license. I've added corrections to errors I located in that digital transcription, used regular expressions to reintroduce some basic formatting (e.g. indent and em dash before lines of dialogue), and manually am adding HTML/CSS as I read through the text to reintroduce extremely important typographical choices used in the 1922 first printing of the novel (as verified against the Modernist Versions Project's digital images of the printing; decisions such as the all-caps headlines in the Aeolus episode).
+
+**Where to find it:** The most up-to-date list of textual corrections can be found on the [Text page](http://www.infiniteulysses.com/content/text) on Infinite Ulysses. I've also created [a public repository](https://github.com/amandavisconti/ulysses) offering the text of Ulysses as HTML files (with my added typographical formatting and error correction) and files suitable for import into a Drual site (CSVs and .import/.export files).
 
 ------
 ------
