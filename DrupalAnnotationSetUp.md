@@ -4,7 +4,7 @@ Annotator.js works on Drupal as two modules and a library (installed, as usual, 
     /libraries/annotator
 The files in libraries/annotator are the latest from the Annotator.js repo (https://github.com/openannotation/annotator/releases). Although the modules Infinite Ulysses uses have been significantly changed from the modules you could download on Drupal.org, the Drupal.org Annotator (https://www.drupal.org/project/annotator) and Annotation (https://www.drupal.org/project/annotation) modules pages might still have useful info if you're troubleshooting. 
 
-Instructions:
+# Instructions:
 I'll refer to the two modules as "Annotator" and "Annotation" throughout, and use "libraries/annotator" if I'm referring to the JS library.
 
 1. Rename /libraries/annotator folder as just "annotator" and place in your sites/all/libraries folder (create a libraries folder there if you don't already have one).
