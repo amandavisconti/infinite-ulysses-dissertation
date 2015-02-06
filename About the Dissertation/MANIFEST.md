@@ -12,6 +12,15 @@
 * Miscellaneous
 
 #The item manifest
+##Design/appearance
+  
+##Code
+  
+##Research writing
+  
+##Public speaking
+  
+##Miscellaneous
 
 Item:
 What it does (technical, research):
