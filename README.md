@@ -8,7 +8,7 @@
 
 #Table of Contents
 ---------------------
-* What's Infinite Ulysses?
+* [What's Infinite Ulysses?](#What's Infinite Ulysses?)
   * Milestones
 
 * Provenance of included code
