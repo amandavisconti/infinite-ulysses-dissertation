@@ -9,21 +9,21 @@
 #Table of Contents
 ---------------------
 * [What's Infinite Ulysses?](#whats-infinite-ulysses)
-  * Milestones
+  * [Milestones](#milestones)
 
-* Provenance of included code
-  * Functionality
+* [Provenance of included code](#provenance-of-included-code)
+  * [Functionality](#functionality)
 
-  * Appearance
+  * [Appearance](#appearance)
   
-  * The Text
+  * [The Text](#the-text)
   
-  * Support credits
+  * [Support credits](#support-credits)
   
-* I want to use this!
-  * Documentation
-  * Issues queue
-  * Caveat emptor: in-progress code
+* [I want to use this!](#i-want-to-use-this)
+  * [Documentation](#documentation)
+  * [Issues queue](#issues-queue)
+  * [Caveat emptor: in-progress code](#caveat-emptor-in-progress-code)
 
 #What's Infinite Ulysses?
 This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://www.literaturegeek.com/digital-dissertation/) to learn more about the site and the resarch project behind it:
