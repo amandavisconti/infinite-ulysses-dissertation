@@ -12,6 +12,7 @@ An ongoing, currently incomplete manifest of artifacts that comprise my disserta
 + ? lines of HTML and CSS/LESS
 + ? CMS installations
 + ? themes
++ ? things tried that didn't ultimately use (e.g. EMiC, Fedora, other annotation options)
 + ? key stages of book page design
 + ? Google Analytic custom reports (gathering and analyzing data from user visits to the digital edition)
 + ? beta-testers (first round, committee, second round)
