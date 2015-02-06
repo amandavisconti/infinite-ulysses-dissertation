@@ -1,0 +1,4679 @@
+array(
+  (object) array(
+      'vid' => '35',
+      'uid' => '1',
+      'title' => 'Test',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '6c4ef39f-aee7-4da1-a55b-6b536fdac84d',
+      'nid' => '34',
+      'type' => 'book',
+      'language' => 'und',
+      'created' => '1412382431',
+      'changed' => '1412388141',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '6164d767-36cc-40a4-bdcc-8e7839267269',
+      'revision_timestamp' => '1412388141',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => '<a class="colorbox-load" href="http://localhost:8080/www.infiniteulysses.com/node/6">ulysses</a>',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p><a class=\"colorbox-load\" href=\"http://localhost:8080/www.infiniteulysses.com/node/6\">ulysses</a></p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1412382431',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '34',
+        'enabled' => '1',
+        'machine_name' => '34',
+        'block_title' => 'Test',
+        'view_mode' => 'node_block_default',
+        'node_link' => 'node_block_default',
+        'comment_link' => 'node_block_default',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => array(
+        'link_title' => 'Test',
+        'mlid' => 0,
+        'plid' => '0',
+        'menu_name' => 'main-menu',
+        'weight' => '0',
+        'options' => array(),
+        'module' => 'menu',
+        'expanded' => '0',
+        'hidden' => '0',
+        'has_children' => '0',
+        'customized' => 0,
+        'parent_depth_limit' => 8,
+        'description' => '',
+        'enabled' => 1,
+      ),
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '6',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '93c32137-cd40-4476-9e01-63b68d8b3fb7',
+      'nid' => '6',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411043828',
+      'changed' => '1412385203',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '3bc37a49-215c-46de-96e1-c5202ae43c33',
+      'revision_timestamp' => '1412385203',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Stairs',
+            'format' => NULL,
+            'safe_value' => 'Stairs',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'stairhead',
+            'format' => NULL,
+            'safe_value' => 'stairhead',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '6',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":43,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":52}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:43,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:52}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411043828',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '6',
+        'enabled' => '1',
+        'machine_name' => '6',
+        'block_title' => 'Annotation of Ulysses',
+        'view_mode' => 'full',
+        'node_link' => '1',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '34',
+      'uid' => '4',
+      'title' => 'Annotation of Page 1',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '891aff93-a4dc-46f8-9962-9f8e7ebe1745',
+      'nid' => '33',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411774819',
+      'changed' => '1411774819',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e9fefa00-9ea0-4b79-b88a-e607cf5d0afb',
+      'revision_timestamp' => '1411774819',
+      'revision_uid' => '4',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Amanda says!',
+            'format' => NULL,
+            'safe_value' => 'Amanda says!',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'blessed gravely thrice the tower',
+            'format' => NULL,
+            'safe_value' => 'blessed gravely thrice the tower',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Page 1',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","startOffset":75,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","endOffset":107}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;startOffset&quot;:75,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;endOffset&quot;:107}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411774819',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '4',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '33',
+        'enabled' => '1',
+        'machine_name' => '33',
+        'block_title' => 'Annotation of Page 1',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'Amanda Visconti',
+      'picture' => '0',
+      'data' => NULL,
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '33',
+      'uid' => '4',
+      'title' => 'Annotation of Page 2',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'dfb1f0a8-0529-47ba-aa44-46b77c173d3f',
+      'nid' => '32',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411668042',
+      'changed' => '1411668042',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '43ec8049-c1a0-4f9a-8e6e-57e79bb9c6e5',
+      'revision_timestamp' => '1411668042',
+      'revision_uid' => '4',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'SYMBOLISM',
+            'format' => NULL,
+            'safe_value' => 'SYMBOLISM',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Thanks, old chap',
+            'format' => NULL,
+            'safe_value' => 'Thanks, old chap',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/29',
+            'title' => 'Page 2',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":232,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":248}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:232,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:248}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '29',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411668042',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '4',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '32',
+        'enabled' => '1',
+        'machine_name' => '32',
+        'block_title' => 'Annotation of Page 2',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'Amanda Visconti',
+      'picture' => '0',
+      'data' => NULL,
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '32',
+      'uid' => '1',
+      'title' => 'Annotation of Page 2',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '77ea636b-a5a2-43af-a394-7d7973a45822',
+      'nid' => '31',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411653876',
+      'changed' => '1411653876',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '3a86751b-ac01-470b-8bd9-03043c9e1a12',
+      'revision_timestamp' => '1411653876',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'That guy! Yep',
+            'format' => NULL,
+            'safe_value' => 'That guy! Yep',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Malachi Mulligan',
+            'format' => NULL,
+            'safe_value' => 'Malachi Mulligan',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/29',
+            'title' => 'Page 2',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":1022,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":1038}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:1022,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:1038}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '29',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411653876',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '31',
+        'enabled' => '1',
+        'machine_name' => '31',
+        'block_title' => 'Annotation of Page 2',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '31',
+      'uid' => '1',
+      'title' => 'Annotation of Page 2',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '5842ddeb-3246-4dd0-bcc2-3f8d84bf703d',
+      'nid' => '30',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411652393',
+      'changed' => '1411652393',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '17cd560a-f29d-4ad4-aafb-6c92c2715d97',
+      'revision_timestamp' => '1411652393',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Another test today',
+            'format' => NULL,
+            'safe_value' => 'Another test today',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'He peered sideways',
+            'format' => NULL,
+            'safe_value' => 'He peered sideways',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/29',
+            'title' => 'Page 2',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":0,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":18}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:0,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:18}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '29',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411652393',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '30',
+        'enabled' => '1',
+        'machine_name' => '30',
+        'block_title' => 'Annotation of Page 2',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '29',
+      'uid' => '1',
+      'title' => 'Page 2',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'feee3578-b3b5-41d0-82ca-1c1b1808afe9',
+      'nid' => '29',
+      'type' => 'book',
+      'language' => 'und',
+      'created' => '1411652108',
+      'changed' => '1411652258',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'd69f8e21-75e4-49e0-ac7b-e39c13b1c7c4',
+      'revision_timestamp' => '1411652258',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "He peered sideways up and gave a long slow whistle of call, then paused awhile in rapt attention, his even white teeth glistening here and there with gold points. Chrysostomos. Two strong shrill whistles answered through the calm.\r\n—Thanks, old chap, he cried briskly. That will do nicely. Switch off the current, will you?\r\nHe skipped off the gunrest and looked gravely at his watcher, gathering about his legs the loose folds of his gown. The plump shadowed face and sullen oval jowl recalled a prelate, patron of arts in the middle ages. A pleasant smile broke quietly over his lips.\r\n—The mockery of it! he said gaily. Your absurd name, an ancient Greek!\r\nHe pointed his finger in friendly jest and went over to the parapet, laughing to himself. Stephen Dedalus stepped up, followed him wearily halfway and sat down on the edge of the gunrest, watching him still as he propped his mirror on the parapet, dipped the brush in the bowl and lathered cheeks and neck.\r\nBuck Mulligan's gay voice went on.\r\n—My name is absurd too: Malachi Mulligan, two dactyls. But it has a Hellenic ring, hasn't it? Tripping and sunny like the buck himself. We must go to Athens. Will you come if I can get the aunt to fork out twenty quid?",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>He peered sideways up and gave a long slow whistle of call, then paused awhile in rapt attention, his even white teeth glistening here and there with gold points. Chrysostomos. Two strong shrill whistles answered through the calm.<br />\n—Thanks, old chap, he cried briskly. That will do nicely. Switch off the current, will you?<br />\nHe skipped off the gunrest and looked gravely at his watcher, gathering about his legs the loose folds of his gown. The plump shadowed face and sullen oval jowl recalled a prelate, patron of arts in the middle ages. A pleasant smile broke quietly over his lips.<br />\n—The mockery of it! he said gaily. Your absurd name, an ancient Greek!<br />\nHe pointed his finger in friendly jest and went over to the parapet, laughing to himself. Stephen Dedalus stepped up, followed him wearily halfway and sat down on the edge of the gunrest, watching him still as he propped his mirror on the parapet, dipped the brush in the bowl and lathered cheeks and neck.<br />\nBuck Mulligan's gay voice went on.<br />\n—My name is absurd too: Malachi Mulligan, two dactyls. But it has a Hellenic ring, hasn't it? Tripping and sunny like the buck himself. We must go to Athens. Will you come if I can get the aunt to fork out twenty quid?</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'book' => array(
+        'mlid' => '729',
+        'nid' => '29',
+        'bid' => '1',
+        'menu_name' => 'book-toc-1',
+        'plid' => '411',
+        'link_path' => 'node/29',
+        'router_path' => 'node/%',
+        'link_title' => 'Page 2',
+        'options' => array(),
+        'module' => 'book',
+        'hidden' => '0',
+        'external' => '0',
+        'has_children' => '0',
+        'expanded' => '0',
+        'weight' => '0',
+        'depth' => '2',
+        'customized' => '0',
+        'p1' => '411',
+        'p2' => '729',
+        'p3' => '0',
+        'p4' => '0',
+        'p5' => '0',
+        'p6' => '0',
+        'p7' => '0',
+        'p8' => '0',
+        'p9' => '0',
+        'updated' => '0',
+        'href' => 'node/29',
+        'title' => 'Page 2',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411652108',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '29',
+        'enabled' => '0',
+        'machine_name' => '29',
+        'block_title' => 'Page 2',
+        'view_mode' => 'node_block_default',
+        'node_link' => 'node_block_default',
+        'comment_link' => 'node_block_default',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'book_helper' => array(
+        'link_title_custom' => 'Page 2',
+        'link_title_sync' => TRUE,
+      ),
+      'path' => FALSE,
+      'menu' => array(
+        'link_title' => 'Page 2',
+        'mlid' => 0,
+        'plid' => '0',
+        'menu_name' => 'main-menu',
+        'weight' => '0',
+        'options' => array(),
+        'module' => 'menu',
+        'expanded' => '0',
+        'hidden' => '0',
+        'has_children' => '0',
+        'customized' => 0,
+        'parent_depth_limit' => 8,
+        'description' => '',
+        'enabled' => 1,
+      ),
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '1',
+      'uid' => '1',
+      'title' => 'Page 1',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '664f1431-2595-4ffd-acce-2d072a47d22f',
+      'nid' => '1',
+      'type' => 'book',
+      'language' => 'und',
+      'created' => '1410983629',
+      'changed' => '1411652219',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '6c0c1581-577e-43f3-b00d-6bf97df28f1a',
+      'revision_timestamp' => '1411652219',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressinggown, ungirdled, was sustained gently behind him by the mild morning air. He held the bowl aloft and intoned:\r\n\r\n- Introibo ad altare Dei.\r\n\r\n- Halted, he peered down the dark winding stairs and called up coarsely:\r\n\r\n- Come up, Kinch. Come up, you fearful Jesuit.\r\n\r\nSolemnly he came forward and mounted the round gunrest. He faced about and blessed gravely thrice the tower, the surrounding country and the awaking mountains. Then, catching sight of Stephen Dedalus, he bent towards him and made rapid crosses in the air, gargling in his throat and shaking his head. Stephen Dedalus, displeased and sleepy, leaned his arms on the top of the staircase and looked coldly at the shaking gurgling face that blessed him, equine in its length, and at the light untonsured hair, grained and hued like pale oak.\r\nBuck Mulligan peeped an instant under the mirror and then covered the bowl smartly.\r\n\r\n- Back to barracks, he said sternly.\r\n\r\nHe added in a preacher's tone:\r\n\r\n- For this, O dearly beloved, is the genuine Christine: body and soul and blood and ouns. Slow music, please. Shut your eyes, gents. One moment. A little trouble about those white corpuscles. Silence, all.",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressinggown, ungirdled, was sustained gently behind him by the mild morning air. He held the bowl aloft and intoned:</p>\n<p>- Introibo ad altare Dei.</p>\n<p>- Halted, he peered down the dark winding stairs and called up coarsely:</p>\n<p>- Come up, Kinch. Come up, you fearful Jesuit.</p>\n<p>Solemnly he came forward and mounted the round gunrest. He faced about and blessed gravely thrice the tower, the surrounding country and the awaking mountains. Then, catching sight of Stephen Dedalus, he bent towards him and made rapid crosses in the air, gargling in his throat and shaking his head. Stephen Dedalus, displeased and sleepy, leaned his arms on the top of the staircase and looked coldly at the shaking gurgling face that blessed him, equine in its length, and at the light untonsured hair, grained and hued like pale oak.<br />\nBuck Mulligan peeped an instant under the mirror and then covered the bowl smartly.</p>\n<p>- Back to barracks, he said sternly.</p>\n<p>He added in a preacher's tone:</p>\n<p>- For this, O dearly beloved, is the genuine Christine: body and soul and blood and ouns. Slow music, please. Shut your eyes, gents. One moment. A little trouble about those white corpuscles. Silence, all.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'book' => array(
+        'mlid' => '411',
+        'nid' => '1',
+        'bid' => '1',
+        'menu_name' => 'book-toc-1',
+        'plid' => '0',
+        'link_path' => 'node/1',
+        'router_path' => 'node/%',
+        'link_title' => 'Page 1',
+        'options' => array(),
+        'module' => 'book',
+        'hidden' => '0',
+        'external' => '0',
+        'has_children' => '1',
+        'expanded' => '0',
+        'weight' => '0',
+        'depth' => '1',
+        'customized' => '0',
+        'p1' => '411',
+        'p2' => '0',
+        'p3' => '0',
+        'p4' => '0',
+        'p5' => '0',
+        'p6' => '0',
+        'p7' => '0',
+        'p8' => '0',
+        'p9' => '0',
+        'updated' => '0',
+        'href' => 'node/1',
+        'title' => 'Page 1',
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1410983629',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '1',
+        'enabled' => '1',
+        'machine_name' => '1',
+        'block_title' => 'Page 1',
+        'view_mode' => 'node_block_default',
+        'node_link' => 'node_block_default',
+        'comment_link' => 'node_block_default',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'book_helper' => array(
+        'link_title_custom' => 'Page 1',
+        'link_title_sync' => TRUE,
+      ),
+      'path' => FALSE,
+      'menu' => array(
+        'link_title' => 'Page 1',
+        'mlid' => 0,
+        'plid' => '0',
+        'menu_name' => 'main-menu',
+        'weight' => '0',
+        'options' => array(),
+        'module' => 'menu',
+        'expanded' => '0',
+        'hidden' => '0',
+        'has_children' => '0',
+        'customized' => 0,
+        'parent_depth_limit' => 8,
+        'description' => '',
+        'enabled' => 1,
+      ),
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '28',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'db093621-1cf7-4730-8601-7354e1d8595d',
+      'nid' => '28',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411648074',
+      'changed' => '1411648074',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '6c23ad88-87d7-464c-b98f-f3e94d7b0eaf',
+      'revision_timestamp' => '1411648074',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'That guy!',
+            'format' => NULL,
+            'safe_value' => 'That guy!',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Stephen Dedalus',
+            'format' => NULL,
+            'safe_value' => 'Stephen Dedalus',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '10',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","startOffset":184,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","endOffset":199}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;startOffset&quot;:184,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;endOffset&quot;:199}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411648074',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '28',
+        'enabled' => '1',
+        'machine_name' => '28',
+        'block_title' => 'Annotation of Ulysses',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '27',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '75d813c6-dd0b-42e9-9cd9-59890770e9fc',
+      'nid' => '27',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411647859',
+      'changed' => '1411647859',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'dc2a5854-2673-4dc4-946a-0fa5a1d3f44c',
+      'revision_timestamp' => '1411647859',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Place where guns sleep?',
+            'format' => NULL,
+            'safe_value' => 'Place where guns sleep?',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'gunrest',
+            'format' => NULL,
+            'safe_value' => 'gunrest',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '9',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","startOffset":47,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","endOffset":54}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;startOffset&quot;:47,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;endOffset&quot;:54}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411647859',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'nodeblock' => array(
+        'nid' => '27',
+        'enabled' => '1',
+        'machine_name' => '27',
+        'block_title' => 'Annotation of Ulysses',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '26',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'c3d1c392-c7ab-4e88-bb81-6d4c3fbfb0ad',
+      'nid' => '26',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411647601',
+      'changed' => '1411647601',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '5f3d3c63-1636-4b59-81c4-5e625e60d6b0',
+      'revision_timestamp' => '1411647601',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Tester',
+            'format' => NULL,
+            'safe_value' => 'Tester',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Solemnly',
+            'format' => NULL,
+            'safe_value' => 'Solemnly',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","startOffset":0,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]","endOffset":8}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;startOffset&quot;:0,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[5]&quot;,&quot;endOffset&quot;:8}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '1',
+      'last_comment_timestamp' => '1411647951',
+      'last_comment_name' => '',
+      'last_comment_uid' => '1',
+      'comment_count' => '1',
+      'nodeblock' => array(
+        'nid' => '26',
+        'enabled' => '1',
+        'machine_name' => '26',
+        'block_title' => 'Annotation of Ulysses',
+        'view_mode' => 'full',
+        'node_link' => '0',
+        'comment_link' => '1',
+        'translation_fallback' => '0',
+      ),
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '24',
+      'uid' => '1',
+      'title' => 'Welcome DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '9d11f582-3d32-4a12-a6bf-0ad48a711d1f',
+      'nid' => '24',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '1a3c1b01-106d-4e33-974d-0df02f50f477',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "You are welcome on this site not regardless of, but <em>because of</em> whatever background you bring to reading and discussing <em>Ulysses</em>. Whether you're a first-time reader, enthusiast, a teacher, student, scholar, book club member, or bringing an additional background to this community, we value your thoughts and invite you to contribute your comments, interpretations, questions, and answers to the novel.\r\n\r\nDRAFT:\r\nencourage participation by everyone\r\ncontact form for suggestions on how the site can better its users\r\naddress the positive rights of the site users, such as the site being a safe space to ask questions (however simple) and to provide answers from any viewpoint\r\nclear path for reporting any issues within the site user community\r\n\r\nResources for this statement:\r\n1. Reddit has four policies for site:\r\n\t•\tUser agreement\r\n\t•\tPrivacy policy\r\n\t•\tReddiquette\r\n\t•\tRules of reddit\r\n2. Signals blog moderation policies: \"This blog is governed by the general rules of respectful civil discourse. You are fully responsible for everything that you post. The content of all comments is released into the public domain unless clearly stated otherwise. The Library of Congress does not control the content posted. Nevertheless, the Library of Congress may monitor any user-generated content as it chooses and reserves the right to remove content for any reason whatever, without consent. Gratuitous links to sites are viewed as spam and may result in removed comments. We further reserve the right, in our sole discretion, to remove a user's privilege to post content on the Library site. Read our Comment and Posting Policy.\"\r\n\t•\thttp://www.loc.gov/homepage/commentspolicy.html\r\n3. Speaking in Code statement\r\n4. Ada Initiative\r\n5. Tweet: what would make you feel welcome?",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>You are welcome on this site not regardless of, but <em>because of</em> whatever background you bring to reading and discussing <em>Ulysses</em>. Whether you're a first-time reader, enthusiast, a teacher, student, scholar, book club member, or bringing an additional background to this community, we value your thoughts and invite you to contribute your comments, interpretations, questions, and answers to the novel.</p>\n<p>DRAFT:<br />\nencourage participation by everyone<br />\ncontact form for suggestions on how the site can better its users<br />\naddress the positive rights of the site users, such as the site being a safe space to ask questions (however simple) and to provide answers from any viewpoint<br />\nclear path for reporting any issues within the site user community</p>\n<p>Resources for this statement:<br />\n1. Reddit has four policies for site:<br />\n\t•\tUser agreement<br />\n\t•\tPrivacy policy<br />\n\t•\tReddiquette<br />\n\t•\tRules of reddit<br />\n2. Signals blog moderation policies: \"This blog is governed by the general rules of respectful civil discourse. You are fully responsible for everything that you post. The content of all comments is released into the public domain unless clearly stated otherwise. The Library of Congress does not control the content posted. Nevertheless, the Library of Congress may monitor any user-generated content as it chooses and reserves the right to remove content for any reason whatever, without consent. Gratuitous links to sites are viewed as spam and may result in removed comments. We further reserve the right, in our sole discretion, to remove a user's privilege to post content on the Library site. Read our Comment and Posting Policy.\"<br />\n\t•\t<a href=\"http://www.loc.gov/homepage/commentspolicy.html\">http://www.loc.gov/homepage/commentspolicy.html</a><br />\n3. Speaking in Code statement<br />\n4. Ada Initiative<br />\n5. Tweet: what would make you feel welcome?</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '23',
+      'uid' => '1',
+      'title' => 'IP and Rights DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '68871aa5-e9d0-43c6-9dcf-6efeb5e685f8',
+      'nid' => '23',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'a158ff55-f1c6-4442-a9f8-0ae06503dc0b',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "An explanation of copyrights and other licensing active on the site (what rights do users maintain over content shared with the site? what licenses have I applied to my written content, code, and design?)\r\nExplanation of possible futures for site (what happens if site needs to close annotating, or comepletely go offline; how will user data be returned or protected, how much time guaranteed before site closes?)",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>An explanation of copyrights and other licensing active on the site (what rights do users maintain over content shared with the site? what licenses have I applied to my written content, code, and design?)<br />\nExplanation of possible futures for site (what happens if site needs to close annotating, or comepletely go offline; how will user data be returned or protected, how much time guaranteed before site closes?)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '22',
+      'uid' => '1',
+      'title' => 'Site Development DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'fa351acd-90ec-4c80-b35c-7c260340783d',
+      'nid' => '22',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '18969e2e-75b0-45b8-8bb6-413dcdbe84ab',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Development blog (with a timeline, of site work new features, bugs fixed, questions for existing users)',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Development blog (with a timeline, of site work new features, bugs fixed, questions for existing users)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '21',
+      'uid' => '1',
+      'title' => 'Support Forum DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '621a98c0-9be3-4e66-9fc5-e43f21d30d6e',
+      'nid' => '21',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'e4058553-f18d-4d6f-b950-24bdea51aa56',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'A support forum (intended for questions about site usage and bug reporting; postings that are questions about the text may be lifted to the textual annotations)',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>A support forum (intended for questions about site usage and bug reporting; postings that are questions about the text may be lifted to the textual annotations)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '20',
+      'uid' => '1',
+      'title' => 'Core Tag Set DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'f0cfb958-5caa-41ec-b7da-7262e98e445b',
+      'nid' => '20',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'b1569078-2fd1-416a-97a2-cf2ac5f63bca',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "An explanation of the core set of tags I'm providing when the site opens for public use (what they mean, who they may be useful to, why I included them, how to add your own)",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>An explanation of the core set of tags I'm providing when the site opens for public use (what they mean, who they may be useful to, why I included them, how to add your own)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '19',
+      'uid' => '1',
+      'title' => "This Site's Future DRAFT",
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '59729003-66d9-4a86-984c-b565a48c7f98',
+      'nid' => '19',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '7b3cf2bb-e748-48f5-93d4-307a3d30eb0c',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'Future plans for the site, with a poll on possible future features of the site',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Future plans for the site, with a poll on possible future features of the site</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '18',
+      'uid' => '1',
+      'title' => 'Accessibility DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '6ee2c9ec-7acb-4997-a00c-0760517ec04d',
+      'nid' => '18',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'f111baea-1fc1-4e90-8124-5e9aee172b5b',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'A page describing the accessibility/universal design work done on the site, future plans for greater accessibility, and a form for suggesting other tactics',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>A page describing the accessibility/universal design work done on the site, future plans for greater accessibility, and a form for suggesting other tactics</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '17',
+      'uid' => '1',
+      'title' => 'Using the Mobile Site DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '1b11925a-6f4f-412f-bd2e-650742ebbaa7',
+      'nid' => '17',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '601b0484-a75d-4dfa-9f98-f5258c5cbae6',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'How to use the mobile version of the site',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>How to use the mobile version of the site</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '16',
+      'uid' => '1',
+      'title' => 'Teaching DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'e6de7dd8-5a19-4f48-8269-b45f18e98fa0',
+      'nid' => '16',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '80517bb5-3bb0-4dba-9227-c1b710f10cbc',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "How to use the site in the classroom to teach Ulysses (how to let students privately annotate the text and have that work only visible to their teacher; how to let students curate their own themed digital edition version of the text)\r\nFERPA\r\nlesson plans",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>How to use the site in the classroom to teach Ulysses (how to let students privately annotate the text and have that work only visible to their teacher; how to let students curate their own themed digital edition version of the text)<br />\nFERPA<br />\nlesson plans</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '15',
+      'uid' => '1',
+      'title' => 'Book Clubs and Other Reading in Groups DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '9be86851-bce5-493d-a23d-31a03db1c5bf',
+      'nid' => '15',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '398974a4-1988-4ff7-a1f9-8914987cb7bb',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => 'How to use the site in reading groups (e.g. book clubs)',
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>How to use the site in reading groups (e.g. book clubs)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '14',
+      'uid' => '1',
+      'title' => 'My Scholarly Background DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '0f7efd04-f066-42f0-95eb-a6e51c56f36f',
+      'nid' => '14',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '95018c52-c22e-401f-8424-d310ceac9c01',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Information on my digital humanities and Joyce studies backgrounds, as well as my interests and biases as they effect interpretation of Ulysses and design of digital editions\r\n\t•\tValues page\r\n\t•\tPages on why read Ulysses",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Information on my digital humanities and Joyce studies backgrounds, as well as my interests and biases as they effect interpretation of Ulysses and design of digital editions<br />\n\t•\tValues page<br />\n\t•\tPages on why read Ulysses</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '13',
+      'uid' => '1',
+      'title' => 'Background: James Joyce and the Writing of Ulysses DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'a71e56ad-d885-4df5-93f0-0f7de1391f21',
+      'nid' => '13',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'f796982a-4460-4945-adf8-9926b38c6fa5',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Background material on Joyce and the writing of Ulysses (e.g. Ulysses' legal history, versions of the work from drafts onward)\r\n\t•\tjudge woolsey decision / ulysses and obscenity\r\n\t•\tgabriel conroy and artistic reuse",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>Background material on Joyce and the writing of Ulysses (e.g. Ulysses' legal history, versions of the work from drafts onward)<br />\n\t•\tjudge woolsey decision / ulysses and obscenity<br />\n\t•\tgabriel conroy and artistic reuse</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '12',
+      'uid' => '1',
+      'title' => 'Moderation Policy DRAFT',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'a536f6cb-d887-421f-ba1f-b0b7aa33e0ed',
+      'nid' => '12',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'fcb746ce-b766-4500-a66e-46a0afe23fe2',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "An explanation of annotation moderation policy (e.g. I reserve the right to unpublish or delete content that is spam, defamatory, or otherwise not supportive of the goals of the project. Whenever the possibility of the content being added to the site in good faith is present, I will contact the author of the content upon unpublishing and either give them a few days to copy their content from the site before I delete it, or send them a copy of the content.)\r\nSEE ALSO welcome page and rights page\r\n\t•\tHow my moderation works (reserve right to remove, will not be saved)",
+            'summary' => '',
+            'format' => 'filtered_html',
+            'safe_value' => "<p>An explanation of annotation moderation policy (e.g. I reserve the right to unpublish or delete content that is spam, defamatory, or otherwise not supportive of the goals of the project. Whenever the possibility of the content being added to the site in good faith is present, I will contact the author of the content upon unpublishing and either give them a few days to copy their content from the site before I delete it, or send them a copy of the content.)<br />\nSEE ALSO welcome page and rights page<br />\n\t•\tHow my moderation works (reserve right to remove, will not be saved)</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '11',
+      'uid' => '1',
+      'title' => 'Bulk Annotations',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'f775c2a1-1660-4fb1-85e6-1573d462eecc',
+      'nid' => '11',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '7789fa4a-c6ef-42e2-9db8-e501f5c3c14f',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "If you have a list or file of <em>Ulysses</em> annotations and wish to add them to the text without typing them in one by one, please contact me using the link in the main menu and I can add them for you, attributing the annotations to your account. In the future, I'm hoping to add a feature to help you upload annotations in bulk and assign them to sections of the text yourself.",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>If you have a list or file of &lt;em&gt;Ulysses&lt;/em&gt; annotations and wish to add them to the text without typing them in one by one, please contact me using the link in the main menu and I can add them for you, attributing the annotations to your account. In the future, I&#039;m hoping to add a feature to help you upload annotations in bulk and assign them to sections of the text yourself.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '10',
+      'uid' => '1',
+      'title' => 'Full Data Feed',
+      'log' => '',
+      'status' => '1',
+      'comment' => '1',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => 'd1970727-b668-43dc-9d9c-0ad01a721255',
+      'nid' => '10',
+      'type' => 'page',
+      'language' => 'und',
+      'created' => '1411487691',
+      'changed' => '1411487691',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'abd1c854-8713-4152-8e98-f0323ddf326f',
+      'revision_timestamp' => '1411487691',
+      'revision_uid' => '1',
+      'body' => array(
+        'und' => array(
+          array(
+            'value' => "Once it's available, this page will explain use of the site's feed of data for use by others (i.e. an exportable data set of user annotations). An explanation of licensing and options for filtering the dataset will appear here, as well as suggestions for exploring the dataset (e.g. basic visualization in Gephi).\r\nIf you're a researcher (professional or otherwise) and would like to see something added to the dataset, please contact me and I'll see whether I can accommodate you.",
+            'summary' => '',
+            'format' => 'plain_text',
+            'safe_value' => "<p>Once it&#039;s available, this page will explain use of the site&#039;s feed of data for use by others (i.e. an exportable data set of user annotations). An explanation of licensing and options for filtering the dataset will appear here, as well as suggestions for exploring the dataset (e.g. basic visualization in Gephi).<br />\nIf you&#039;re a researcher (professional or otherwise) and would like to see something added to the dataset, please contact me and I&#039;ll see whether I can accommodate you.</p>\n",
+            'safe_summary' => '',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411487691',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => FALSE,
+            'display_node_edit' => FALSE,
+            'multi' => FALSE,
+            'modules' => array(
+              'block',
+              'nodeblock',
+            ),
+            'regions' => array(
+              'content',
+            ),
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '9',
+      'uid' => '4',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '49e67ebd-b82a-422b-9e7e-6ecd205fa854',
+      'nid' => '9',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411335828',
+      'changed' => '1411335828',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '8236b2ba-5e64-4094-95e8-20c456ad954a',
+      'revision_timestamp' => '1411335828',
+      'revision_uid' => '4',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'testing',
+            'format' => NULL,
+            'safe_value' => 'testing',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'dressinggown',
+            'format' => NULL,
+            'safe_value' => 'dressinggown',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '8',
+          ),
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":131,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":143}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:131,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:143}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411335828',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '4',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'Amanda Visconti',
+      'picture' => '0',
+      'data' => NULL,
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '8',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '866225a6-a314-436c-9c72-18e79e059422',
+      'nid' => '8',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411047673',
+      'changed' => '1411047673',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '3c335a7f-e908-49ba-a5b8-de8629b1fe5e',
+      'revision_timestamp' => '1411047673',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'More testing',
+            'format' => NULL,
+            'safe_value' => 'More testing',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Come up, you fearful Jesuit',
+            'format' => NULL,
+            'safe_value' => 'Come up, you fearful Jesuit',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[4]","startOffset":18,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[4]","endOffset":45}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[4]&quot;,&quot;startOffset&quot;:18,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[4]&quot;,&quot;endOffset&quot;:45}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411047673',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '7',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '86e96610-aa8d-4fb5-8bba-7c7e344aca26',
+      'nid' => '7',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411047398',
+      'changed' => '1411047398',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '04e734d8-63ec-42ca-a6c9-411750d5ca7e',
+      'revision_timestamp' => '1411047398',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Testing',
+            'format' => NULL,
+            'safe_value' => 'Testing',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'dark winding stairs',
+            'format' => NULL,
+            'safe_value' => 'dark winding stairs',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '7',
+          ),
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[3]","startOffset":29,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[3]","endOffset":48}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[3]&quot;,&quot;startOffset&quot;:29,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[3]&quot;,&quot;endOffset&quot;:48}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411047398',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '5',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '529aacd6-48ae-4b07-83c6-d354a27cda2f',
+      'nid' => '5',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411043678',
+      'changed' => '1411043678',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'a9c8371b-bb83-4ec5-b6df-8b9122a95259',
+      'revision_timestamp' => '1411043678',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Bowl!',
+            'format' => NULL,
+            'safe_value' => 'Bowl!',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'bowl',
+            'format' => NULL,
+            'safe_value' => 'bowl',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":225,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":229}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:225,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:229}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411043678',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '4',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '9a8db640-8b91-46cd-b3a8-c69232b4d908',
+      'nid' => '4',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411043639',
+      'changed' => '1411043639',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '6476f6d9-959b-48c8-abaf-5a527183881a',
+      'revision_timestamp' => '1411043639',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Latinate',
+            'format' => NULL,
+            'safe_value' => 'Latinate',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Introibo ad altare Dei',
+            'format' => NULL,
+            'safe_value' => 'Introibo ad altare Dei',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '5',
+          ),
+          array(
+            'tid' => '1',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[2]","startOffset":2,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[2]","endOffset":24}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[2]&quot;,&quot;startOffset&quot;:2,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[2]&quot;,&quot;endOffset&quot;:24}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411043639',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '3',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '85ad3fb2-0706-4ba7-85f4-c1a5d3052313',
+      'nid' => '3',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1411042981',
+      'changed' => '1411042981',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '55eda08d-cae8-4707-a149-3f473ffb8b3d',
+      'revision_timestamp' => '1411042981',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'Yay symbolism',
+            'format' => NULL,
+            'safe_value' => 'Yay symbolism',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'a bowl of lather on which a mirror and a razor lay crossed',
+            'format' => NULL,
+            'safe_value' => 'a bowl of lather on which a mirror and a razor lay crossed',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '3',
+          ),
+          array(
+            'tid' => '3',
+          ),
+          array(
+            'tid' => '4',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":62,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":120}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:62,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:120}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1411042981',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '2',
+      'uid' => '1',
+      'title' => 'Annotation of Ulysses',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '0',
+      'sticky' => '0',
+      'vuuid' => '2e620cdb-95bc-463e-86d1-47bf4ac538b8',
+      'nid' => '2',
+      'type' => 'annotation',
+      'language' => 'und',
+      'created' => '1410983950',
+      'changed' => '1410983950',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'dfb4e7b1-03e9-49ce-bdd9-cc491a271f50',
+      'revision_timestamp' => '1410983950',
+      'revision_uid' => '1',
+      'text' => array(
+        'und' => array(
+          array(
+            'value' => 'This guy',
+            'format' => NULL,
+            'safe_value' => 'This guy',
+          ),
+        ),
+      ),
+      'quote' => array(
+        'und' => array(
+          array(
+            'value' => 'Buck Mulligan',
+            'format' => NULL,
+            'safe_value' => 'Buck Mulligan',
+          ),
+        ),
+      ),
+      'private' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'uri' => array(
+        'und' => array(
+          array(
+            'url' => 'http://localhost:8080/www.infiniteulysses.com/node/1',
+            'title' => 'Ulysses',
+            'attributes' => array(),
+          ),
+        ),
+      ),
+      'annotation_tags' => array(
+        'und' => array(
+          array(
+            'tid' => '1',
+          ),
+          array(
+            'tid' => '2',
+          ),
+        ),
+      ),
+      'category' => array(),
+      'ranges' => array(
+        'und' => array(
+          array(
+            'value' => '[{"start":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","startOffset":15,"end":"\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]","endOffset":28}]',
+            'format' => NULL,
+            'safe_value' => '[{&quot;start&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;startOffset&quot;:15,&quot;end&quot;:&quot;\/div[2]\/div[1]\/div[1]\/div[1]\/p[1]&quot;,&quot;endOffset&quot;:28}]',
+          ),
+        ),
+      ),
+      'annotation_reference' => array(
+        'und' => array(
+          array(
+            'target_id' => '1',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1410983950',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'node_level_blocks' => array(
+        'blocks' => array(),
+        'settings' => (object) array(
+            'enabled' => 1,
+            'display_node_edit' => 0,
+            'multi' => 0,
+            'regions' => array(
+              'content' => 'content',
+            ),
+            'modules' => array(
+              'block' => 'block',
+              'nodeblock' => 'nodeblock',
+            ),
+            'nodeblock' => 0,
+          ),
+      ),
+      'name' => 'James Joyce',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

@@ -1,0 +1,5 @@
+.DS_Store
+.deps/
+doc/_build/
+node_modules/
+pkg/

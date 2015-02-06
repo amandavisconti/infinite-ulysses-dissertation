@@ -1,0 +1,131 @@
+* Providing a field requires:
+ * - Defining a field:
+ *   - hook_field_info()
+ *   - hook_field_schema()
+ *   - hook_field_validate()
+ *   - hook_field_is_empty()
+ *
+ * - Defining a formatter for the field (the portion that outputs the field for
+ *   display):
+ *   - hook_field_formatter_info()
+ *   - hook_field_formatter_view()
+ *
+ * - Defining a widget for the edit form:
+ *   - hook_field_widget_info()
+ *   - hook_field_widget_form()
+* Our module defines the field in field_example_field_info(),
+ * field_example_field_validate() and field_example_field_is_empty().
+ * field_example_field_schema() is implemented in field_example.install.
+ *
+ * Our module sets up a formatter in field_example_field_formatter_info() and
+ * field_example_field_formatter_view(). These are the API hooks that present
+ * formatted and themed output to the user.
+ *
+ * And finally, our module defines the widet in
+ * field_example_field_widget_info() and field_example_field_widget_form().
+ * The widget is the form element used to receive input from the user
+ * when the field is being populated.
+========================================================================
+========================================================================
+========================================================================
+
+<?php
+   $node=node_load($nid);
+    $tags = array();
+    foreach ($node->field_tags['und'] as $item) {
+      $tags[$item['tid']] = isset($item['taxonomy_term']) ? $item['taxonomy_term'] : taxonomy_term_load($item['tid']);
+    }
+    $form['tags'] = array(
+      '#type' => 'textfield',
+      '#default_value' => taxonomy_implode_tags($tags),
+      '#title' => 'Add Tags',
+      '#autocomplete_path' => 'taxonomy/autocomplete/field_tags',
+      '#maxlength' => 1024,
+      '#element_validate' => array('taxonomy_autocomplete_validate'),
+        );
+?>
+
+========================================================================
+========================================================================
+========================================================================
+
+if ($term) $node->field_tags[$node->language][0]['tid'] = $term;
+if ($term2) $node->field_tags[$node->language][]['tid'] = $term2;
+
+========================================================================
+========================================================================
+========================================================================
+
+<?php
+  // Create a new term programmatically.
+  $newterm = new stdClass();
+  $newterm->name = 'My term'; // The name of the term
+  $newterm->vid = $vid; // The ID of the parent vocabulary
+  $newterm->parent = 0; // This tells taxonomy that this is a top-level term
+  taxonomy_term_save($newterm);
+?>
+
+========================================================================
+========================================================================
+========================================================================
+
+/**
+* TAGWORK Update hook to add a field to the annotation entity as well as the widget needed for users to interact with the field via the display.
+H/t http://goo.gl/S8zPHf and http://goo.gl/iHkym7
+Read more about the Drupal Field API here: https://api.drupal.org/api/drupal/modules!field!field.module/group/field/7
+Might need to use columns, indexes, foreign keys, or storage on field and/or instance?
+*/
+
+function annotation_tagging_update() {
+	$field_name = 'field_tagger';
+	// Make sure the field doesn't already exist.
+	if (!field_info_field($field_name)) {
+		
+		// Create the field.
+		$field = array(
+			'field_name' => $field_name,
+			'type' => 'taxonomy_term_reference',
+			'cardinality' => FIELD_CARDINALITY_UNLIMITED,
+		'settings' => array( // May need to change to instance_settings only (currently using both settings and i_s); see https://www.drupal.org/node/872194#comment-6962968
+			'allowed_values' => array(
+				array(
+					'vocabulary' => $vocabulary->machine_name, // might need to swap in actual specific machine name
+					'parent' => 0
+				),
+			),
+		),
+		'instance_settings' => array(
+			'allowed_values' => array(
+				array(
+					'vocabulary' => $vocabulary->machine_name,
+					'parent' => 0
+						),
+				),
+			),
+	);
+		field_create_field($field);
+		
+		// Create the instance. Might need settings, widget, display?
+		$instance = array( 
+			'field_name' => $field_name,
+			'entity_type' => 'annotation',
+			'bundle' => 'annotation',
+			'label' => 'TagInstance',
+			'description' => 'Annotation tag field instance',
+			'required' => TRUE,
+			'widget' => array(
+				'type' => 'options_select', // TAGWORK taxonomy_autocomplete also an option
+			),
+			'display' => array(
+				'default' => array('type' => 'full'),
+				'teaser' => array('type' => 'full')
+				) // needs comma?
+		);
+		field_create_instance($instance);
+		
+		watchdog('annotation', t('!field_name was added successfully.', array('!field_name' => $field_name)));
+	}
+	else {
+		watchdog('annotation', t('!field_name already exists.', array('!field_name' => $field_name)));
+	}
+}

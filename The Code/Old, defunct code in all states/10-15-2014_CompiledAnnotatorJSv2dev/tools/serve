@@ -1,0 +1,156 @@
+#!/usr/bin/env node
+var path = require('path');
+
+var _browserify = require('browserify');
+var connect = require('connect');
+var convert = require('convert-source-map');
+var jwt = require('jwt-simple');
+var glob = require('glob');
+var q = require('kew');
+var watchify = require('watchify');
+
+var CONSUMER_KEY = 'mockconsumer';
+var CONSUMER_SECRET = 'mockconsumersecret';
+var CONSUMER_TTL = 1800;
+
+
+function browserify(opts) {
+  var b = _browserify(opts);
+  b.serve = serve;
+  b.watch = watch;
+  return b;
+}
+
+
+// Serve a browserify bundle with connect middleware
+function serve(app, location) {
+  var bundle = this.bundle.bind(this);
+  var promise = q.defer();
+
+  this.bundle = function (opts) {
+    var p = promise;
+    return bundle(opts, function (err, result) {
+      if (p == null) return;
+      if (err) return p.reject(err);
+      p.resolve(result);
+    });
+  };
+
+  this.on('update', function () {
+    promise = q.defer();
+  });
+
+  app.use(location, function (req, res, next) {
+    res.setHeader('Content-Type', 'application/javascript');
+    promise.then(function (result) {
+      var src = convert.removeComments(result);
+      var srcMap = convert.fromSource(result);
+      var sources = srcMap.getProperty('sources');
+      var sourcesContent = srcMap.getProperty('sourcesContent');
+
+      // Make the source files resolve relative to the package root.
+      // Strip absolute path information from the source map sources
+      sources = sources.map(function (source) {
+        return '/' + path.relative(process.cwd(), source);
+      });
+
+      // Add all the sources and set the root relative to the workspace
+      srcMap.setProperty('sources', sources);
+
+      res.write(src);
+      res.write(srcMap.toComment());
+      res.end('\n;');
+    }).fail(next);
+  });
+
+  return this;
+}
+
+
+// Watch a bundle and rebuild changes
+function watch(options) {
+  watchify(this).on('update', this.bundle.bind(this, options));
+  this.bundle(options);
+  return this;
+}
+
+
+var app = module.exports = connect();
+
+// Token
+app.use('/api/token', function(request, response) {
+  var payload = {
+    'consumerKey': CONSUMER_KEY,
+    'userId': 'alice',
+    'issuedAt': new Date().toISOString(),
+    'ttl': CONSUMER_TTL
+  };
+  var tok = jwt.encode(payload, CONSUMER_SECRET);
+
+  response.setHeader('Access-Control-Allow-Origin', request.headers['origin']);
+  response.setHeader('Access-Control-Allow-Credentials', 'true');
+  response.setHeader('Access-Control-Expose-Headers', 'Location, Content-Type, Content-Length');
+
+  if (request.method == 'OPTIONS') {
+    response.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Content-Length');
+    response.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    response.setHeader('Access-Control-Max-Age', '86400');
+  }
+
+  response.end(tok);
+});
+
+// jQuery
+browserify()
+  .require('jquery', {expose: 'jquery'})
+  .serve(app, '/lib/vendor/jquery.js')
+  .watch({debug: true});
+
+// Core
+browserify()
+  .external('jquery')
+  .require('./src/annotator', {expose: 'annotator'})
+  .serve(app, '/lib/annotator.js')
+  .watch({debug: true});
+
+
+// Other files
+glob.sync('./src/**/*.js').forEach(function (p) {
+  var loc = '/lib/' + path.relative('./src/', p);
+  browserify()
+    .external('jquery')
+    .external('annotator')
+    .add(p)
+    .serve(app, loc)
+    .watch({debug: true});
+});
+
+// Test helpers
+browserify()
+  .external('jquery')
+  .require('./test/helpers.js', {expose: 'helpers'})
+  .serve(app, '/test/helpers.js')
+  .watch({debug: true});
+
+// Other test files
+glob.sync('./test/**/*.js').forEach(function (t) {
+  var loc = t.replace('./', '/');
+  browserify(t)
+    .external('jquery')
+    .external('annotator')
+    .external('helpers')
+    .serve(app, loc)
+    .watch({debug: true});
+});
+
+// Static files
+app.use(connect.static(process.cwd()));
+
+
+// Go
+if (require.main === module) {
+  var port = process.env.PORT || 4000;
+  app.listen(port);
+  console.log("Development: http://localhost:" + port + "/dev.html");
+  console.log("Testing: http://localhost:" + port + "/test/runner.html");
+}

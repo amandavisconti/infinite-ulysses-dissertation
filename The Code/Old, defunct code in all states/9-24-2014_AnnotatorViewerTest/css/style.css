@@ -1,0 +1,1926 @@
+@charset "UTF-8";
+@-ms-viewport {
+    width: device-width;
+}
+@viewport {
+    width: device-width;
+}
+
+body {
+    color: #333333;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+/*
+    =======================================
+  Main Stylesheet for Materiales HTML5
+  ==========================================
+ */
+@import url('bootstrap-custom.min.css');
+/*
+    General Adjustments
+  =============================================
+ */
+
+ .rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  text-align: center;
+  margin: 0 auto;
+}
+
+ .annotator-hl-errata {
+    background:  #ffcfbf;
+     cursor:pointer;
+}
+
+.annotator-hl-destacat {
+    background:  #dfffbf;
+     cursor:pointer;
+}
+
+.annotator-hl-subratllat {
+    background: rgba(255, 255, 10, 0.3);
+    text-decoration:underline;
+     cursor:pointer;
+} 
+.errata {
+    background: #ffcfbf;
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
+.destacat {
+    background: #dfffbf;
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
+.hightlight {
+    background: #dfffbf;
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
+.subratllat {
+    background: rgba(255, 255, 10, 0.3);
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
+.caixa_color {
+    float:left;
+    width:20px;
+    margin-right:5px;
+}
+
+.anotator_color_box {
+    float:left;
+    height:12px;
+    margin-bottom: 4px;
+    width: 99%;
+}
+
+.annotations-list-uoc {
+    position: fixed;
+    top: 5em;
+    right: 1em;
+    height:95%;
+    z-index: 100;
+
+}
+
+.label-compartit {
+    border: 1px solid #676767;
+    padding: 1px 4px 2px;
+    background-color: #666666;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    vertical-align: baseline;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+
+.label-counter {
+    background-color: #666666;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold; 
+}
+
+.label-counter-alert {
+    background-color: #B20000;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold; 
+}
+
+.label {
+    padding: 1px 4px 2px;
+    font-weight: bold;
+    line-height: 14px;    
+    vertical-align: baseline;
+    white-space: nowrap;
+    margin-top: 4px;
+    border: 1px solid #676767;
+    color: #333333;
+    font-size: 11px;
+}
+
+.container-anotacions {
+    list-style: none outside none;
+    position:relative;
+    width:100%;
+    padding:10px;
+    margin:0 0 0 -22.5%;
+    float:left;
+    left:22.5%;
+
+}
+
+.square {
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
+.annotator-marginviewer-element {
+        border: 1px solid #b3b3b3;
+        margin: 0px;
+        margin-bottom: 10px;
+        width: 227px;        
+        font-size: 12px;
+        cursor:pointer;
+}
+
+.annotator-marginviewer-element:hover {
+        border: 1px solid #666666;
+        background: #ffffff;
+        background-color: #ffffff;
+}
+
+.annotator-marginviewer-header {
+        border-bottom: 1px solid #b3b3b3;
+        background-color: #e6e6e6;
+        height: 26px;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+      
+}
+
+.annotator-marginviewer-footer {        
+        background-color: #f5f5f5;
+        height: 26px;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-top: 0.3em;
+      
+}
+.annotator-marginviewer-highlighted>.annotator-marginviewer-header {
+        background-color: #fbed20;
+}
+.annotator-marginviewer-selected>.annotator-marginviewer-header {
+        background-color: #fbed20;
+}
+
+.annotator-marginviewer-text {
+    border-bottom: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    padding: 0.5em;
+    font-family: arial;
+    font-size: 11px;
+    line-height: 1.5em;
+  
+      
+}
+
+.annotator-marginviewer-quote {
+    border-bottom: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    padding: 0.5em;
+    display: none;
+    font-family: arial;
+    font-size: 11px;
+    line-height: 1.4em;
+    padding-left: 0.6em;
+}
+
+
+.anotador_text {
+    padding-left: 0.1em;
+}
+
+.annotator-marginviewer-highlighted>.annotator-marginviewer-text {
+}
+.annotator-marginviewer-selected>.annotator-marginviewer-text {
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #fef8cd, #f6edb5);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#fef8cd), to(#f6edb5));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#fef8cd', EndColorStr='#f6edb5', GradientType=0);
+}
+/*
+    =======================================
+  Main Stylesheet for Materiales HTML5
+  ==========================================
+ */
+@import url('bootstrap-custom.min.css');
+/*
+    General Adjustments
+  =============================================
+ */
+.loweralpha {
+    list-style-type:lower-alpha;
+}
+body {
+    padding:0;
+    margin:0;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height:1.4em;
+     
+}
+h1, h2 {
+    font-size:30px;
+     
+}
+h3 {
+    font-size:24px;
+     
+}
+h4, h5 {
+    font-size:18px;
+     
+}
+h6 {
+    font-size:15px;
+     
+}
+ul {
+    margin-left: 16px;
+        
+}
+ol {
+    margin-left: 20px;
+     
+}
+dd {
+    margin:0 0 12px 0;
+     
+}
+
+li ul
+{
+    list-style:url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+}
+
+hr {
+  border-top: 1px dotted #dddddd;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width:100%;
+}
+
+.table {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.table-marge  {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+th {
+    background: #b1b2b4;
+}
+.figure-dreta {
+    padding: 0px;    
+    text-align:center;
+}
+.seccio_barra {
+    color: #000000;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+/* Hide only visually, but have it available for screenreaders: */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.para {
+    margin-bottom:10px;
+}
+.subtitle {
+    font-size:24px;
+    font-weight:normal;    
+}
+.audio-tag {
+    padding-left: 20px;
+}
+.personblurb {
+    display: none;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+    Navbar Adjustments
+  =============================================
+ */
+#container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+#content {
+    margin-left:30px;
+    margin-right:10px;
+}
+
+.authors {
+    padding:20px 0 0;
+     
+}
+/*
+    Sections Adjustments
+  =============================================
+ */
+#content {
+    border-bottom:30px solid #333;
+    padding-bottom:40px!important;
+}
+.sect0, .sect1 {
+    border-top:20px solid #333;
+    padding-top:30px!important;
+    margin-top:30px;
+}
+.sect2, .sect3 {
+    padding-top:25px!important;
+}
+.sect4 {
+    padding-top:10px!important;
+}
+.footer {
+    border-top:1px dashed #333;
+    padding-top:30px;
+    margin-top:30px;
+}
+.footer ul li {
+    margin:5px 0
+}
+/*
+    Position Bar Adjustments
+  =============================================
+ */
+#position-bar {
+    width:24px;
+    height:100%;
+    position:fixed;
+    top:50px;
+    left:0;
+    background:#ddd;
+    border-right:1px solid #999;
+    -webkit-box-shadow: 3px 0 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 0 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.25);
+    z-index:1000;
+}
+.no-js #position-bar {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+#position-bar .progress {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background:#aaa url("../img/progress-pattern.gif") 0 0 repeat;
+}
+#position-bar a {
+    display:block;
+    width:100%;
+    height:100%;
+}
+#position-bar .s1 .line {
+    display:block;
+    width:100%;
+    height:3px;
+    background:#333;
+}
+#position-bar .s2 .line {
+    display:block;
+    width:100%;
+    height:1px;
+    background:#666;
+}
+#position-bar ul {
+    position:relative;
+    z-index:1001;
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+#position-bar ul li {
+    margin:0;
+    padding:0;
+    line-height:1;
+    display:block;
+    width:100%;
+}
+#position-bar ul li.active a {
+    background:#ff7f00
+}
+/*
+    Index Chapter
+  =============================================
+ */
+.index-chapter a {
+    color: #333;
+}
+.index-chapter a:hover {
+    color: #005580;
+}
+.index-chapter ul {
+    list-style: none;
+    margin:0;
+    font-weight:bold;
+     
+}
+.index-chapter ul ul {
+    margin-left:25px;
+    font-weight:normal;
+     
+}
+.index-chapter ul ul ul {
+    margin-left:35px;
+     
+}
+.index-chapter ul li {
+    margin:4px 0;
+     
+}
+.numeracio {
+    margin-right:12px;
+     
+}
+.index-chapter .index-module {
+    display:block;
+    width:100%;
+    font-size:14px;
+    margin:35px 0 5px;
+}
+.index-chapter .index-title {
+    margin:3px 0;
+    display:block;
+    width:100%;
+    font-size:18px;
+    font-weight:bold;
+}
+.index-chapter .index-authors {
+    margin: 5px 0 10px;
+    display:block;
+    width:100%;
+    font-size:12px;
+    font-weight:normal;
+    color:#777;
+}
+/*
+    Authors
+  =============================================
+ */
+.authors {
+    list-style: none;
+}
+.authors .author {
+    background:#fff;
+    border: 1px solid #DDDDDD;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    padding: 0 20px;
+}
+.authors li {
+    margin-bottom:20px;
+}
+.authors .author h3 {
+    font-size:13px;
+    line-height:1.4em;
+    margin:10px 0;
+     
+}
+.authors .author img {
+    margin-bottom:10px;
+     
+}
+.authors .author p {
+    font-size:11px;
+    line-height:1.6em;
+     
+}
+
+.license-info {
+    font-style: italic;
+    font-size:11px;
+    line-height:1.5em;
+    margin:40px 0;
+
+}
+
+.copyrigths {
+    font-style: italic;
+    font-size:11px;
+    line-height:1.5em;
+    margin:10px 0;
+     
+}
+aside .caption, .caption {
+    margin-top:5px;
+    font-size:10px;
+    line-height:1.5em;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+}
+.object {
+    text-align:center;    
+}
+
+.tablecaption {
+    font-size:10px;
+    line-height:1.5em;
+    text-decoration:none;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.tabletitle {
+    font-size:10px;
+    line-height:1.5em;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;   
+}
+
+.courier-new {
+    font-family:"Courier New";    
+}
+/*
+    Bibliolist
+  =============================================
+ */
+.bibliolist {
+    display:block;
+    background:#eee;
+    border: 1px solid #333;
+    display: block;
+    padding: 0;
+    font-size:11px;
+    line-height:1.6em;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
+.bibliolist-title {
+    font-weight:bold;
+    display:block;
+    background:#333;
+    color:#fff;
+    padding:5px 13px;
+}
+.bibliolist-content {
+    padding:8px 13px 10px;
+}
+.biblioentry {
+}
+.sect0 .biblioentry {
+    margin:12px 0
+}
+/*
+    Tips & Notes
+  =============================================
+ */
+.tip, .warning, .informalexample, .example, .note {
+    display:block;
+    background:#fff;
+    border: 1px solid #333;
+    display: block;
+    padding: 0;
+    font-size:11px;
+    line-height:1.6em;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
+.informalexample-title ,.tip-title, .example-title, .warning-title, .note-title {
+    border-bottom: 1px solid #333;
+    font-weight:bold;
+    display:block;
+    background:#eee;
+    color:#333;
+    padding:5px 13px;
+}
+.informalexample-content,.warning-content, .tip-content, .example-content, .note-content {
+    padding:8px 13px 10px;
+}
+.footnote-content {
+    padding:8px 13px 10px;
+    background:#eee;
+}
+.note-content audio {
+    width:100%;
+}
+/*
+    Note Centre
+  =============================================
+ */
+.note-centre {
+    margin:10px 0 15px;
+    display:block;
+    background:#fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    font-size:11px;
+    line-height:1.6em;
+    padding:8px 13px 10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.note-centre-title,.alert-block-centre-title {
+    font-weight:bold;
+    display:block;
+    padding: 4px 0 0;
+}
+/*
+    Alerts
+  =============================================
+ */
+.alert {
+    margin:10px 0 15px;
+}
+.alert-info-centre-title {
+    font-weight:bold;
+    display:block;
+    padding: 5px 0 0;
+}
+/*
+    Cites
+  =============================================
+ */
+blockquote {
+    margin:10px 0 20px;
+    padding-top:7px;
+    padding-bottom:10px
+}
+blockquote p {
+    font-size:12px;
+    line-height: 1.7em;
+    color:#555
+}
+.blockquote-title {
+    font-weight:bold
+}
+/*
+    Media object
+  =============================================
+ */
+.mediaobject {
+    margin:20px 0;
+     
+}
+
+.figure {
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+span.rollover {
+    opacity: 1;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition: -webkit-transform 1s;
+    background:url(../img/mag.png) center center no-repeat #000;
+    cursor: pointer;
+    height: 346px;
+    width: 347px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+}
+
+span.rollover:hover {
+    opacity: .7;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition: -webkit-transform 1s;
+    -webkit-box-shadow: 0px 0px 4px #000;
+    -moz-box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px #000;
+}
+
+/*
+    Activities & Exercises
+  =============================================
+ */
+.activity-row {
+    margin:10px 0;
+}
+.exsercise-row {
+    margin:10pz 0;
+}
+.alert {
+    margin:0px 0 15px;
+}
+
+.alert-success {
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+    color: #666666;
+}
+.alert-info-centre-title {
+    font-weight:bold;
+    display:block;
+    padding: 5px 0 0;
+}
+.imatge-beta {
+    vertical-align:top;    
+}
+/*
+    Tables
+  =============================================
+ */
+.table .row-fluid {
+    padding: 3px 0;
+     
+}
+.table th, .table td {
+    line-height: 1.5em;
+    font-size:11px;
+    border-top: 1px solid #EEEEEE;
+}
+.table-bordered {
+    border: 1px solid #ccc;
+    border-left:none;
+    border-collapse: separate;
+}
+.table thead {
+    background: #ccc;
+/* padding: 3px; */
+}
+.table td.fuoc-header,
+.table th.fuoc-header {
+    background: #b1b2b4;
+}
+.table td.fuoc-subheader,
+.table th.fuoc-subheader {
+    background: #ddd;
+/* padding: 3px; */
+}
+.table td.fuoc-header,
+.table td.fuoc-subheader,
+.table th.fuoc-header,
+.table th.fuoc-subheader,
+.table thead th {
+    padding-top: 12px;
+    padding-bottom:12px;
+}
+.tfoot {
+    font-size:11px;
+}
+ol.oluoc {
+    list-style:none;
+    position:relative
+}
+ol.oluoc .numeracio {
+    position:absolute;
+    left:-20px;
+    font-weight:bold;
+}
+/*
+    Tooltips
+  =============================================
+ */
+.uoctip {
+    z-index:1001;
+    padding:0 5px;
+    width:auto;
+}
+.uoctip .tooltip-arrow::after {
+    background: #fff;
+    border: 1px solid #777;
+}
+.uoctip .tooltip-arrow::after {
+    content: "";
+    position: absolute;
+    -moz-box-shadow: 3px 1px 6px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 1px 6px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 1px 6px -2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+.uoctip .tooltip-inner {
+    min-width: 130px;
+    max-width: 300px;
+    max-width: auto;
+    line-height: 1.4em;
+    color:#333;
+    background-color: #fff;
+    font-weight:bold;
+    padding: 6px 10px;
+    border:1px solid #999;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    display:block;
+    float:left;
+}
+.uoctip.right .tooltip-inner {
+    text-align:left;
+}
+.navbar .uoctip .tooltip-inner {
+    min-width:0
+}
+.navbar .uoctip.right .tooltip-inner {
+    min-width:80px
+}
+.uoctip .tooltip-arrow {
+    border: none;
+    overflow: hidden;
+    position: absolute;
+}
+.uoctip.right .tooltip-arrow {
+    width: 15px;
+    height: 30px;
+    margin-left: -9px;
+    margin-top: -15px;
+}
+.uoctip.right .tooltip-arrow:after {
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    top: 8px;
+}
+.uoctip.bottom .tooltip-arrow {
+    width: 30px;
+    height: 15px;
+    margin-left: -15px;
+    top: -14px;
+}
+.uoctip.bottom .tooltip-arrow:after {
+    left: 7px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+}
+.uoctip.top .tooltip-arrow {
+    width: 30px;
+    height: 15px;
+    margin-left: -15px;
+    bottom: -14px;
+}
+.uoctip.top .tooltip-arrow:after {
+    left: 7px;
+    bottom: 10px;
+    width: 14px;
+    height: 14px;
+}
+.uoctip.top {
+    margin-top: -5px;
+     
+}
+.brand-active {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 12px;
+    background-color: #ffffff;
+    text-shadow: none;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    padding: 10px 15px;
+}
+
+.versio-anterior {
+    background-color: #F39200;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 0px solid #F39200;
+     padding: 6px 17px;
+}
+/*
+    Masonry Transitions
+  ============================================
+ */
+.masonry,
+.masonry .masonry-brick {
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -ms-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+.masonry {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.masonry .masonry-brick {
+    -webkit-transition-property: left, right, top;
+    -moz-transition-property: left, right, top;
+    -ms-transition-property: left, right, top;
+    -o-transition-property: left, right, top;
+    transition-property: left, right, top;
+}
+/*
+    Responsive
+  ============================================
+ */
+/*
+  @media (max-width: 979px) {
+  .navbar-inner .container { margin-top:0; }
+  .navbar .brand { padding-top: 10px; }
+  body { padding-top: 0;}
+  }
+ */
+/*
+  @media (min-width: 768px) {
+  #top .nav-open-btn {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  }
+  }
+ */
+@media (max-width: 767px) {
+#position-bar {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+aside {
+    margin:20px 0;
+     
+}
+#container {
+    padding-top:60px;
+    margin:0 20px;
+}
+#content {
+    margin-right:0;
+    margin-left:0
+}
+#nav-content {
+    margin:0;
+}
+.navbar {
+    position: relative;
+     
+}
+.navbar .navbar-inner {
+    padding:0;
+}
+.navbar-inner .container {
+    margin-top:0;
+     
+}
+.navbar .brand {
+    padding-top: 17px;
+     margin-left:40px 
+}
+.navbar .nav {
+    padding-right:0px;
+    width:100%;
+}
+#nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top:50px;
+     overflow:visible
+}
+#nav:not(:target) {
+    overflow:hidden;
+    z-index: 1;
+    height: 0;
+}
+#nav .nav-block {
+    position: relative;
+    float:left;
+    width:100%;
+     
+}
+#top .nav-open-btn {
+    display: block;
+     
+}
+#nav:target .nav-close-btn {
+    display: block;
+     
+}
+#nav li {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width:100%;
+}
+#nav li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     
+}
+#nav li a {
+    padding: 0.85714em 20px;
+}
+#nav li.active a {
+    -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+}
+/* .js-ready #nav-wrap, .js-ready .navbar {height:100%} */
+.js-ready #nav:not(:target) {
+    overflow:visible;
+}
+.js-ready #nav {
+    height: 100%;
+    width: 70%;
+    background: #333333;
+    -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+}
+.js-ready #nav .nav-block {
+    background: transparent;
+}
+.js-ready #nav .nav-close-btn {
+    display: block;
+}
+.js-ready #nav {
+    left: -70%;
+     
+}
+.js-ready #inner-wrap {
+    left: 0;
+     
+}
+.js-nav #inner-wrap {
+    left: 70%;
+     
+}
+.js-nav #nav-wrap {
+    left: 70%;
+     
+}
+.js-nav #position-bar {
+    left: 70%;
+     
+}
+.js-nav #nav-wrap, .js-nav .navbar {
+    height:100%;
+}
+/*
+  .csstransforms3d.csstransitions.js-ready #nav {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .csstransforms3d.csstransitions.js-ready #inner-wrap  {
+  left: 0 !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .csstransforms3d.csstransitions.js-nav #inner-wrap  {
+  -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  -moz-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  -ms-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  -o-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  }
+  .csstransforms3d.csstransitions.js-ready #nav .nav-block {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+  -webkit-transition-delay: ease, 0s;
+  -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
+  -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
+  transition: opacity 300ms 100ms ease, transform 500ms ease;
+  -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+  -moz-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+  -ms-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+  -o-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+  transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  }
+  .csstransforms3d.csstransitions.js-nav #nav .nav-block {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+ */
+}
+
+/*  Annotator Touch Plugin - v1.1.1
+ *  Copyright 2012-2013, Compendio <www.compendio.ch>
+ *  Released under the MIT license
+ *  More Information: https://github.com/aron/annotator.touch.js
+ */
+.annotator-viewer .annotator-touch-controls .annotator-edit::after {
+    /* Assign the image once to ensure data uri is not repeated. */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAtCAYAAABxsjF3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDA0RjExNjU0MUU3MTFFMUFGNzA4RDM2MDNEMkIyQjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDA0RjExNjY0MUU3MTFFMUFGNzA4RDM2MDNEMkIyQjkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MDRGMTE2MzQxRTcxMUUxQUY3MDhEMzYwM0QyQjJCOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0MDRGMTE2NDQxRTcxMUUxQUY3MDhEMzYwM0QyQjJCOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl46a1UAAAVTSURBVHjajJZ7TFtVHMdvHzxKWzo2xqNAeMO6AQNKBKUoZbiUIBhCIuHxh/+4xQwk4HuRGIkJQgmSqfyBqCDMmQjZ4rQR8I+6CMgfAgIiE5oMVt4vESiFUur33Nw2t6XF3eTXc8/p+Zzze5zf71wORVFnIHKIF3X6swsZhwghjyEWqra29tre3t6i5X8es9n8sK2t7XpPT88nAQEBFwFzOVtbWzpPT08K0uJiR8vBwQE1Ojo6IJPJPpRIJNmDg4N3sOnr1PHxsXlubq7zFHUFKpXqSk1Nzcurq6s3Mf+IaLKzs6OkoM4B4C4XoFd5eXnO2tpa/8bGxpRarX7NYDC8AVYNEdPw/Pz8bWdgdXX1C4uLi/d0Ot33u7u7K/v7+7qJiYkQ/HcBInIFS6qqqlQLCwv3Z2Zm7q6vr08zflOXlZVdHhoa+nZycvKyM/hMU1NTiV6v/w47aqDyNOw0AKwlf05PT79HVhkeHo7hO+wobmxsfLG4uPil7e1tU2Bg4CVvb++go6Ojt/l8/sdkAofD4dEhwMNlk3V1dVeLiopuwJMeABPFYvF5DBOwFdCxo1P4zGoWNLzCwsJXgoKC5DDFyOVyzVD3BsCv2ADGLWyYQ2JdUVFxNiwsLAULcXk83h7at/DfbWjHYRanHyxse+eSybDPKzw8XA51H+AkVSJEKoxrIcGQMMwLt8rS0tI5AsIsM8dkMg0fHh6GjIyMaHEA9tE3wUFmqMsDaGcjUSE9PT1TKBRCOZ6ceE0GmbA8+TMKUdKL4cW2cmpqKvFBDORpyFPERMhvkCGIDrG187gNBiiCKpXoV8KB5x08vIBGjfFWLLBvBwMUw8bPYWuRs+wg4QHIIfHGnEosYKTHAXKRy2+6AlNSUtZzcnJI5aAw55q7u/t126LoRCJ21c7AxMTEDRzXVqVS2Z6fn/+Y0aIGG0rpd8QrF9EROgObm5u/FAgE76N7B5lkIuNGo/FccHDw8/QJc3Nzy3AEExISNhnwJnZxw25fwOYIW6J7eWWi6eAia3zYYFxc3BZSsp0F9gJ8xi7ZJRL6lHFDQ0MX2V6tr6/vQjZZwfsAT2gWERGhp+ejIj7w8PAgh4GKjIzc9vX1fZdEAM89gFccQSx8CLO01lD9jOr4iHRQo4zod+P1H4BXnUUgNzf3b5zvX2gYBXyutLT0VnJy8gZKTwDGVBB3Z6BCoVhBlWmEP1bZx1OMVPugvb29sLe3VwoN7MqTSCQy5eXl6UtKSjr9/PzqSMQcE0OMGJbMzs4Wj42NBUxNTYlhNxUfH/8vYq6HPzpxPIlJhhOJwTykuAVDLkFkTFZNMbJAX27srHIwi0MXc4ryYW5PMnmLEQMbJpuybeNLpdKogoICRVZWVkJsbGwMPH4M9R/29/ePdXd3/4py9YjRxr6KyuVyhVar7YDdm46lA1fwqkajacXpSyERsu5Mq5qdnZ2Ea0Xrqu6Q6kra8fFxDTa5YIOhnnhgYODrU8C7KIy3rP2+vr5PwXrScEtLSwaq544L8Ec07rheL+Ji+4aMYaG1hoaGRAJzk5KSMpCWohOfAxaLBpW2AGLOzMyU+vv7J9E3vUDgm5aWpqAn4WLvcLLjT2RHEnccDuXKysqf7P9xe35Gq41PhTYHsB+NgIBRUVHPLS8vn6jpGGum4c3NzVcdvCohYHR09LO43Eed+QJMKQ3jS0eGArjHDP5BSjhqVAEy7HdnICroGpoQGsYPHwXwI/IHvgL+IhAWM7kKHea+Q25OW07gxQcr/vAEH3JdaITsE2Zd4CykDnZvO/H+OsAavHqzE4PjENtTLzr2pwWB/xNgAIkda0u78FfgAAAAAElFTkSuQmCC');
+}
+
+.annotator-selection-handle::after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MENGMkFGNTMzRTZBMTFFMUJCQThENjQ1NDg5Q0U3NUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MENGMkFGNTQzRTZBMTFFMUJCQThENjQ1NDg5Q0U3NUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGRERCNTk2ODNFNEQxMUUxQkJBOEQ2NDU0ODlDRTc1RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowQ0YyQUY1MjNFNkExMUUxQkJBOEQ2NDU0ODlDRTc1RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pqv8zQEAAAWBSURBVHjapFdrTFRHFP727i4ioMCCyEOsWbHQihigEVqJL6jV2gcl1OCrtjXVmpAYQ5P6o+mfpi2JScMf0tAftCHRhMjDpg9tAmooTTSBoqC7i2BAXgZ2QXbZXfZx796ec9lVweVVJzk7c+/OfPPNOXO+mauSZRkvUlQq1axnYZHOmt7e3m9HR0dv2Gy2nsHBwYv0btWCMzDDYEYlksD+kOeUgYGBm/Tfmmf6LQ2wvr7+KwbweEW5vLJVLvumWTZbbAqoyWS6yhMGAxTmWeqG/Pz8E9yuqeuCaSQJj71pqPjZAK8oITU19a3KyspjwcYKQcAiOjo6foiMjNxw1/QI1/4NgaCNg0qtw8BEAhqvmJR+hYWFH1Pf+EUBz5w583p6evpehd3lIQgh8RChhVdWQ9bo8NvfHkxanUhMTMxuaGgoXRCQZtSVlpae02g04ddaH6DPHANJFU7LhGKSHAKPKgEXLt9X+m/fvv09qtbNC1hRUVGSkpKyh/104cokZG0svJJABr+pIAmr0dSuwdCjScTFxW1paWn5moZqnwMkdnFFRUUfcfvS790wT62B6At9wi5goqSFpF6Ln2ofKOMyMjLepGrDc4C1tbWnk5OTc6xTLtRfd0OkIDCjp+yemiSswi1TOO4YHoGD197e/j1BhD8BJHZJeXl573L7l/puWL1rIZK/goHNmBo+TRyqLg0rZDIzMz8oLy8veAKYk5OzlaNmd7jx502RGETNyy5goioM9waj0XDVxISE3NzcQoJaLdDDipKSkkwG7uoeg8OzmnynIV9hESOWFKB/OqwKSwrmZqriNfQTHRsbqyS8bcoNn4/Uw7dEpfH5oPZHQZIkChliGFBDG9R49OhRbElbA614C9N2B3dfHFAcx4f7Nintnp6ee4zL7Qiyt4eHh9vk/1msVuvDsLCwdwhnY0CC8ouLiz9hUFEUnUsF8vl8Emll58mTJ08xKV6tigH9SZ6FFysGsn5VQNP8oC+xY5cJxGHuJ1M2pSqYSBJ46DIAXUEVmzclyXstnR0PlhOQiYmJO62trQdnAbKcG43Gv+QXKDU1NZ8zEO9DJCUlZaWlpe1l2fryuxsYd+ho2epF1yp6pnAgbyUOFWVxpuygV/Ua8pf2/PnzudzhrnEE485ErIzUkyOFxQG9Ntwf6FXaer1+cyBToiMiIkL4pdsjQfIJlKeqpSQKJNGHiHBlkXA6nRztGKahrqqq4j2E9LR4rNRa4fG4FlQaxUQZbpcdm1Nmzn06Wjn1PAw4cfv2bUdfX19LRHgoDu2PxbTTohyXc9X6WfN4XQhVW7D7Db0CWFdX10HVuEABclPDXlZWVk1p59iTp8f62HF43M4FGPrgco7jyIEYrFihAZOprq4eIhxzwPOGxsZGc2dnJ98IcPz9dXA5xuZl6XE5kRDJ7GaOEiZD1RSb4N+LFk6f7OzsalKO/oxXE5C1yUEsp4Kwk+CeNuPTokQIggCDwXCVydB449xj9CH/tLW1NXH92cGN8EyPEiPvbEC3HVs32vBaRhLsdvvQzp07f/Tns2UWILFkVe0uKChoHBsb60pOjMK+bSKxtBGQ7I8sgbtGcergTCDotGuyWCys1F3zXUWYpbe5uVnx5Ynil6GWhmkDu2l/Eqj7MfZv80K/XgeedNeuXZeoG+9sW1BAYsmzGQ8fPnxjZGSkPToqDOeO6yA6H0J0mZG0aginj7yi9PVPKvmla+H7IZXdrOBut3uSE//ir3flY180yb39FkUI6CJ63a/Q65Z04eTjkAecPXu2dK6qsORHRUXxJWnHsm6wVFIDoHRfbCDnd3PtZ8amCyrOC30FkBJlBFkWD7hD40aCfQWoFvusoAHRLJnMiPOeg0Bj7PN9VvwnwAD1CUyXisQtngAAAABJRU5ErkJggg==');
+}
+
+.annotator-button::after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAEiCAYAAAD0w4JOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkREQjU5NUUzRTREMTFFMUJCQThENjQ1NDg5Q0U3NUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkREQjU5NUYzRTREMTFFMUJCQThENjQ1NDg5Q0U3NUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMkY4NEM4QjNERkExMUUxQkJBOEQ2NDU0ODlDRTc1RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMkY4NEM4QzNERkExMUUxQkJBOEQ2NDU0ODlDRTc1RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoUNah0AABE5SURBVHja7JwJWFXX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');
+}
+
+/* Generic Touch Widget Styles */
+.annotator-touch-widget {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgba(57, 57, 57, 0.85)),
+        color-stop(0.5, rgba(58, 58, 58, 0.85)),
+        color-stop(0.5, rgba(0, 0, 0, 0.85)),
+        to(rgba(0, 0, 0, 0.85))
+    );
+    background: -moz-linear-gradient(
+        -90deg,
+        from(rgba(57, 57, 57, 0.85)),
+        color-stop(0.5, rgba(58, 58, 58, 0.85)),
+        color-stop(0.5, rgba(0, 0, 0, 0.85)) 50%,
+        to(rgba(0, 0, 0, 0.85))
+    );
+    background: -webkit-linear-gradient(
+        -90deg,
+        from(rgba(57, 57, 57, 0.85)),
+        color-stop(0.5, rgba(58, 58, 58, 0.85)) 50%,
+        color-stop(0.5, rgba(0, 0, 0, 0.85)) 50%,
+        to(rgba(0, 0, 0, 0.85))
+    );
+    background: linear-gradient(
+        to bottom,
+        from(rgba(57, 57, 57, 0.85)),
+        color-stop(0.5, rgba(58, 58, 58, 0.85)) 50%,
+        color-stop(0.5, rgba(0, 0, 0, 0.85)) 50%,
+        to(rgba(0, 0, 0, 0.85))
+    );
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    /* Removes the tap outline on elements that have bound touch events */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.annotator-touch-widget-inner {
+    background: #efefef;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 7px;
+    padding: 6px;
+    line-height: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.annotator-touch-widget .annotator-button {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 44px;
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.annotator-touch-widget .annotator-button[disabled] {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.annotator-touch-widget .annotator-button::after {
+    left: 15px;
+}
+
+.annotator-touch-widget .annotator-add::after,
+.annotator-touch-widget .annotator-add:hover::after,
+.annotator-touch-widget .annotator-add:focus::after,
+.annotator-touch-widget .annotator-add.annotator-focus::after {
+    margin-top: -7px;
+    background-position: 0 -270px;
+}
+
+/* Adder Styles */
+
+.annotator-touch-controls {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    min-width: auto;
+}
+
+.annotator-touch-controls.annotator-touch-hide {
+    right: -9999em;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s 0 ease-in, right 0s 0.3s linear;
+    -moz-transition: opacity 0.2s 0 ease-in, right 0s 0.3s linear;
+    -ms-transition: opacity 0.2s 0 ease-in, right 0s 0.3s linear;
+    -o-transition: opacity 0.2s 0 ease-in, right 0s 0.3s linear;
+    transition: opacity 0.2s 0 ease-in, right 0s 0.3s linear;
+}
+
+.annotator-touch-controls .annotator-button {
+    line-height: 56px;
+}
+
+/* Viewer Overrides*/
+
+.annotator-touch-viewer .annotator-widget {
+    min-width: 380px;
+}
+
+.annotator-touch-viewer div {
+    padding: 12px;
+}
+
+.annotator-touch-viewer div:first-of-type {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.annotator-touch-viewer .annotator-touch-controls {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    display: none;
+    background: rgba(255, 255, 255, 0.6);
+    background: -webkit-gradient(
+        linear, right top, left top,
+        from(rgba(255, 255, 255, 0.8)),
+        color-stop(0.9, rgba(255, 255, 255, 0.8)),
+        to(rgba(255, 255, 255, 0))
+    );
+    background: -moz-linear-gradient(
+        0deg,
+        from(rgba(255, 255, 255, 0.8)) 90%,
+        to(rgba(255, 255, 255, 0))
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        from(rgba(255, 255, 255, 0.8)) 90%,
+        to(rgba(255, 255, 255, 0))
+    );
+    background: linear-gradient(
+        to bottom,
+        from(rgba(255, 255, 255, 0.8)) 90%,
+        to(rgba(255, 255, 255, 0))
+    );
+    -webkit-box-pack: end;
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -moz-box-pack: end;
+    -moz-box-align: center;
+    -moz-box-orient: horizontal;
+    box-pack: end;
+    box-align: center;
+    box-orient: horizontal;
+    padding: 10px;
+    bottom: 0;
+    padding: 0 10px 0 20px;
+}
+
+.annotator-touch-viewer li.annotator-visible .annotator-touch-controls {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+
+.annotator-touch-viewer .annotator-touch-controls button {
+    line-height: 44px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-left: 6px;
+}
+
+.annotator-touch-viewer .annotator-touch-controls .annotator-edit::after {
+    background-position: 0 -15px;
+}
+
+.annotator-touch-viewer .annotator-touch-controls .annotator-edit:hover::after,
+.annotator-touch-viewer .annotator-touch-controls .annotator-edit:focus::after,
+.annotator-touch-viewer .annotator-touch-controls .annotator-edit:active::after,
+.annotator-touch-viewer .annotator-touch-controls .annotator-edit.annotator-focus::after {
+    background-position: 0 -30px;
+}
+
+.annotator-touch-viewer .annotator-touch-controls button::after {
+    left: 15px;
+}
+
+/* Editor Overrides */
+
+.annotator-touch-editor {
+    position: fixed;
+    top: -1000px !important;
+    left: 0 !important;
+    right: 0;
+    bottom: -1000px;
+    padding: 1000px 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    box-pack: center;
+    box-align: center;
+}
+
+.annotator-touch-editor .annotator-touch-widget {
+    pointer-events: all;
+    position: relative;
+    width: 80%;
+    max-width: 680px;
+}
+
+.annotator-touch-editor .annotator-touch-widget-inner {
+    position: static;
+    width: auto;
+    padding: 0;
+    background: #fff;
+}
+
+.annotator-touch-editor .annotator-widget::after {
+    display: none;
+}
+
+.annotator-touch-editor .annotator-widget .annotator-item {
+    border-top-color: rgba(0, 0, 0, 0.15);
+}
+
+.annotator-touch-editor .annotator-widget .annotator-item,
+.annotator-touch-editor.annotator-editor .annotator-item label,
+.annotator-touch-editor.annotator-editor .annotator-item input,
+.annotator-touch-editor.annotator-editor .annotator-item textarea {
+    font-size: 18px;
+}
+
+.annotator-touch-editor.annotator-editor .annotator-item input,
+.annotator-touch-editor.annotator-editor .annotator-item label {
+    line-height: 30px;
+    margin-left: 8px;
+}
+
+.annotator-touch-editor.annotator-editor .annotator-item input[checkbox] {
+    font-size: large;
+}
+
+.annotator-touch-editor .annotator-widget .annotator-item:first-child textarea {
+    font-size: 18px;
+    background-color: #fff;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.annotator-touch-editor .annotator-resize {
+    display: none;
+}
+
+.annotator-touch-editor .annotator-controls {
+    padding: 7px;
+    background-color: #efefef;
+    background-image: none;
+}
+
+.annotator-touch-editor .annotator-item-quote {
+    font-size: 16px;
+    line-height: 1.2;
+    border-color: #cebfa2;
+    background-color: #fbfae9;
+    color: #a58129;
+    padding: 10px 7px;
+}
+
+.annotator-item-quote span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #a58129;
+    font-family: Georgia, serif;
+}
+
+.annotator-item-quote.annotator-touch-expand span {
+    overflow: visible;
+    text-overflow: inherit;
+    white-space: inherit;
+}
+
+.annotator-item-quote button {
+    font-size: 14px;
+    line-height: 44px;
+    margin-top: -13px;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a58129;
+    border: none;
+    background: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.annotator-button::after {
+    background-repeat: no-repeat;
+}
+
+.annotator-button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    padding: 0 6px 0 22px;
+    color: rgb(54, 54, 54);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid rgb(162, 162, 162);
+    background-color: rgb(212, 212, 212);
+    background-image: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgb(245, 245, 245)),
+        color-stop(0.5, rgb(210, 210, 210)),
+        color-stop(0.5, rgb(190, 190, 190)),
+        to(rgb(210, 210, 210))
+    );
+    background-image: -moz-linear-gradient(
+        -90deg,
+        rgb(245, 245, 245),
+        rgb(210, 210, 210) 50%,
+        rgb(190, 190, 190) 50%,
+        rgb(210, 210, 210)
+    );
+    background-image: -webkit-linear-gradient(
+        -90deg,
+        rgb(245, 245, 245),
+        rgb(210, 210, 210) 50%,
+        rgb(190, 190, 190) 50%,
+        rgb(210, 210, 210)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        rgb(245, 245, 245),
+        rgb(210, 210, 210) 50%,
+        rgb(190, 190, 190) 50%,
+        rgb(210, 210, 210)
+    );
+    -webkit-box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.2),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.2),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    -o-box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.2),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.2),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.annotator-button::after {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
+    background-position: 0 -90px;
+}
+
+.annotator-button:hover,
+.annotator-button:focus,
+.annotator-button.annotator-focus {
+    outline: none;
+    border-color: rgb(67, 90, 160);
+    background-color: rgb(56, 101, 249);
+    background-image: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgb(118, 145, 251)),
+        color-stop(0.5, rgb(80, 117, 251)),
+        color-stop(0.5, rgb(56, 101, 249)),
+        to(rgb(54, 101, 250))
+    );
+    background-image: -moz-linear-gradient(
+        -90deg,
+        rgb(118, 145, 251),
+        rgb(80, 117, 251) 50%,
+        rgb(56, 101, 249) 50%,
+        rgb(54, 101, 250)
+    );
+    background-image: -webkit-linear-gradient(
+        -90deg,
+        rgb(118, 145, 251),
+        rgb(80, 117, 251) 50%,
+        rgb(56, 101, 249) 50%,
+        rgb(54, 101, 250)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        rgb(118, 145, 251),
+        rgb(80, 117, 251) 50%,
+        rgb(56, 101, 249) 50%,
+        rgb(54, 101, 250)
+    );
+    color: rgb(255, 255, 255);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.42);
+}
+
+.annotator-button:hover::after,
+.annotator-button:focus::after {
+    margin-top: -8px;
+    background-position: 0 -105px;
+}
+
+.annotator-button:active {
+    border-color: rgb(112, 12, 73);
+    background-color: rgb(209, 46, 142);
+    background-image: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgb(252, 124, 202)),
+        color-stop(0.5, rgb(232, 93, 178)),
+        color-stop(0.5, rgb(209, 46, 142)),
+        to(rgb(255, 0, 156))
+    );
+    background-image: -moz-linear-gradient(
+        -90deg,
+        rgb(252, 124, 202),
+        rgb(232, 93, 178) 50%,
+        rgb(209, 46, 142) 50%,
+        rgb(255, 0, 156)
+    );
+    background-image: -webkit-linear-gradient(
+        -90deg,
+        rgb(252, 124, 202),
+        rgb(232, 93, 178) 50%,
+        rgb(209, 46, 142) 50%,
+        rgb(255, 0, 156)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        rgb(252, 124, 202),
+        rgb(232, 93, 178) 50%,
+        rgb(209, 46, 142) 50%,
+        rgb(255, 0, 156)
+    );
+}
+
+.annotator-button.annotator-save::after {
+    background-position: 0 -120px;
+}
+
+.annotator-button.annotator-save::after,
+.annotator-button.annotator-save:focus::after,
+.annotator-button.annotator-save.annotator-focus::after {
+    margin-top: -8px;
+    background-position: 0 -135px;
+}
+
+/* Icon only button styles */
+
+[data-annotator-use-icons] .annotator-touch-widget .annotator-button {
+    /* width & overflow is required by Android WebKit */
+    width: 1px;
+    overflow: hidden;
+    text-indent: -999em;
+    padding-left: 25px;
+}
+
+[data-annotator-use-icons] .annotator-touch-controls .annotator-button {
+    padding-left: 35px;
+}
+
+[data-annotator-use-icons] .annotator-touch-controls .annotator-button::after {
+    left: 20px;
+}
+
+[data-annotator-use-icons] .annotator-touch-viewer .annotator-touch-controls button {
+    padding-left: 25px;
+    text-indent: -9000em;
+}
+
+[data-annotator-use-icons] .annotator-touch-viewer .annotator-touch-controls button::after {
+    left: 15px;
+}
+
+[data-annotator-use-icons] .annotator-touch-viewer .annotator-widget {
+    min-width: 320px;
+}
+
+/* Highlighter Selection Styles */
+
+.annotator-selection-handle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-left: -22px;
+    margin-top: -22px;
+    border-radius: 50%;
+    /* Removes the tap outline on elements that have bound touch events */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.annotator-selection-handle::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -5px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.annotator-selection-start::after {
+  top: -5px;
+  bottom: auto;
+  background-position: 0 -20px;
+}
+
+.annotator-selection-hide .annotator-selection-handle {
+  display: none;
+}
+
+/* Styles for smaller screens */
+
+@media only screen and (max-width: 480px) {
+    .annotator-touch-viewer {
+        left: 0 !important;
+        width: 100%;
+        background: none;
+        min-width: 0;
+        border: none;
+    }
+
+    .annotator-touch-viewer .annotator-widget {
+        position: static;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        -webkit-box-sizing: border-box;
+        -webkit-border-radius: none;
+        border-radius: none;
+    }
+
+    .annotator-touch-viewer .annotator-widget::after {
+        display: none;
+    }
+
+    .annotator-touch-editor {
+        border: none;
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        box-align: start;
+    }
+
+    .annotator-touch-editor .annotator-touch-widget {
+        width: 100%;
+        max-width: auto;
+        margin: 0;
+        border-color: #333;
+        border-left: none;
+        border-right: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .annotator-touch-editor .annotator-touch-widget-inner {
+        width: 100%;
+        max-width: auto;
+        margin: 0;
+        border: 0;
+    }
+
+    .annotator-touch-editor .annotator-controls {
+        border-bottom: 1px solid #D4D4D4;
+    }
+
+    .annotator-touch-editor .annotator-touch-widget,
+    .annotator-touch-editor .annotator-touch-widget-inner,
+    .annotator-touch-editor .annotator-touch-widget .annotator-item:first-child textarea,
+    .annotator-touch-editor .annotator-controls {
+        border-radius: 0;
+    }
+}
+
+/* Begin added sidebar code */
+.annotator-sidebar-background {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.annotator-sidebar-display {
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	overflow-y: scroll;
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+	-webkit-moz-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+	-webkit-o-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.annotator-sidebar-display::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+.annotator-sidebar-display::-webkit-scrollbar-track-piece {
+	margin: 3px;
+	background-color: #e5e5e5;
+	-webkit-border-radius: 4px;
+}
+
+.annotator-sidebar-display::-webkit-scrollbar-thumb:vertical {
+	height: 25px;
+	background-color: #ccc;
+	-webkit-border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.annotator-sidebar-display::-webkit-scrollbar-thumb:horizontal {
+	width: 25px;
+	background-color: #ccc;
+	-webkit-border-radius: 4px;
+}

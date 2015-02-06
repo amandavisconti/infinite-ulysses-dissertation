@@ -1,0 +1,55 @@
+<label>Thumbs Up/Down </label><div id="rate-node-2-1-1" class="rate-widget-1 rate-widget clear-block rate-user rate-widget-thumbs_up_down rate-node-2-1-1 rate-processed"><ul><li class="thumb-up"><a id="rate-button-1" class="rate-button rate-thumbs-up-down-btn-up rate-voted" title="up" href="" rel="nofollow">up</a><div class="percent"></div></li><li class="thumb-down"><a id="rate-button-2" class="rate-button rate-thumbs-up-down-btn-down" title="down" href="" rel="nofollow">down</a><div class="percent"></div></li></ul><div class="rate-info"></div><div class="rate-description"></div></div>
+
+Just need 3 different rater instance IDs:
+in first div: rate-x
+up and down hrefs: www.infiniteulysses.com/node/2?rate=x
+
+<?php
+ print rate_embed($node, 'agree_disagree_vote', RATE_FULL); 
+?>
+into JS?
+
+====================================
+// For DS specifically:
+<?php
+/**
+ * Implements hook_ds_fields_info().
+ */
+function MYMODULE_ds_fields_info($entity_type) {
+
+  // Provide a custom field to display suite
+  $fields = array();
+
+  $fields['node']['rate'] = array(
+    'title' => t('Rate'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'function' => 'MYMODULE_ds_field_rate',
+  );
+
+  return $fields;
+}
+
+function MYMODULE_ds_field_rate($field) {
+   return rate_embed($field['entity'], 'machinenameofwidget', RATE_FULL);
+}
+?>
+
+====================================
+
+<?php
+if (isset($results['user_vote'])) {
+  print t('Thanks for your vote!');
+}
+else {
+    print theme('rate_button', array(
+      'text' => $links[0]['text'],
+      'href' => $links[0]['href'],
+      'class' => "extra-class")
+    );
+    print theme('rate_button', array(
+      'text' => $links[1]['text'],
+      'href' => $links[1]['href'],
+      'class' => "extra-class")
+    );
+}
+?>

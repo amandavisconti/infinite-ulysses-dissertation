@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="annotator.js"></script>
+<script src="jquery-1.9.1.js"></script>
+<script src="annotator-full.1.2.9/annotator-full.min.js"></script>
+<script src="jquery-i18n-master/jquery.i18n.min.js"></script>
+<script src="jquery.dateFormat.js"></script>
+<script src="jquery.slimscroll.js"></script>
+
+<link rel="stylesheet" href="annotator-full.1.2.9/annotator.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="view_annotator.js"></script>
+<script src="categories.js"></script>
+
+<script>
+jQuery(function ($) {
+// Customise the default plugin options with the third argument.
+	var annotator = $('body').annotator().annotator().data('annotator');
+		var propietary = 'demoUser';
+			annotator.addPlugin('Permissions', {
+				user: propietary,
+				permissions: {
+					'read': [propietary],
+					'update': [propietary],
+					'delete': [propietary],
+					'admin': [propietary]
+				},
+				showViewPermissionsCheckbox: true,
+				showEditPermissionsCheckbox: false
+				});
+	$('body').annotator().annotator('addPlugin', 'AnnotatorViewer');
+	$('body').annotator().annotator('addPlugin', 'Categories',{
+		errata:'annotator-hl-errata',
+		destacat:'annotator-hl-destacat',
+		subratllat:'annotator-hl-subratllat' }
+	);
+
+//Annotation scroll
+	$('#anotacions-uoc-panel').slimscroll({height: '100%'});
+});
+</script>
+
+</head>
+
+<body>
+<div class="annotator-sidebar-background">
+<div class="annotator-sidebar-display">
+</div>
+</div>
+<p>Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressinggown, ungirdled, was sustained gently behind him by the mild morning air. He held the bowl aloft and intoned...</p>
+<p>Solemnly he came forward and mounted the round gunrest. He faced about and blessed gravely thrice the tower, the surrounding country and the awaking mountains. Then, catching sight of Stephen Dedalus, he bent towards him and made rapid crosses in the air, gargling in his throat and shaking his head. Stephen Dedalus, displeased and sleepy, leaned his arms on the top of the staircase and looked coldly at the shaking gurgling face that blessed him, equine in its length, and at the light untonsured hair, grained and hued like pale oak.
+Buck Mulligan peeped an instant under the mirror and then covered the bowl smartly.</p>
+
+</body>
+</html>
