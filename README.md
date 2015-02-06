@@ -75,6 +75,24 @@ Peter Schuelke's [post](http://www.metaltoad.com/blog/passing-multiple-values-th
 
 This module is dependent on changes I made to Annotator.js (see below).
 
+## My Modifications of Annotator.js
+Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See (this section of this repo's README)[https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md#functionality] for more on what Annotator.js does and who was responsible for what parts of its functionality.
+
+I committed the original Annotator.js library files, then made my next commit hold all my changes (up to 2/6/2015); this will allow you to see a nice comparison of modifications I made to the Annotator.js library by visiting [this commit page](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064). Note that I may have made changes to these files subsequent to that commit (e.g. tidying things up a bit when time allows), but the most important code changes are visible in that commit.
+
+###Annotator.min.css
+Use of the Mac FileMerge file comparison tool shows I made 21 changes to this CSS file, including changing the mouse cursor to a hand when hovering over a highlight, browser prefixes (required to make certain browsers use a CSS rule; e.g. -moz, -webkit), removing a lot of unneeded elements (e.g. gradients on the annotation filter buttons), and most importantly removing display of the Annotator.js viewer (a pop-up that I replaced with my annotation sidebar).
+
+###Annotator-full.min.js
+Use of the Mac FileMerge file comparison tool shows I made 25 changes to this Javascript file. Many of the key modifications are marked with a comment (// or /* */) and the word "Amanda", usually followed by a short explanation. The main reasons for modifying this file were small tweaks such as removing use of the Annotator.js Viewer (the pop-up for viewing existing annotations) in favor of my sidebar, and changing behavior from on mouse hover to on mouse click. 
+
+These were mostly one- or two-line changes; the biggest change is from lines 1847-1855, which I've commented [on this page to make them easy to look at](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064#commitcomment-9632201). This code reacts to a user clicking on a highlighted piece of text by *adding the ID numbers (NIDs) 
+*for all annotations referencing that highlight (i.e. the one or more annotations that might be associated with a highlighted piece of text) 
+*into a list ("array"), 
+*entering them into an invisible form field, and 
+*submitting that form.
+This makes the list of annotations associated with a highlight available to the website's server through my Highlighted Anno(tation)s module, described above.
+
 ##Appearance
 * Custom child theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
 * Drupal layout modules: [Panoply](https://www.drupal.org/project/panopoly), [Radix](https://www.drupal.org/project/radix), [Panels](https://www.drupal.org/project/panels)
