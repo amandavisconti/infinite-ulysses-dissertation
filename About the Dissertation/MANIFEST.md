@@ -58,13 +58,13 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 ##Talks and Presentations
 **Item:** 4 invited talks about the dissertation:
 * June 2013: Presentation to Dr. Hans Gabler's Digital Ulysses Master Class at the University of Victoria
-* 
+
 * April 2014: [2nd Annual Nebraska Forum on Digital Humanities](http://cdrh.unl.edu/news-events/nebraskaforum)
-* 
+
 * March 2015: [Not-yet-named panel on digital dissertations at CUNY Graduate Center](http://digitalfellows.commons.gc.cuny.edu/digital-dissertations/)
-* 
+
 * April 2015: [MITH Digital Dialogue](http://mith.umd.edu/digitaldialogues))
-* 
+
 **What it does (technical, research):** Written preparation for talks aimed at various audiences (Joycean, digital humanities scholars, digital dissertation students and advisors, digital humanities/public)
 
 **Item:** 3 service panel talks supporting UMD English graduate students
