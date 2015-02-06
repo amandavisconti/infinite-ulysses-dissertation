@@ -1,3 +1,5 @@
+The items I'll be submitting to my dissertation committee and the registrar at the time of my doctoral defense, plus in what format each item will be presented.
+
 # Given to the committee
 * Link to umbrella website (see below for contents of umbrella website) *via email*
 * Directions on locating various deliverables *via email*
