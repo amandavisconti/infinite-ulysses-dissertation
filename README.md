@@ -9,15 +9,25 @@
 #Table of Contents
 ---------------------
 * What's Infinite Ulysses?
+* 
   ** Milestones
+
 * Provenance of included code
+* 
   ** Functionality
+
   ** Appearance
+  
   ** The Text
+  
   ** Support credits
+  
 * I want to use this!
+* 
   ** Documentation
+
   ** Issues queue
+  
   ** Caveat emptor: in-progress code
 
 #What's Infinite Ulysses?
