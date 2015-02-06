@@ -10,11 +10,10 @@
 ---------------------
 * What's Infinite Ulysses?
 * 
-  ** Milestones
+..* Milestones
 
 * Provenance of included code
-* 
-  ** Functionality
+..* Functionality
 
   ** Appearance
   
