@@ -3,9 +3,9 @@ Welcome to the infinite-ulysses-public repository!
 
 Repository Contents: Top-Level Folders
 ---------------------
-* **About the Project** ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
-* **[The Code](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)** (code allowing Infinite Ulysses' interface look and behavior)
-* **Technical Instructions** ([notes on syncing multiple repos](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/RepoSyncingNotes.md), [how to install and configure annotation functionality on Drupal](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md))
+1. **About the Project** ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
+2. **[The Code](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)** (code allowing Infinite Ulysses' interface look and behavior)
+3. **Technical Instructions** ([notes on syncing multiple repos](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/RepoSyncingNotes.md), [how to install and configure annotation functionality on Drupal](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md))
 
 Table of Contents
 ---------------------
