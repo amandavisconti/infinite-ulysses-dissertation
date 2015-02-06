@@ -27,10 +27,53 @@ An ongoing manifest of the work my dissertation comprises, with explanations of 
 ------
 ------
 ##Design/appearance
+Each Infinite Ulysses design and coding decison involved thinking about
+* **scope**: what could I reasonably accomplish while leaving time for the other parts of my dissertational project?
+* **speculative experiment**: thinking of the site as hosting thousands or millions of users and annotations, how could I build something that would structurally support that weight? how could I parse the noise of a million annotations so that each unique reader was offered just those annotations that suited her background, needs, and desires?
+* **speculative experiment + scope**: how could I mediate between these two desires to support my research but also create something practically useful to a large public humanities audience?
+* **theory** what did my reading in areas such as visual design rhetoric, scholarly editing/textual scholarship, and reading behavior suggest? what did precedents in Joycean scholarship, print and digital editions, and digital humanities projects suggest?
+* **online communities** what did historical successes, working systems, organic uses of official features, and other observed phenomena at existing online communities with heavy user-created textual content suggest?
+
+------
+**Item:** Custom Drupal theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
+
+**What it does (technical, research):** A "theme" is a set of code (CSS3, HTML5, Javascript/jQuery, and PHP for page templates) that creates the look of a website. Some considerations that went into the design of the Infinite Ulysses digial edition theme:
+* accessibility
+* use-testing feedback
+* research on reading practices (e.g. visual chunking)
+* the type of reading experience I wanted my audience to have
+* my expected audience
+* behaviors/emotions I wanted to scaffold
+The largest amount of research time (thinking, sketching, reading, translating drawings into code) went into questions around laying out the page. For example, I decided to divide the text into pages that corresponded with the print pages of the Ulysses edition I'm using for several reasons: 
+* bookmarking
+* page analytics
+* loading time /speculative experiment
+
+**Where to find it:** Visible on [the Infinite Ulysses digital edition](http://www.infiniteulysses.com), and also stored in [this repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)
 
 ------
 ------
 ##Code
+
+**Item:** Highlighted Anno(tation)s Drupal module
+
+**What it does (technical, research):** "highlighted_annos" is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
+
+By replacing the Annotator.js pop-up annotation display with a Views (Drupal SQL query module) block, I was able to alter both the design and functionality of the annotation feature (e.g. adding display of and interaction with a rating widget, commenting on annotations, tagging by users other than the annotation's author with separation of "my tags" from "all tags" on a given annotation for the current logged-in user). I was also able to improve the display of annotations when there were multiple annotations for a given highlight, adding an option to sort displayed annotations by highest- or lowest-rated, oldest or newest date, or most commented-on.
+
+The module includes three files:
+* highlighted_annos.info file: Contains basic module metadata (e.g. Drupal version, author)
+* highlighted_annos.js: A 22-line jQuery (a Javascript library) file; handles the user's input (the "client side" code handling everything that happens in your browser before information is sent to my website's server)
+* highlighted_annos.module file: A 67-line PHP file handling information once it's passed from the "client side" to my website's server. Accomplishes tasks including:
+  * structuring the form that takes as input the ID number (NID) of the annotation(s) related to the highlight the user clicked
+  * get that input and convert it into a format that works in a database query ("database, please find only those annotations matching these ID numbers and then return some specific information about each annotation")
+  * prevent the webpage from redirecting when clicking on a highlight triggers the inputting of the related annotation IDs to the invisible form
+
+Peter Schuelke's [post](http://www.metaltoad.com/blog/passing-multiple-values-through-exposed-filter) was especially helpful in creating this module. 
+
+This module is dependent on changes I made to Annotator.js (see below).
+
+**Where to find it:** [This repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)
 
 ------
 ------
