@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file 
+ */
+
+/**
+ * Implementation of hook_install() 
+ */
+function guten_install() {
+
+}
+
+/**
+ * Implementation of hook_uninstall() 
+ */
+function guten_uninstall() {
+
+}

@@ -1,0 +1,4 @@
+name = "mymodule_ajax"
+description = "Example sidebar view block/main area AJAX update via http://mrkadin.com/blog/node/70 tutorial"
+core = 7.x
+package = Annotation Functionality

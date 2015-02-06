@@ -1,0 +1,4 @@
+name = "guten"
+description = "Ajax updating for view of annotations related to highlighting"
+core = 7.x
+package = Annotation Functionality

@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Amanda: exposed filter-by-nid for sidebar view block
+ */
+function annotator_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if($form['#id'] == 'views-exposed-form-annos-from-this-page-only-block4'){ // views-exposed-form-id
+    $form['nid'] = array(
+    '#type' => 'hidden',  //you can leave this for now and change it when everything works; this doesn't like being removed or set to visible for some reason
+     '#attributes' => array(
+        'id'=>'filter-nid',  //set an id for jQuery ("I’m going to use jQuery to insert my values, so I want to make sure I have an ID.")
+      ),
+    );
+  }
+}
+
+/**
+ * Amanda: 
+ */
+function annotator_views_query_alter(&$view, &$query) {
+  if ($view->current_display == 'annos_from_this_page_only' && $view->exposed_raw_input['nid']) {
+    // first we grab the value from our filter and convert it into an array
+    $nids = explode(',',$view->exposed_raw_input['nid']);
+    // we loop over the array of values we created from our exposed filter field
+    foreach ($nids as $nid){
+      // Be conscious of the ‘where[1]’. In the $query object you noticed the conditions array had multiple arrays. Each filter in your view will be placed in a conditions array. It is important to include the empty brackets [] after ['conditions']. This will append the new conditions instead of overwriting them.
+      $query->where[1]['conditions'][] = array(
+        'field' => 'node.nid', // this is ‘table.field’ from your database. If you used another filter than ‘Content: nid’ this will change. i.e ‘users.uid’
+        'value' => $nid,  // looped value from our values array
+        'operator' => '!=',  // originally !=condition operator; he wanted to filter out nids, so he used ‘not equal’. Amanda needed to change this probably to == to filter to only selected NIDs.
+      );
+    }
+  }
+}
+
+function theviewsfilter_theme() {
+   return array(
+      'theviewsfilter_javascript' => array(
+         'arguments' => array(),
+      ),
+   );   
+}
+
+function theviewsfilter_init() {
+  theme('theviewsfilter_javascript');
+}
+
+function theme_theviewsfilter_javascript() {
+  drupal_add_js(drupal_get_path('module', 'theviewsfilter') . '/theviewsfilter.js');
+}

@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function myarray_menu() {
+  $items['articles'] = array(
+    'title' => 'Articles',
+    'page_callback' => 'myarray_articles_page',
+  );
+  return $items;
+}
+
+/**
+ * The page callback to display the view.
+ */
+function myarray_articles_page() {
+    $content['my_articles_list'] = array(
+      'theme' => 'view',
+      'format' => 'ul',
+      'path' => 'my-articles', /* the path to the view in Drupal */
+      'row_callback' => 'myarray_articles_list_row',
+      'empty_callback' => 'myarray_articles_list_empty',
+      'attributes' => array(
+        'id' => 'my_articles_list_view',
+      )
+    );
+    return $content;
+}
+
+/**
+ * The row callback to render a single row.
+ */
+function myarray_articles_list_row($view, $row) {
+    return l(row.title, 'node/' + row.nid); // might need $ on row x2
+}
+
+/**
+ * If empty
+ */
+function myarray_articles_list_empty($view) {
+    return 'Sorry, no articles were found.';
+}

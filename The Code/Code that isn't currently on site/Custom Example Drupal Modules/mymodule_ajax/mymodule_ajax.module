@@ -1,0 +1,32 @@
+<?php
+function mymodule_menu() {
+        $items['mymodule-ajax/%/%node'] = array(
+                'access arguments' => array('access content'),
+                'page callback' => 'mymodule_ajax_callback',
+                'page arguments' => array(1,2),
+                'type' => MENU_CALLBACK,
+        );
+        return $items;
+}
+
+function mymodule_ajax_callback($js, $node) {
+  // If the nojs didn't get changed to ajax, the user has no javascript.
+  // Send them to the regular node page instead.
+  if ($js == 'nojs') {
+    drupal_goto('node/' . $node->nid);
+  }
+
+  // Get the render array for the node.
+  $build = node_view($node);
+
+  // Render the node into html.
+  $html = render($build);
+
+  // Prepare an ajax command to insert the node html into our ajax wrapper.
+  $commands = array();
+  $commands[] = ajax_command_html('#mymodule-ajax-wrapper', $html);
+
+  // Render the commands into JSON and print them.
+  print ajax_render($commands);
+  exit;  // Exit so Drupal doesn't have a chance to build a whole page.
+}

@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function nid_array_menu() {
+  $items['articles'] = array( // whatever is in the brackets is the /path!
+    'title' => 'Articles',
+    'page_callback' => 'nid_array_articles_page',
+    'pageshow' => 'nid_array_articles_pageshow'
+  );
+  return $items;
+}
+
+/**
+ * The page callback: this will create a page with an empty list.
+ */
+function nid_array_articles_page() {
+    $content['my_articles_list'] = array(
+      'title' => 'My Article List',
+      'items' => array(), //changed to array from []
+      'attributes' => array(
+        'id' => 'my_article_list',
+      )
+    );
+    return $content;
+}
+
+/**
+ * Pageshow callback to retrieve the results from the View and populate the list.
+ */
+function nid_array_articles_pageshow() {
+  $path_to_view = 'my-articles'; //correct?
+  views_datasource_get_view_result($path_to_view, array(
+      success => function (data) {
+        if (data.nodes.length > 0) {
+          $items = [];
+          $.each(data.nodes, function(index, object){
+              $node = object.node;
+              items.push(node.id, l(node.title, 'node/' + node.nid)); // or items.push([node.id, l(node.title, 'node/' + node.nid)]);
+          });
+          drupalgap_table_populate("#my_article_table", items); // replace with non-drupalgap table population
+        }
+      }
+  ));
+}

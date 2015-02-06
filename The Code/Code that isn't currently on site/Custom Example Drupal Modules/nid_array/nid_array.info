@@ -1,0 +1,4 @@
+name = "nid_array"
+description = "Multiple annos per highlight?"
+core = 7.x
+package = Annotation Functionality

@@ -1,0 +1,45 @@
+<?php
+function guten_menu() {
+
+  $items = array();
+
+  $items['node/%'] = array( //Amanda: "The actual url the ajax code will call". Could try just [], was some URL, e.g. views/ajax, http://goo.gl/1s9ohN
+    'title' => 'guten',
+    'page callback' => 'guten_get_by_nid', //the function that will retrieve the information
+    'access arguments' => array('access guten content'),
+    'type' => MENU_CALLBACK
+  );
+
+  return $items;
+}
+
+function guten_perm() {
+   return array('access guten content');
+}
+
+function guten_get_by_nid($gethnid){
+  $viewName = 'block4'; //Amanda: Name of view to load; might need to be e.g. block4 instead of machine name 'annos_from_this_page_only'
+  $args = array($gethnid);  // Array of arguments we set for the view. Only one argument in our example. In our case, the view accepts a single argument which is the $gethnid.
+  $displayId = 'default'; //Amanda: The display id for the view: (i.e. default, page, block, etc.). If unsure, use 'default', as it will always be valid.
+  $res = views_embed_view($viewName, $displayId, $args); //Call the views_embed_view function to returned themed view output. The result is HTML output containing the result of the view. This view can be themed as it if it weren't loaded dynamically. After we have the view result, we load it into a JSON object which will be returned as a response to the AJAX request.  
+  return drupal_json(array('guten'=>$res)); //Amanda: Create a JSON object. The object will contain a property named “products” that will be set with the themed result of the executed view.
+
+// $view->set_exposed_input(array('filter_identifier' => 'filter_value')); //You can set a value to be used by an existing exposed filter.
+  exit;
+}
+
+function guten_theme() {
+   return array(
+      'guten_javascript' => array(
+         'arguments' => array(),
+      ),
+   );   
+}
+
+function guten_init() {
+  theme('guten_javascript');
+}
+
+function theme_guten_javascript() {
+  drupal_add_js(drupal_get_path('module', 'guten') . '/guten.js');
+}

@@ -1,0 +1,36 @@
+<?php
+/**
+ * Implements hook_menu(). The rest of these options can be researched at api.drupal.org.
+ */
+function ajax2example_menu() {
+ 
+  // Ajax Callback. Returns telephone number for current region.
+  $items['ajax/username'] = array(
+    'title' => 'Get Current User Name',
+    'page callback' => 'ajax2example_get_username',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+ 
+  return $items;
+}
+
+/**
+ * AJAX function that returns the current logged in users name.
+ */
+function ajax2example_get_username() {
+ 
+  // Get currently logged in user. First the function retrieves the information. In this example it’s just the currently logged in users name. But any information can obtained. The function can run raw queries, pull globals, generate entire pages, or just return some random text.
+  global $user;
+  $user_name = $user->name;
+ 
+  // The return is the important piece. Do not try to send the data with a return statement. Drupal assumes that information called by a menu hook is a page. Any information returned will be wrapped with the default page template. This is usually not desired for an ajax function, so instead pass the info to jQuery with a standard “print”. Also note that even if the function does not return a value if the function returns at all the page template will be printed to the screen by the menu system. In order to prevent the page template from being outputted the function should be exited stopping any further html generation.
+  drupal_json_output($user_name);
+}
+
+/**
+ * Once the javascript file is finished it needs to be included in the appropriate pages. This can be done through a block hook, a page hook, a node api hook, or anything that determines a page's content. 
+ */
+function ajax2example_init() {
+  drupal_add_js(drupal_get_path('module', 'ajax2example') . '/ajax2example.js', array('scope' => 'footer'));
+}
