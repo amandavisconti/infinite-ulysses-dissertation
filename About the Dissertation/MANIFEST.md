@@ -1,6 +1,6 @@
 *I'm currently updating this file (circa February 6, 2015). More info soon!*
 
-An ongoing manifest of the work my dissertation comprises, with explanations of the what and why behind formats unusual in literary studies. (Happy to take feedback if something isn't explained clearly enough via [@Literature_Geek](http://www.twitter.com/Literature_Geek) or [my contact form](http://www.infiniteulysses.com/contact).)
+An ongoing manifest of the work my dissertation comprises, with explanations of the what and why behind formats unusual in literary studies. (Happy to take feedback if something isn't explained clearly enough, via [@Literature_Geek](http://www.twitter.com/Literature_Geek) or [my contact form](http://www.infiniteulysses.com/contact).)
 
 # Thoughts:
 + Creating design wireframes, writing, code, and other web development activities are **both similar and different** to chapter-writing in terms of quantifying output:
