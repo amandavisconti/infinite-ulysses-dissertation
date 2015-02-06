@@ -1,15 +1,15 @@
 *I'm currently updating this file (circae February 6, 2015). More info soon!*
 
-* Categories of work:
-  * Design/appearance
+# Categories of work:
+* Design/appearance
   
-  * Code
+* Code
   
-  * Research writing
+* Research writing
   
-  * Public speaking
+* Public speaking
   
-  * Miscellaneous
+* Miscellaneous
 
 #The item manifest
 
