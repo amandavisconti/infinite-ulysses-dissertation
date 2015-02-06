@@ -3,9 +3,9 @@ Welcome to the infinite-ulysses-public repository!
 
 Repository Contents: Top-Level Folders
 ---------------------
-* *About the Project* ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
-* *[The Code](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)* (code allowing Infinite Ulysses' interface look and behavior)
-* *Technical Instructions* ([notes on syncing multiple repos](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/RepoSyncingNotes.md), [how to install and configure annotation functionality on Drupal](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md))
+* **About the Project** ([manifest of work units and rationale](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/MANIFEST.md), [description of formats in final submissions to the dissertation committee and registrar](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md), [discussion of project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md))
+* **[The Code](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)** (code allowing Infinite Ulysses' interface look and behavior)
+* **Technical Instructions** ([notes on syncing multiple repos](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/RepoSyncingNotes.md), [how to install and configure annotation functionality on Drupal](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md))
 
 Table of Contents
 ---------------------
@@ -22,7 +22,7 @@ Table of Contents
 # Caveats and provisions
 This is the public repo for code related to the Infinite Ulysses participatory digital edition, the focus of Amanda Visconti's (@amandavisconti) digital humanities doctoral dissertation. Watch a quick 3-minute video or read more about Infinite Ulysses [here](http://www.literaturegeek.com/digital-dissertation/) or [sign up to beta-test the site](http://goo.gl/qtcy6).
 
-*WARNING* This repo represents code that is likely to be in-progress, outdated, insecure, strange, silly, or otherwise unwieldy, in an attempt to share the entire building process with the public. I don't currently recommend using any of it, and I cannot currently provide assistance with using any of this code. Please wait for late Spring 2015, when I'll provide clean, concise code and friendly documentation on creating your own participatory digital edition. 
+**WARNING** This repo represents code that is likely to be in-progress, outdated, insecure, strange, silly, or otherwise unwieldy, in an attempt to share the entire building process with the public. I don't currently recommend using any of it, and I cannot currently provide assistance with using any of this code. Please wait for late Spring 2015, when I'll provide clean, concise code and friendly documentation on creating your own participatory digital edition. 
 
 If you'd like to be notified when an easy-to-use code+documentation package is available, please [use the beta-testing sign up form here](http://goo.gl/qtcy6) and indicate your interest in the comments.
 
@@ -94,7 +94,7 @@ You can! That is, you will be able to, easily, once the code is polished and doc
 This will eventually link you to resources to turn this repo into a participatory digital edition site of your own (probably over Summer 2015).
 
 #Support credits
-- *The Maryland Institute for Technology in the Humanities (MITH) Winnemore Digital Dissertation Fellowship* (2014-2015)
+- **The Maryland Institute for Technology in the Humanities (MITH) Winnemore Digital Dissertation Fellowship** (2014-2015)
 - Editing Modernism in Canada (EMiC) Doctoral Fellowship (2013-2014)
 - University of Maryland English Department Summer Fellowship (2014)
 - University of Maryland University Fellowship (2010-2013)
