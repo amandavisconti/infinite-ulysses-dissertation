@@ -49,7 +49,9 @@ The largest amount of research time (thinking, sketching, reading, translating d
 * page analytics
 * loading time /speculative experiment
 
-**Where to find it:** Visible on [the Infinite Ulysses digital edition](http://www.infiniteulysses.com), and also stored in [this repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)
+**Where to find it:** Visible on [the Infinite Ulysses digital edition](http://www.infiniteulysses.com), and also stored in [this repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code). 
+
+See also [various dated screenshot files here](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Screenshots).
 
 ------
 ------
@@ -135,6 +137,13 @@ This makes the list of annotations associated with a highlight available to the 
 **Where to find it:** More info once proposal accepted.
 
 ------
+**Item:** Dissertation prospectus
+
+**What it does (technical, research):** I submitted an 18-page dissertation prospectus PDF at the beginning of my dissertation, containing plans for the project, a literature review, and a bibliography.
+
+**Where to find it:** https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Prospectus
+
+------
 ------
 ##Scholarly Editing
 **Item:** Typographical formatting, proofing and error correction, and data formatting on the digital text of Ulysses
@@ -187,3 +196,10 @@ This makes the list of annotations associated with a highlight available to the 
 **What it does (technical, research):** Forms filled out, an example user-study survey submitted, and other hoops jumped to achieve a waiver of Institutional Review Board (IRB) oversight for my dissertational user studies.
 
 **Where to find it:** [IRB Waiver](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Miscellaneous/IRBNetDocument.pdf)
+
+------
+**Item:** Affinity Wall
+
+**What it does (technical, research):** An affinity wall is a mind-mapping technique I learned during my iSchool degree. I used it to draft an outline for my scholarly article. See also [this blog post on how I created the affinity wall](http://www.literaturegeek.com/2014/04/28/affinitywallarticle/).
+
+**Where to find it:** https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Affinity%20Wall%20Photos%20(Article%20Outlining)
