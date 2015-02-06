@@ -1,14 +1,11 @@
-infinite-ulysses-public
-=======================
+Welcome to the infinite-ulysses-public repository!
+==================================================
 
-Repository Contents
+Repository Contents: Top-Level Folders
 ---------------------
-* Manifest
-* Scope
-* Umbrella
-* Repo Syncing Notes
-* Annotation Sidebar Work
-
+* About the Project (manifest of work units and rationale, description of formats in final submissions to the dissertation committee and registrar, discussion of project scope)
+* Technical Instructions (e.g. how to install and configure the code)
+* The Code (code allowing Infinite Ulysses' interface look and behavior)
 
 Table of Contents
 ---------------------
@@ -60,7 +57,23 @@ I'm currently using improved versions of these two modules created by Michael Wi
 
 More thorough crediting of FOSS licenses, previous contributors to customized modules, etc. will eventually be outlined here. When code is a bit more cleaned up, I'll try to label provenance within code as well, so that files representing multiple people's work clearly attribute each piece to its author. I've started to do that locally via comments beginning //Amanda:
 
-# Milestones
+##The Text
+This site builds off the digital plaintext transcription of the 1922 first printing of Ulysses, transcribed by Matthew Kochis and Patrick Belk with the Modernist Versions Project (MVP) and offered for public reuse by the MVP under a CC BY SA license. I've added transcription-error corrections, regex formatting replacements, and HTML/CSS for important typographical choices used in the 1922 first printing of the novel (as verified against the Modernist Versions Project's digital images of the printing). You can read a full log of my corrections and changes on this page about the text of the novel, or grab the text for your own use (under CC BY SA requirements) in this repository.
+
+##The Functionality
+Annotator.js
+Michael Widner with Stanford's Lacuna Stories for code discussions and vital code that fully brings Annotator.js into Drupal
+The Drupal Annotation and Annotator modules
+Many Drupal modules/contributors (full provenance will be tracked on the Readme.md of this project's GitHub repo)
+Interface
+
+##Custom child theme built off the Drupal Bootstrap theme framework
+Panoply, Radix, Panels
+Flat UI kit
+Shiny Metal UI Kit by Giuseppe Severo (CC BY 3.0)
+The background photograph (on pages except the book pages) was taken by me, courtesy of the Special Collections and University Archives at theUniversity of Victoria Libraries. I've released it as CC0, so you can do whatever you'd like with it (but please download it, don't hotlink!).
+
+#Milestones
 - [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
 - [x] Beta testing I (individual volunteers; January 2015)
 - [x] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
@@ -73,10 +86,14 @@ More thorough crediting of FOSS licenses, previous contributors to customized mo
 You'll notice there's already a bunch of items in [this repo's issue queue](https://github.com/amandavisconti/infinite-ulysses-public/issues); I'm currently keeping most of my tasks private in Basecamp, but I'll be moving any remaining tasks here after I begin beta-testing with members of the public. You can submit issues to tell me about bugs on the site or feature requests, or otherwise contact me about the InfiniteUlysses.com site-part of my dissertation. You might notice issues get tagged with various labels—this helps me do things like prioritize work on anything blocking use/accessibility/inclusion on the site, or keep track of good suggestions and requests that I won't have time to address during the scope of my dissertation. The "out of scope" label doesn't mean your report isn't useful—any feedback is useful! I'll just only be able to do so much while trying to finish my PhD in 2015, which means data clean-up, analysis, and drafting a scholarly article on the project as well as trying to make it a better experience for our reading community.
 
 #I want to use this!
-You can! That is, you will be able to, easily, once the code is polished and documented (and a piece provided by a colleague is published). This is a dissertational project, and some of the work at the end of the tunnel (Spring 2015) will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. They'll be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public).
+You can! That is, you will be able to, easily, once the code is polished and documented (and a piece of the code provided by a colleague is made public). This is a dissertational project, and some of the work ater I've successfully defended will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. There will be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public). You may wish to check out [my page on Infinite Ulysses IP & Copyright](http://www.infiniteulysses.com/content/ip-and-copyright) to understand what you can reuse (and how).
 
-##Documentation (not yet complete)
-This will eventually link you to resources to turn this repo into a participatory digital edition site of your own!
+##Documentation
+This will eventually link you to resources to turn this repo into a participatory digital edition site of your own (probably over Summer 2015).
 
 #Support credits
-I'm being supported by the [Maryland Institute for Technology in the Humanities'](http://mith.umd.edu) Winnemore Digital Dissertation Fellowship this year as I complete my work on the site. My dissertation work has previously been supported by the UMD English Department (Summer 2014), MITH graduate research assistantships (Webmaster, BitCurator Usability/Documentation), and the Editing Modernism in Canada Ph.D. Fellowship.
+- *The Maryland Institute for Technology in the Humanities (MITH) Winnemore Digital Dissertation Fellowship* (2014-2015)
+- Editing Modernism in Canada (EMiC) Doctoral Fellowship (2013-2014)
+- University of Maryland English Department Summer Fellowship (2014)
+- University of Maryland University Fellowship (2010-2013)
+- Funding as a graduate research assistant and course instructor from the University of Maryland English Department (Summer 2011 and Winter 2012), iSchool (2010-2011), Digital Cultures and Creativity Honors College (Fall 2012), and MITH (Summer 2011-Winter 2013, Fall 2013-Spring 2014)
