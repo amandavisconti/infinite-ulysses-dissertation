@@ -1,0 +1,29 @@
+annotation.install
+On two instances—lines 48 and 56—change
+'field_name' => 'name',
+to
+'field_name' => 'label',
+Use of reserved word was causing a Drupal error: "FieldException: Attempt to create field name <em class="placeholder">name</em> which is reserved by entity type <em class="placeholder">taxonomy_term</em>. in field_create_field() (line 93 of /Applications/MAMP/htdocs/infiniteulysses.com/modules/field/field.crud.inc)." 
+[I submitted a fix to this in the LacunaStories/Drupal-Master private repo here](https://github.com/LacunaStories/Drupal-Master/issues/5).
+
+annotation.store.inc
+On line 151, changed
+$annotation->title = 'Annotation of ' . $node->title;
+to
+$annotation->title = 'link';
+to fit display in annotation sidebar (since all displayed annotations are always on the same page, giving all the annotations on page 3 "Annotation of 3" as a title didn't make sense.
+
+annotator.module
+On line 18, changed
+drupal_add_js(array('annotator' => array('element' => variable_get('annotator_element','.node'))), 'setting');
+to
+drupal_add_js(array('annotator' => array('element' => variable_get('annotator_element','.node-type-book .col-md-8'))), 'setting');
+to fit the element digital editions using my code will want to annotate. 
+
+Also changed this on line 12 of annotator.pages.inc
+
+annotator.touch.css
+Line 97: changed to cursor: pointer; 
+
+UnsupportedAnnotatorPlugin.class.inc
+Line 20: Updated message to "Annotation is not supported by this browser or you have Javascript disabled."
