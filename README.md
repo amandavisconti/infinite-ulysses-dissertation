@@ -93,6 +93,9 @@ These were mostly one- or two-line changes; the biggest change is from lines 184
 *submitting that form.
 This makes the list of annotations associated with a highlight available to the website's server through my Highlighted Anno(tation)s module, described above.
 
+###My changes to Michael Widner's Lacuna Stories code:
+These were mostly small changes to text wording, although I did fix one site-breaking [issue](https://github.com/LacunaStories/Drupal-Master/issues/5) in the annotation.install file that Widner incorporated back into his code.
+
 ##Appearance
 * Custom child theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
 * Drupal layout modules: [Panoply](https://www.drupal.org/project/panopoly), [Radix](https://www.drupal.org/project/radix), [Panels](https://www.drupal.org/project/panels)
