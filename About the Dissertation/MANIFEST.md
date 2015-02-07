@@ -109,6 +109,14 @@ This makes the list of annotations associated with a highlight available to the 
 
 ------
 
+**Item:** My changes to Michael Widner's Lacuna Stories code
+
+**What it does (technical, research):** See [this section](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md#better-annotation-drupalization) of this repository's README for an explanation of Widner's code. Short version: he's vastly improved the Annotation and Annotator modules available on Drupal.org. He hasn't done a public release of the code yet, so I'm not posting it into my repo—but I will post a page of notes on the lines in his code that I further modified. These were mostly small changes to text wording, although I did fix one site-breaking issue in the annotation.install file that Widner incorporated back into his code.
+
+**Where to find it:** https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code
+
+------
+
 **Item:** Server and Drupal configuration
 
 **What it does (technical, research):** I installed and set up a server to run my website on; this included work like installing Ubuntu, MySQL (databases), and a mail server (to send beta-tester invitations), and modifications to make the server more secure. Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
