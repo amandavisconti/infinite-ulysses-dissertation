@@ -96,6 +96,23 @@ This makes the list of annotations associated with a highlight available to the 
 ###My changes to Michael Widner's Lacuna Stories code:
 These were mostly small changes to text wording, although I did fix one site-breaking [issue](https://github.com/LacunaStories/Drupal-Master/issues/5) in the annotation.install file that Widner incorporated back into his code. You can find notes on what I changed in his code [here](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code), and I'll share the full code once it's been released.
 
+### Other Drupal modules
+*These are linked to their information pages on Drupal.org; you can read about the latest code contributors to each there.*
+
+**Modules I've made tiny customizations to**: (e.g. applying a patch that hasn't been rolled into the current release yet; modules/custom)
+* [book_helper](https://www.drupal.org/project/book_helper)
+
+* [community_tags](https://www.drupal.org/project/community_tags)
+
+* [node_export](https://www.drupal.org/project/node_export)
+
+* [rate](https://www.drupal.org/project/rate)
+
+* [views](https://www.drupal.org/project/views)
+
+**Modules I'm using as packaged (modules/contrib)
+Installed and configured around 50 modules over the course of working on the current Drupal site; kept about 20 on the current site.
+
 ##Appearance
 * Custom child theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
 * Drupal layout modules: [Panoply](https://www.drupal.org/project/panopoly), [Radix](https://www.drupal.org/project/radix), [Panels](https://www.drupal.org/project/panels)
