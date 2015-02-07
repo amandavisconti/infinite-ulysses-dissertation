@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Book order tab styling
+ */
+
+#book-outline tr.draggable {
+  vertical-align: top;
+}
+
+#book-outline tr.hidden input {
+  background-color: #eee !important;
+}

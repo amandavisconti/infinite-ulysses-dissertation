@@ -1,0 +1,49 @@
+
+TEST SCRIPT
+-----------
+
+[Setup]
+
+- Enable module
+
+- Create a book with pages
+
+- Enable default (core) 'Book navigation' block.
+
+- Enable 'Book helper: Book (inline) navigation' block.
+
+
+[Order]
+
+- Check that 'Order' tab is visible on the main book page. (node/%/order)
+
+- Goto 'Books' admin page (admin/content/book) and confirm that
+  'edit order and titles' is displaying new UI.
+
+- Test 'sync' checkbox.
+
+- Test 'enable' checkbox. Make 'Book navigation' is hiding disable pages.
+
+- Test 'revert' empty book.
+
+[Outline]
+
+- Goto 'Administer > Content management > Books > Settings.
+  (admin/content/book/settings)
+
+- Set 'Remove outline tab from all book pages' to 'Yes'.
+
+- Verify 'Outline' tab is removed from book pages.
+
+
+[Book Navigation]
+
+- Goto 'Administer > Content management > Books > Settings.
+  (admin/content/book/settings)
+
+- Check and uncheck options under 'Select book navigation options:'.
+  Verify elements are being removed from book navigation.
+
+- Check 'Remove book navigation from all book pages.'
+  Confirm only the book helper block is visible.
+

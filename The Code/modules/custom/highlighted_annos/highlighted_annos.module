@@ -51,6 +51,7 @@ function highlighted_annos_views_pre_build(&$view) {
   }
 }
 
+// Include JS file in module folder
 function highlighted_annos_theme() {
    return array(
       'highlighted_annos_javascript' => array(

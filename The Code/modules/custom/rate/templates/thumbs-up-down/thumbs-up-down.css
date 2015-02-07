@@ -1,0 +1,90 @@
+.rate-widget-thumbs_up_down ul {
+  list-style: none;
+  overflow: hidden;
+}
+.rate-widget-thumbs_up_down ul li {
+  padding: 0px 5px 0px 5px;
+  margin: 0;
+  width: 40px;
+  float: left;
+  list-style: none;
+  background-image: none;
+}
+.rate-widget-thumbs_up_down ul li a {
+  display: block;
+  float: left;
+}
+.rate-widget-thumbs_up_down .percent {
+  float: left;
+}
+.rate-thumbs-up-down-btn-up {
+  display: inline-block;
+  background: url(nonclickedthumb-up.png) no-repeat 0 0px;
+  width: 30px;
+  height: 38px;
+}
+.rate-user .rate-thumbs-up-down-btn-up {
+  background: url(nonclickedthumb-up.png) no-repeat 0 0px;
+  float: right;
+}
+.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
+  background: url(clickedthumb-up.png) no-repeat 0 0px;
+}
+.rate-widget-thumbs_up_down .thumb-up a {
+  float: right;
+}
+.rate-thumbs-up-down-btn-down {
+  display: inline-block;
+  background: url(nonclickedthumb-down.png) no-repeat 0 0px;
+  width: 30px;
+  height: 38px;
+}
+.rate-user .rate-thumbs-up-down-btn-down {
+  background: url(nonclickedthumb-down.png) no-repeat 0 0px;
+}
+.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
+  background: url(clickedthumb-down.png) no-repeat 0 0px;
+}
+.rate-thumbs-up-down-rating-up {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-top: 3px;
+}
+.rate-thumbs-up-down-rating-down {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  padding-top: 3px;
+}
+
+@media (max-width: 992px) {
+  .rate-thumbs-up-down-btn-up {
+  background: url(Snonclickedthumb-up.png) no-repeat 0 0px;
+  width: 16px;
+  height: 20px;
+  margin: 2px 0px -4px 4px !important;
+}
+.rate-user .rate-thumbs-up-down-btn-up {
+  background: url(Snonclickedthumb-up.png) no-repeat 0 0px;
+  margin: 2px 0px -4px 4px !important;
+}
+.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
+  background: url(Sclickedthumb-up.png) no-repeat 0 0px;
+  margin: 2px 0px -4px 4px !important;
+}
+.rate-thumbs-up-down-btn-down {
+  background: url(Snonclickedthumb-down.png) no-repeat 0 0px;
+  width: 16px;
+  height: 20px;
+  margin: 3px 0px -4px 4px !important;
+}
+.rate-user .rate-thumbs-up-down-btn-down {
+  background: url(Snonclickedthumb-down.png) no-repeat 0 0px;
+  margin: 3px 0px -4px 4px !important;
+}
+.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
+  background: url(Sclickedthumb-down.png) no-repeat 0 0px;
+  margin: 3px 0px -4px 4px !important;
+}  
+}
