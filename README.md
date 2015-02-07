@@ -17,6 +17,11 @@
     * [Annotator Drupalization](#annotation-drupalization)
     * [Better Annotation Drupalization](#better-annotation-drupalization)
     * [Highlighted Anno(tation)s module](#highlighted-annotations-module)
+    * [My modifications of Annotator.js)[#my-modifications-of-annotatorjs]
+      * [Annotator.mins.css](#annotatormincss) 
+      * [Annotator-full.min.js](#annotator-fullminjs)
+    * [My changes to Michael Widner's Lacuna Stories code](#my-changes-to-michael-widners-lacuna-stories-code)
+    * [Other Drupal modules](#other-drupal-modules)
   * [Appearance](#appearance)
   * [The text](#the-text)
   * [Support credits](#support-credits)
