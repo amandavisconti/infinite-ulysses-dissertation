@@ -1,0 +1,118 @@
+$view = new view();
+$view->name = 'all_annotations_feed';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'All Annotations Feed';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'All Annotations Feed';
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'table';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['content'] = 'Below you can read through a feed of all annotations created on this site together with some related metadata. To access the RSS feed of all site annotations (including metadata not displayed in the table below), visit <a href="http://infiniteulysses.com/annotations.xml">infiniteulysses.com/annotations.xml</a>.
+
+Instructions for exporting the set of annotations and all related data in CSV format will appear here in the future. An explanation of licensing and options for filtering the dataset will appear here, as well as suggestions for exploring the dataset (e.g. basic visualization in Gephi).
+
+If you\'re a researcher (professional or otherwise) and would like to see something added to the dataset, please contact me and I\'ll see whether I can accommodate you.';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Relationship: Content: Author */
+$handler->display->display_options['relationships']['uid']['id'] = 'uid';
+$handler->display->display_options['relationships']['uid']['table'] = 'node';
+$handler->display->display_options['relationships']['uid']['field'] = 'uid';
+/* Field: Content: Annotated Content */
+$handler->display->display_options['fields']['annotation_reference']['id'] = 'annotation_reference';
+$handler->display->display_options['fields']['annotation_reference']['table'] = 'field_data_annotation_reference';
+$handler->display->display_options['fields']['annotation_reference']['field'] = 'annotation_reference';
+$handler->display->display_options['fields']['annotation_reference']['label'] = 'Page of Ulysses Annotated';
+$handler->display->display_options['fields']['annotation_reference']['settings'] = array(
+  'link' => 0,
+);
+/* Field: Content: Quote */
+$handler->display->display_options['fields']['quote']['id'] = 'quote';
+$handler->display->display_options['fields']['quote']['table'] = 'field_data_quote';
+$handler->display->display_options['fields']['quote']['field'] = 'quote';
+/* Field: Content: Text */
+$handler->display->display_options['fields']['text']['id'] = 'text';
+$handler->display->display_options['fields']['text']['table'] = 'field_data_text';
+$handler->display->display_options['fields']['text']['field'] = 'text';
+/* Field: Content: Tags */
+$handler->display->display_options['fields']['annotation_tags']['id'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['table'] = 'field_data_annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['field'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['delta_offset'] = '0';
+/* Field: User: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'users';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['relationship'] = 'uid';
+/* Field: Content: Post date */
+$handler->display->display_options['fields']['created']['id'] = 'created';
+$handler->display->display_options['fields']['created']['table'] = 'node';
+$handler->display->display_options['fields']['created']['field'] = 'created';
+$handler->display->display_options['fields']['created']['date_format'] = 'short';
+$handler->display->display_options['fields']['created']['second_date_format'] = 'long';
+/* Field: Content: Comment count */
+$handler->display->display_options['fields']['comment_count']['id'] = 'comment_count';
+$handler->display->display_options['fields']['comment_count']['table'] = 'node_comment_statistics';
+$handler->display->display_options['fields']['comment_count']['field'] = 'comment_count';
+/* Field: Content: Link */
+$handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'annotation' => 'annotation',
+);
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'all-annotations-feed';
+$handler->display->display_options['menu']['type'] = 'tab';
+$handler->display->display_options['menu']['title'] = 'Annotation Feed';
+$handler->display->display_options['menu']['weight'] = '0';
+$handler->display->display_options['menu']['name'] = 'main-menu';
+$handler->display->display_options['menu']['context'] = 0;
+$handler->display->display_options['menu']['context_only_inline'] = 0;
+
+/* Display: Feed */
+$handler = $view->new_display('feed', 'Feed', 'feed');
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['style_plugin'] = 'rss';
+$handler->display->display_options['style_options']['description'] = 'A feed of annotations on James Joyce\'s Ulysses from InfiniteUlysses.com';
+$handler->display->display_options['row_plugin'] = 'node_rss';
+$handler->display->display_options['row_options']['links'] = TRUE;
+$handler->display->display_options['path'] = 'annotations.xml';
+$handler->display->display_options['displays'] = array(
+  'page' => 'page',
+  'default' => 0,
+);

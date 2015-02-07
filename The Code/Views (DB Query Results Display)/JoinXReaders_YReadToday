@@ -1,0 +1,64 @@
+$view = new view();
+$view->name = 'join_readers';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'users';
+$view->human_name = 'Join readers';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['group_by'] = TRUE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'access user profiles';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'list';
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['inline'] = array(
+  'name_1' => 'name_1',
+  'name' => 'name',
+);
+/* Field: COUNT(User: Name) */
+$handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+$handler->display->display_options['fields']['name_1']['table'] = 'users';
+$handler->display->display_options['fields']['name_1']['field'] = 'name';
+$handler->display->display_options['fields']['name_1']['group_type'] = 'count';
+$handler->display->display_options['fields']['name_1']['label'] = '';
+$handler->display->display_options['fields']['name_1']['exclude'] = TRUE;
+$handler->display->display_options['fields']['name_1']['alter']['text'] = 'Join our [name_1] members in creating a site account for the best reading experience ';
+$handler->display->display_options['fields']['name_1']['element_label_colon'] = FALSE;
+/* Field: COUNT(DISTINCT User: Last access) */
+$handler->display->display_options['fields']['access']['id'] = 'access';
+$handler->display->display_options['fields']['access']['table'] = 'users';
+$handler->display->display_options['fields']['access']['field'] = 'access';
+$handler->display->display_options['fields']['access']['group_type'] = 'count_distinct';
+$handler->display->display_options['fields']['access']['label'] = '';
+$handler->display->display_options['fields']['access']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['access']['alter']['text'] = 'Join [name_1] Ulysses readers on this site by signing up for an account! ([access] members read some of Ulysses during the past day.)';
+$handler->display->display_options['fields']['access']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['access']['empty'] = 'Join [name_1] Ulysses readers on this site by signing up for a account!';
+$handler->display->display_options['fields']['access']['empty_zero'] = TRUE;
+/* Filter criterion: User: Active */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'users';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = '1';
+/* Filter criterion: COUNT(DISTINCT User: Last access) */
+$handler->display->display_options['filters']['access_1']['id'] = 'access_1';
+$handler->display->display_options['filters']['access_1']['table'] = 'users';
+$handler->display->display_options['filters']['access_1']['field'] = 'access';
+$handler->display->display_options['filters']['access_1']['group_type'] = 'count_distinct';
+$handler->display->display_options['filters']['access_1']['operator'] = '<=';
+$handler->display->display_options['filters']['access_1']['value']['value'] = '+1 day';
+
+/* Display: Block */
+$handler = $view->new_display('block', 'Block', 'block');

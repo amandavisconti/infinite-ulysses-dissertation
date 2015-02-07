@@ -1,0 +1,143 @@
+$view = new view();
+$view->name = 'annosidebar';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'annosidebar';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Customize';
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'post_exposed_filters';
+$handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
+$handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
+$handler->display->display_options['exposed_form']['options']['form_method'] = 'post';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'list';
+$handler->display->display_options['row_plugin'] = 'node';
+$handler->display->display_options['row_options']['view_mode'] = 'full';
+$handler->display->display_options['row_options']['comments'] = TRUE;
+/* No results behavior: Global: Text area */
+$handler->display->display_options['empty']['area']['id'] = 'area';
+$handler->display->display_options['empty']['area']['table'] = 'views';
+$handler->display->display_options['empty']['area']['field'] = 'area';
+$handler->display->display_options['empty']['area']['empty'] = TRUE;
+$handler->display->display_options['empty']['area']['content'] = 'No results have been found for this text and filter combination. If you\'re looking for help, highlight the text you\'re curious about, add your question as an annotation, and choose the "Question" category.';
+$handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+/* Relationship: Entity Reference: Referenced Entity */
+$handler->display->display_options['relationships']['annotation_reference_target_id']['id'] = 'annotation_reference_target_id';
+$handler->display->display_options['relationships']['annotation_reference_target_id']['table'] = 'field_data_annotation_reference';
+$handler->display->display_options['relationships']['annotation_reference_target_id']['field'] = 'annotation_reference_target_id';
+$handler->display->display_options['relationships']['annotation_reference_target_id']['required'] = TRUE;
+/* Relationship: Content: Vote results */
+$handler->display->display_options['relationships']['votingapi_cache']['id'] = 'votingapi_cache';
+$handler->display->display_options['relationships']['votingapi_cache']['table'] = 'node';
+$handler->display->display_options['relationships']['votingapi_cache']['field'] = 'votingapi_cache';
+$handler->display->display_options['relationships']['votingapi_cache']['votingapi'] = array(
+  'value_type' => 'points',
+  'tag' => '',
+  'function' => 'average',
+);
+/* Relationship: Content: Author */
+$handler->display->display_options['relationships']['uid']['id'] = 'uid';
+$handler->display->display_options['relationships']['uid']['table'] = 'node';
+$handler->display->display_options['relationships']['uid']['field'] = 'uid';
+/* Relationship: Userpoints: User */
+$handler->display->display_options['relationships']['uid_1']['id'] = 'uid_1';
+$handler->display->display_options['relationships']['uid_1']['table'] = 'userpoints';
+$handler->display->display_options['relationships']['uid_1']['field'] = 'uid';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Sort criterion: Global: Random */
+$handler->display->display_options['sorts']['random']['id'] = 'random';
+$handler->display->display_options['sorts']['random']['table'] = 'views';
+$handler->display->display_options['sorts']['random']['field'] = 'random';
+$handler->display->display_options['sorts']['random']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['random']['expose']['label'] = 'Show first:';
+/* Sort criterion: Vote results: Value */
+$handler->display->display_options['sorts']['value']['id'] = 'value';
+$handler->display->display_options['sorts']['value']['table'] = 'votingapi_cache';
+$handler->display->display_options['sorts']['value']['field'] = 'value';
+$handler->display->display_options['sorts']['value']['relationship'] = 'votingapi_cache';
+$handler->display->display_options['sorts']['value']['order'] = 'DESC';
+$handler->display->display_options['sorts']['value']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['value']['expose']['label'] = 'Top-Rated';
+$handler->display->display_options['sorts']['value']['coalesce'] = 1;
+/* Sort criterion: Vote results: Value */
+$handler->display->display_options['sorts']['value_1']['id'] = 'value_1';
+$handler->display->display_options['sorts']['value_1']['table'] = 'votingapi_cache';
+$handler->display->display_options['sorts']['value_1']['field'] = 'value';
+$handler->display->display_options['sorts']['value_1']['relationship'] = 'votingapi_cache';
+$handler->display->display_options['sorts']['value_1']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['value_1']['expose']['label'] = 'Lowest Rated';
+$handler->display->display_options['sorts']['value_1']['coalesce'] = 1;
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+$handler->display->display_options['sorts']['created']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['created']['expose']['label'] = 'Newest';
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created_1']['id'] = 'created_1';
+$handler->display->display_options['sorts']['created_1']['table'] = 'node';
+$handler->display->display_options['sorts']['created_1']['field'] = 'created';
+$handler->display->display_options['sorts']['created_1']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['created_1']['expose']['label'] = 'Oldest';
+/* Sort criterion: Content: Comment count */
+$handler->display->display_options['sorts']['comment_count']['id'] = 'comment_count';
+$handler->display->display_options['sorts']['comment_count']['table'] = 'node_comment_statistics';
+$handler->display->display_options['sorts']['comment_count']['field'] = 'comment_count';
+$handler->display->display_options['sorts']['comment_count']['order'] = 'DESC';
+$handler->display->display_options['sorts']['comment_count']['exposed'] = TRUE;
+$handler->display->display_options['sorts']['comment_count']['expose']['label'] = 'Most commented';
+/* Contextual filter: Content: Nid */
+$handler->display->display_options['arguments']['nid']['id'] = 'nid';
+$handler->display->display_options['arguments']['nid']['table'] = 'node';
+$handler->display->display_options['arguments']['nid']['field'] = 'nid';
+$handler->display->display_options['arguments']['nid']['relationship'] = 'annotation_reference_target_id';
+$handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+$handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+$handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+$handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+$handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+$handler->display->display_options['arguments']['nid']['break_phrase'] = TRUE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = '1';
+$handler->display->display_options['filters']['status']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_1']['id'] = 'nid_1';
+$handler->display->display_options['filters']['nid_1']['table'] = 'node';
+$handler->display->display_options['filters']['nid_1']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_1']['group'] = 1;
+$handler->display->display_options['filters']['nid_1']['exposed'] = TRUE;
+$handler->display->display_options['filters']['nid_1']['expose']['operator_id'] = 'nid_1_op';
+$handler->display->display_options['filters']['nid_1']['expose']['operator'] = 'nid_1_op';
+$handler->display->display_options['filters']['nid_1']['expose']['identifier'] = 'nid_1';
+$handler->display->display_options['filters']['nid_1']['expose']['remember_roles'] = array(
+  2 => '2',
+  1 => 0,
+  4 => 0,
+  3 => 0,
+);
+
+/* Display: Block */
+$handler = $view->new_display('block', 'Block', 'annosidebar');
