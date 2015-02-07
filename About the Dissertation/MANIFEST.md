@@ -117,6 +117,16 @@ This makes the list of annotations associated with a highlight available to the 
 
 ------
 
+**Item:** Drupal View exports
+
+**What it does (technical, research):** "Views" is an extremely useful Drupal module that gives you an user interface for creating displays of database queries. I've used it to learn how write SQL queries. 
+
+Why would you want to query the Drupal database? All the site information is in there, so you can do things like ask the database to send annotations that were authored in the month of January by users who accessed the site more than once and have at least one piece upvoted annotation. It's the back end of the filtering options you see on the book pages' sidebar, which lets me make fine-grained requests to filter what data is shown.
+
+**Where to find it:** [My Views exports](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/Views%20(DB%20Query%20Results%20Display))
+
+------
+
 **Item:** Server and Drupal configuration
 
 **What it does (technical, research):** I installed and set up a server to run my website on; this included work like installing Ubuntu, MySQL (databases), and a mail server (to send beta-tester invitations), and modifications to make the server more secure. Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
