@@ -273,3 +273,8 @@ Installed and configured around 50 modules over the course of working on the cur
 
 **Item:** RSS/XML feed of annotations updating as they are added to the site for research and artistic use.
 **Where to find it:** http://www.infiniteulysses.com/all-annotations-feed
+
+------
+
+**Item:** Twitter for public outreach
+**Where to find it:** Not easily quantifiable, but I've used Twitter to share my progress, research blog posts, and other news related to the dissertation with others in my field to good effect. I've had about 200 people sign up to beta-test my digital edition (as of 2/6/2015), and that's probably mostly through Twitter publicity. I currently have 1,731 followers (a number that increased steadily starting when I began tweeting my dissertation three years ago). A [a dissertation tweet I made yesterday](https://twitter.com/Literature_Geek/status/563457579243016192) had 888 impressions ("number of times users saw the tweet on Twitter") on Twitter (according to Twitter Analytics), and a [January tweet](https://twitter.com/Literature_Geek/status/554713283471880192) reminding people about the 3-minute video explaining my dissertation was seen by 2,070 people.
