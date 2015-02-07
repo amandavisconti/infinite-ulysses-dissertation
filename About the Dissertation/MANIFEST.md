@@ -122,6 +122,24 @@ This makes the list of annotations associated with a highlight available to the 
 **What it does (technical, research):** I installed and set up a server to run my website on; this included work like installing Ubuntu, MySQL (databases), and a mail server (to send beta-tester invitations), and modifications to make the server more secure. Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
 
 ------
+
+## Modules used on Infinite Ulysses
+*These will be linked to their information pages on Drupal.org; you can read about the latest code contributors to each there.*
+**Modules I've made tiny customizations to: (e.g. applying a patch that hasn't been rolled into the current release yet; modules/custom)**
+* [book_helper](https://www.drupal.org/project/book_helper)
+
+* [community_tags](https://www.drupal.org/project/community_tags)
+
+* [node_export](https://www.drupal.org/project/node_export)
+
+* [rate](https://www.drupal.org/project/rate)
+
+* [views](https://www.drupal.org/project/views)
+
+**Modules I'm using as packaged (modules/contrib)
+Installed and configured around 50 modules over the course of working on the current Drupal site; kept about 20 on the current site.
+
+------
 ------
 ##Research writing
 **Item:** LiteratureGeek.com blog posts
