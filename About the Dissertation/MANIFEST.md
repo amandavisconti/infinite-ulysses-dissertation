@@ -135,7 +135,9 @@ Why would you want to query the Drupal database? All the site information is in 
 
 **Item:** Server and Drupal configuration
 
-**What it does (technical, research):** I installed and set up a server to run my website on; this included work like installing Ubuntu, MySQL (databases), and a mail server (to send beta-tester invitations), and modifications to make the server more secure. Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
+**What it does (technical, research):** I installed and set up multiple servers to run my website on; this included work like installing Ubuntu, MySQL (databases), and a mail server (to send beta-tester invitations), and modifications to make the server more secure. At the time of writing (2/6/2015), I have three servers up and running: one for my live InfiniteUlysses.com site, another online server for development use, and a local MAMP server for quick testing.
+
+Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
 
 ------
 
