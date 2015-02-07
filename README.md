@@ -57,14 +57,14 @@ Initial configuration on a Drupal site is currently a bit involved. Tags can be 
 ###Better Annotation Drupalization
 I'm currently using improved versions of these two modules, created by Michael Widner (@mwidner) of Stanford's Lacuna Stories project and graciously shared with me (yay digital humanities community!). That code is not yet shared publicly, as the Lacuna Stories project has not yet made their code public (but plans to do so). Until that code is made public, it won't appear in this repository. 
 
-Where I've made changes to Michael's code, I'll include a note in the repository that records my work without revealing his code.
+Where I've made changes to Michael's code, [I'll include a note in the repository](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code) that records my work without revealing his code.
 
 ###Highlighted Anno(tation)s Module
-"highlighted_annos" is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
+["highlighted_annos"](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/modules/custom/highlighted_annos) is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
 
 By replacing the Annotator.js pop-up annotation display with a Views (Drupal SQL query module) block, I was able to alter both the design and functionality of the annotation feature (e.g. adding display of and interaction with a rating widget, commenting on annotations, tagging by users other than the annotation's author with separation of "my tags" from "all tags" on a given annotation for the current logged-in user). I was also able to improve the display of annotations when there were multiple annotations for a given highlight, adding an option to sort displayed annotations by highest- or lowest-rated, oldest or newest date, or most commented-on.
 
-The module includes three files:
+[The module](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/modules/custom/highlighted_annos) includes three files:
 * highlighted_annos.info file: Contains basic module metadata (e.g. Drupal version, author)
 * highlighted_annos.js: A 22-line jQuery (a Javascript library) file; handles the user's input (the "client side" code handling everything that happens in your browser before information is sent to my website's server)
 * highlighted_annos.module file: A 67-line PHP file handling information once it's passed from the "client side" to my website's server. Accomplishes tasks including:
