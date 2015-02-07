@@ -152,9 +152,18 @@ Why would you want to query the Drupal database? All the site information is in 
 
 * [views](https://www.drupal.org/project/views)
 
-## Modules I'm using as packaged (modules/contrib)
+------
 
+## Modules I'm using as packaged (modules/contrib)
 Installed and configured around 50 modules over the course of working on the current Drupal site; kept about 20 on the current site.
+
+------
+
+**Item:** Accepted commits to others' code projects
+
+**What it does (technical, research):** I made two fixes to other people's code that they then incorporated back into their own copy of the code:
+* accepted commit to another DH GitHub repo (currently in [a private repo](https://github.com/LacunaStories/Drupal-Master/commit/a2b3d1c317625e7427de11b549a8b6e653442af3))
+* 1 accepted patch to a Drupal module (Annotation; [patch issue here](https://www.drupal.org/node/2329271))
 
 ------
 ------
