@@ -7,6 +7,10 @@ files/
 sites/*/files
 sites/*/private
 
+#Ignore Lacuna Stories code until it's made public
+sites/all/modules/custom/annotation
+sites/all/modules/custom/annotator
+
 # Ignore default text files
 robots.txt
 /CHANGELOG.txt
@@ -20,7 +24,7 @@ sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
 
-# Ignore everything but the "sites" folder ( for non core developer )
+# Ignore everything but the "sites" folder
 .htaccess
 web.config
 authorize.php
@@ -31,5 +35,7 @@ update.php
 xmlrpc.php
 /includes
 /misc
+/modules
 /profiles
 /scripts
+/themes
