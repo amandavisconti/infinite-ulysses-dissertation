@@ -1,0 +1,10 @@
+name = Throwaway 
+description = A Kalatheme subtheme powered by Twitter Bootstrap & Science. 
+base theme = kalatheme 
+core = 7.x 
+
+regions[content] = Content
+
+stylesheets[all][] = css/main.css
+
+scripts[] = js/throwaway.js

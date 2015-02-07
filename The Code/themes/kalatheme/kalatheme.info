@@ -1,0 +1,46 @@
+name = Kalatheme
+description = A flexible, responsive, lightweight and mobile-first theme built on Panopoly and powered by Twitter Bootstrap.
+core = 7.x
+php = 5.3
+
+regions[content] = content
+
+stylesheets[all][] = dist/css/kalatheme.min.css
+
+scripts[] = dist/js/kalatheme.pkg.min.js
+
+;Uncomment if needed
+;scripts[] = dist/js/kalatheme.pkg.js
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 0
+settings[toggle_comment_user_picture] = 0
+settings[toggle_comment_user_verification] = 0
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+
+settings[responsive_toggle] = 1
+settings[pane_styles_toggle] = 1
+settings[always_show_page_title] = 0
+settings[build_subtheme] = 0
+settings[icon_font_library] = font_awesome
+settings[font_awesome_cdn] = 1
+
+plugins[panels][styles] = styles
+
+; Information added by Drupal.org packaging script on 2014-12-10
+version = "7.x-4.0-alpha1"
+core = "7.x"
+project = "kalatheme"
+datestamp = "1418187483"
+
