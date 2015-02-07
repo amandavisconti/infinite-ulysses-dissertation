@@ -235,7 +235,7 @@ Installed and configured around 50 modules over the course of working on the cur
 ##Miscellaneous
 **Item**: This manifest document and this repository
 
-**What it does (technical, research):** This manifest took considerable time to create (roughly two work days); tasks included tracking down files I've altered since beginning the dissertation, figuring out how to quantify codework, and translating technical jargon to explanations free from technical vocabulary. I've also worked throughout the repository on clearly documenting code provenance and usage; the [README file](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md) at the front of the repository is especially thorough in explaining my project and how items in this repository tie into the project.
+**What it does (technical, research):** This manifest took considerable time to create (roughly two work days); tasks included tracking down files I've altered since beginning the dissertation, figuring out how to quantify codework, and translating technical jargon to explanations free from technical vocabulary. I've also worked throughout the repository on clearly documenting code provenance and usage; the [README file](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md) at the front of the repository is especially thorough in explaining my project and how items in this repository tie into the project. Other notable pages are [the explanation of my project scope](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/SCOPE.md), an [overview of the deliverables](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/About%20the%20Dissertation/UMBRELLA.md) I'll submit to my committee and the registrar at my defense, and [instructions on installing and configuring annotation on Drupal sites](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Technical%20Instructions/DrupalAnnotationSetUp.md).
 
 ------
 **Item:** 3 fellowship/scholarships in support of the project received (MITH Winnemore Digital Dissertation Fellowship 2014-2015, Editing Modernism in Canada Ph.D. Fellowship 2013-2014, UMD English Summer Fellowship 2014)
@@ -266,3 +266,8 @@ Installed and configured around 50 modules over the course of working on the cur
 **Item:** 14 site pages authored, including an overview of my research, information about IP and copyright on the site, and information on the text used for the book pages. 
 
 **Where to find it:** All pages are available from the drop-down menu in the InfiniteUlysses.com site header.
+
+------
+
+**Item:** RSS/XML feed of annotations updating as they are added to the site for research and artistic use.
+**Where to find it:** http://www.infiniteulysses.com/all-annotations-feed
