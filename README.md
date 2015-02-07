@@ -13,7 +13,7 @@
 * [Provenance of included code](#provenance-of-included-code)
   * [Functionality](#functionality)
   * [Appearance](#appearance)
-  * [The Text](#the-text)
+  * [The text](#the-text)
   * [Support credits](#support-credits)
 * [I want to use this!](#i-want-to-use-this)
   * [Documentation](#documentation)
