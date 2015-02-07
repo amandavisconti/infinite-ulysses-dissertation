@@ -49,6 +49,12 @@ The largest amount of research time (thinking, sketching, reading, translating d
 * page analytics
 * loading time /speculative experiment
 
+My theme contains 1,398 lines of CSS I authored (as of February 6, 2015). 
+
+My theme also contains [4 template files (PHP)](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/themes/throwaway/templates/core) that I have modified with a few lines of PHP each.
+
+There is also a [template.php file](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/themes/throwaway/template.php) I authored (53 lines of PHP) that changes the display of user account information and allows the [4 other template files](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/themes/throwaway/templates/core) to be read.
+
 **Where to find it:** Visible on [the Infinite Ulysses digital edition](http://www.infiniteulysses.com), and also stored in [this repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code). 
 
 See also [various dated screenshot files here](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Screenshots), especially comparing the current book page design with its [first](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Miscellaneous/Screenshots/4-13-2013_1stBookPageDesigninAI.png) and [second](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/Miscellaneous/Screenshots/4-13-2014_2ndWireframeBookPageDesigninAI.jpg) wireframe iterations back in Spring 2013.
