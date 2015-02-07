@@ -136,7 +136,8 @@ This makes the list of annotations associated with a highlight available to the 
 
 * [views](https://www.drupal.org/project/views)
 
-**Modules I'm using as packaged (modules/contrib)
+## Modules I'm using as packaged (modules/contrib)
+
 Installed and configured around 50 modules over the course of working on the current Drupal site; kept about 20 on the current site.
 
 ------
