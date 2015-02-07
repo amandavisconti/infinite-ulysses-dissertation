@@ -233,9 +233,9 @@ Installed and configured around 50 modules over the course of working on the cur
 ------
 ------
 ##Miscellaneous
-**Item**: This manifest document
+**Item**: This manifest document and this repository
 
-**What it does (technical, research):** This manifest took considerable time to create (roughly three work days); tasks included tracking down files I've altered since beginning the dissertation, figuring out how to quantify codework, and translating technical jargon to explanations free from technical vocabulary.
+**What it does (technical, research):** This manifest took considerable time to create (roughly two work days); tasks included tracking down files I've altered since beginning the dissertation, figuring out how to quantify codework, and translating technical jargon to explanations free from technical vocabulary. I've also worked throughout the repository on clearly documenting code provenance and usage; the [README file](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md) at the front of the repository is especially thorough in explaining my project and how items in this repository tie into the project.
 
 ------
 **Item:** 3 fellowship/scholarships in support of the project received (MITH Winnemore Digital Dissertation Fellowship 2014-2015, Editing Modernism in Canada Ph.D. Fellowship 2013-2014, UMD English Summer Fellowship 2014)
@@ -255,3 +255,14 @@ Installed and configured around 50 modules over the course of working on the cur
 **What it does (technical, research):** An affinity wall is a mind-mapping technique I learned during my iSchool degree. I used it to draft an outline for my scholarly article. See also [this blog post on how I created the affinity wall](http://www.literaturegeek.com/2014/04/28/affinitywallarticle/).
 
 **Where to find it:** https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Affinity%20Wall%20Photos%20(Article%20Outlining)
+
+------
+
+**Item:** 221 annotations to James Joyce's Ulysses authored on InfiniteUlysses.com as of 2/6/2015.
+**What it does (technical, research):** These are annotations aimed at first-time readers covering the low fruit of expected reader questions for the first two episodes of the novel. These annotations were built on annotations I'd authored on my old UlyssesUlysses.com project, but they were edited and often expanded for the new project.
+
+------
+
+**Item:** 14 site pages authored, including an overview of my research, information about IP and copyright on the site, and information on the text used for the book pages. 
+
+**Where to find it:** All pages are available from the drop-down menu in the InfiniteUlysses.com site header.
