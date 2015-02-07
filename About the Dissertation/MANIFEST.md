@@ -172,7 +172,7 @@ Installed and configured around 50 modules over the course of working on the cur
 ##Research writing
 **Item:** LiteratureGeek.com blog posts
 
-**What it does (technical, research):** A research blog with 31 posts (average length: 2,000-3,000 words) plus crosspostings to HASTAC.org plus 2 unique blog posts at mith.umd.edu. Posts are moderately polished; think somewhere between first and final draft level of writing: academic blogging is fast but careful about reaching its scholarly audience.
+**What it does (technical, research):** A research blog with 31 posts (average length: 2,000-3,000 words) plus crosspostings to HASTAC.org plus 2 unique blog posts at mith.umd.edu. Posts are moderately polished; think somewhere between first and final draft level of writing: academic blogging is fast but careful about reaching its scholarly audience. 11 of my LiteratureGeek.com posts have been highlighted on [Digital Humanities Now](http://digitalhumanitiesnow.org/), the main aggregator of quality written content for the digital humanites.
 
 **Where to find it:** http://www.literaturegeek.com/category/dissertation/; http://www.hastac.org/blogs/amanda-visconti; http://mith.umd.edu/invitation-beta-test-infinite-ulysses-digital-edition/ and http://mith.umd.edu/infinite-ulysses-designing-public-humanities-conversation/
 
