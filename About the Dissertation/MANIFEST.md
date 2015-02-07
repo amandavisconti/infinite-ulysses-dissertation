@@ -139,6 +139,8 @@ Why would you want to query the Drupal database? All the site information is in 
 
 Drupal configuration consisted of using various forms on the Drupal administration pages; these are pages created by Drupal or by modules I'd installed that allow for easy, code-free customization of the site.
 
+I also spent considerable time doing web development and systems administration work with Islandora (a combination of Drupal and Fedora), but didn't ultimately build my site on that installation.
+
 ------
 
 ## Modules used on Infinite Ulysses
@@ -202,7 +204,7 @@ Installed and configured around 50 modules over the course of working on the cur
 ##Scholarly Editing
 **Item:** Typographical formatting, proofing and error correction, and data formatting on the digital text of Ulysses
 
-**What it does (technical, research):** This site builds off the digital plaintext transcription of the 1922 first printing of Ulysses, transcribed by Matthew Kochis and Patrick Belk with the Modernist Versions Project (MVP) and offered for public reuse by the MVP under a CC BY SA license. I've added corrections to errors I located in that digital transcription, used regular expressions to reintroduce some basic formatting (e.g. indent and em dash before lines of dialogue), and manually am adding HTML/CSS as I read through the text to reintroduce extremely important typographical choices used in the 1922 first printing of the novel (as verified against the Modernist Versions Project's digital images of the printing; decisions such as the all-caps headlines in the Aeolus episode).
+**What it does (technical, research):** This site builds off the digital plaintext transcription of the 1922 first printing of Ulysses, transcribed by Matthew Kochis and Patrick Belk with the Modernist Versions Project (MVP) and offered for public reuse by the MVP under a CC BY SA license. I have added corrections to errors I located in that digital transcription (20 as of 2/6/2015), used regular expressions to reintroduce some basic formatting (e.g. indent and em dash before lines of dialogue), and manually am adding HTML/CSS as I read through the text to reintroduce extremely important typographical choices used in the 1922 first printing of the novel (as verified against the Modernist Versions Project's digital images of the printing; decisions such as the all-caps headlines in the Aeolus episode).
 
 **Where to find it:** The most up-to-date list of textual corrections can be found on the [Text page](http://www.infiniteulysses.com/content/text) on Infinite Ulysses. I've also created [a public repository](https://github.com/amandavisconti/ulysses) offering the text of Ulysses as HTML files (with my added typographical formatting and error correction) and files suitable for import into a Drual site (CSVs and .import/.export files).
 
