@@ -15,5 +15,5 @@ The items I'll be submitting to my dissertation committee and the registrar at t
   * Warc of digital edition *in ZIP folder*
 * Official folder *as PDFs*
   * IRB Waiver
-  * Written consent to dissertation format from: library repository manager, dean of the graduate school, department graduate chair, committee members
+  * Written consent (email PDFs) to dissertation format from: library repository manager, dean of the graduate school, department graduate chair
   * Nomination of Thesis or Dissertation Committe form
