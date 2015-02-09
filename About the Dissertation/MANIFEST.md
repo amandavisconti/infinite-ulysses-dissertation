@@ -14,7 +14,7 @@ Note: creating design wireframes, writing, code, and other web development activ
 
 * [Scholarly editing](#scholarly-editing)
   
-* [Public humanities](#talks-and-presentations)
+* [Talks and presentations](#talks-and-presentations)
   
 * [Miscellaneous](#miscellaneous)
 
