@@ -15,6 +15,7 @@ I'll refer to the two modules as "Annotator" and "Annotation" throughout, and us
 
 1. Rename /libraries/annotator folder as just "annotator" and place in your sites/all/libraries folder (create a libraries folder there if you don't already have one).
 2. Install the two modules as usual (sites/all/modules) and enable both on the modules admin page.
+2a. The [jQuery Update module](https://www.drupal.org/project/jquery_update) is a dependency, so install and enable that as well. I've found that annotation works or doesn't work depending on your settings in this module; my settings (at admin/config/development/jquery_update) are currently 1.8, default, development, and none. Earlier versions of jQuery are especially likely to cause isuses.
 3. Set permissions for Annotation (admin/people/permissions#module-annotation) and Annotator (http://www.infiniteulysses.com/admin/people/permissions#module-annotator). The Annotator permissions are where you can choose which roles can view, create, and edit the annotations.
 4. Configure the Annotator module (admin/config/content/annotator). I recommend turning on the following plugins all at the same time:
     Store (lets you store annotations to the Drupal database)
