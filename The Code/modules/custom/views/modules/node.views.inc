@@ -705,12 +705,13 @@ function node_views_plugins() {
 function node_row_node_view_preprocess_node(&$vars) {
   $node = $vars['node'];
   $options = $vars['view']->style_plugin->row_plugin->options;
-/* //Amanda: removing this to see if comments will show up in node view block
+
   // Prevent the comment form from showing up if this is not a page display.
+  /* //Amanda: removing this to see if comments will show up in node view block
   if ($vars['view_mode'] == 'full' && !$vars['view']->display_handler->has_path()) {
     $node->comment = FALSE;
-  }
-*/
+  }*/
+
   if (!$options['links']) {
     unset($vars['content']['links']);
   }
