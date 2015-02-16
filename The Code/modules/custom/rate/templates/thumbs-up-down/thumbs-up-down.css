@@ -88,3 +88,9 @@
   margin: 3px 0px -4px 4px !important;
 }  
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 991px) {
+.rate-thumbs-up-down-btn-down {
+margin: 6.5px 0px -4px 4px !important;
+}
+}

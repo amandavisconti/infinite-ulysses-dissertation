@@ -1,6 +1,6 @@
 <?php 
+// Amanda
 /** 
- * @file 
  * Primary pre/preprocess functions and alterations.
  */ 
 
@@ -51,3 +51,12 @@ function throwaway_preprocess_user_picture(&$variables) {
     }
   }
 } 
+
+/* Bookmark flags as images instead of text */
+function throwaway_preprocess_flag(&$vars) {
+    $image_file = $vars['directory'] . '/img/icons/toggle-' . ($vars['action'] == 'flag' ? 'off' : 'on') . '.png';
+    if (file_exists($image_file)) {
+      $image = theme_image(array('path' => $image_file, 'attributes' => array('class' => array('MY-CLASS'))));
+      $vars['link_text'] = $image;
+    }
+}
