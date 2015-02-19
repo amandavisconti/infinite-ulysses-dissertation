@@ -1,6 +1,7 @@
 A list of resources on codes of conduct, charters, professional ethics, accessibility statements, moderation policies, and other means of creating inclusive online communities I've gathered while working on InfiniteUlysses.com's [Terms of Use](http://www.infiniteulysses.com/content/terms-use) and [User Rights](http://www.infiniteulysses.com/content/user-rights) pages.
 
 * https://www.reddit.com/wiki/reddiquette
+* http://blog.stackoverflow.com/2009/05/a-theory-of-moderation/
 * https://www.reddit.com/help/useragreement
 * http://blog.izs.me/post/30036893703/policy-on-trolling
 * https://adainitiative.org/2014/02/howto-design-a-code-of-conduct-for-your-community/
