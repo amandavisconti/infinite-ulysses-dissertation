@@ -32,7 +32,7 @@ $handler->display->display_options['empty']['area']['id'] = 'area';
 $handler->display->display_options['empty']['area']['table'] = 'views';
 $handler->display->display_options['empty']['area']['field'] = 'area';
 $handler->display->display_options['empty']['area']['empty'] = TRUE;
-$handler->display->display_options['empty']['area']['content'] = 'No results have been found for this text and filter combination. If you\'re looking for help, highlight the text you\'re curious about, add your question as an annotation, and choose the "Question" category.';
+$handler->display->display_options['empty']['area']['content'] = 'No annotations have been found on this page. Either this page has no annotations yet, or the filter you\'ve set above return none of the annotations on this page. If you\'re looking for help reading, highlight the text you\'re curious about, add your question as an annotation, and add the tag "question".';
 $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
 /* Relationship: Entity Reference: Referenced Entity */
 $handler->display->display_options['relationships']['annotation_reference_target_id']['id'] = 'annotation_reference_target_id';
