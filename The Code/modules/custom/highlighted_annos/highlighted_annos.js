@@ -1,3 +1,4 @@
+/* Amanda: patched via this workaround: https://www.drupal.org/node/1543752#comment-7393666 */
 (function ($) {
   Drupal.behaviors.ViewsExposedFormFix = {
     attach: function() {
