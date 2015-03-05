@@ -36,7 +36,7 @@
 {
 	position: absolute;
 	font-size: 10px;
-	line-height: 1;
+	line-height: 2;
 }
 
 .annotator-hide
@@ -469,7 +469,6 @@
 	overflow: hidden;
 	line-height: 10px;
 	padding: 2px 0;
-	margin-right: 8px;
 }
 
 .annotator-filter .annotator-filter-property label,.annotator-filter .annotator-filter-navigation button
@@ -585,6 +584,12 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 .annotator-filter .annotator-filter-property label {
-line-height: 1.45em;
+line-height: 1.45em !important;
+background: #cccccc;
 }
+}
+
+.not-logged-in .annotator-adder
+{
+ display: none !important; 
 }
