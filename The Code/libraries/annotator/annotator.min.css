@@ -588,8 +588,3 @@ line-height: 1.45em !important;
 background: #cccccc;
 }
 }
-
-.not-logged-in .annotator-adder
-{
- display: none !important; 
-}
