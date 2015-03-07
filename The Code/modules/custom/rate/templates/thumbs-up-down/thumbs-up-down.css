@@ -1,14 +1,17 @@
 .rate-widget-thumbs_up_down ul {
   list-style: none;
   overflow: hidden;
+  margin: -22px 0px 0px 0px !important;
+  height: 45px;
 }
 .rate-widget-thumbs_up_down ul li {
-  padding: 0px 5px 0px 5px;
-  margin: 0;
+  padding: 0px !important;
+  margin: 0px 0px 0px 0px !important;
   width: 40px;
   float: left;
   list-style: none;
   background-image: none;
+  text-align: center;
 }
 .rate-widget-thumbs_up_down ul li a {
   display: block;
@@ -16,12 +19,14 @@
 }
 .rate-widget-thumbs_up_down .percent {
   float: left;
+  margin: -12px 0px 0px 0px;
 }
 .rate-thumbs-up-down-btn-up {
   display: inline-block;
   background: url(nonclickedthumb-up.png) no-repeat 0 0px;
-  width: 30px;
-  height: 38px;
+  width: 15px;
+  height: 19px;
+  margin: 0px 15px 15px 0px;
 }
 .rate-user .rate-thumbs-up-down-btn-up {
   background: url(nonclickedthumb-up.png) no-repeat 0 0px;
@@ -36,8 +41,9 @@
 .rate-thumbs-up-down-btn-down {
   display: inline-block;
   background: url(nonclickedthumb-down.png) no-repeat 0 0px;
-  width: 30px;
-  height: 38px;
+  width: 15px;
+  height: 19px;
+  margin: 0px 15px 15px 0px;
 }
 .rate-user .rate-thumbs-up-down-btn-down {
   background: url(nonclickedthumb-down.png) no-repeat 0 0px;
@@ -58,39 +64,10 @@
   padding-top: 3px;
 }
 
-@media (max-width: 992px) {
-  .rate-thumbs-up-down-btn-up {
-  background: url(Snonclickedthumb-up.png) no-repeat 0 0px;
-  width: 16px;
-  height: 20px;
-  margin: 2px 0px -4px 4px !important;
-}
-.rate-user .rate-thumbs-up-down-btn-up {
-  background: url(Snonclickedthumb-up.png) no-repeat 0 0px;
-  margin: 2px 0px -4px 4px !important;
-}
-.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
-  background: url(Sclickedthumb-up.png) no-repeat 0 0px;
-  margin: 2px 0px -4px 4px !important;
-}
-.rate-thumbs-up-down-btn-down {
-  background: url(Snonclickedthumb-down.png) no-repeat 0 0px;
-  width: 16px;
-  height: 20px;
-  margin: 3px 0px -4px 4px !important;
-}
-.rate-user .rate-thumbs-up-down-btn-down {
-  background: url(Snonclickedthumb-down.png) no-repeat 0 0px;
-  margin: 3px 0px -4px 4px !important;
-}
-.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
-  background: url(Sclickedthumb-down.png) no-repeat 0 0px;
-  margin: 3px 0px -4px 4px !important;
-}  
+.rate-widget {
+margin: 0px 0px 0px 120px !important;  
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 991px) {
-.rate-thumbs-up-down-btn-down {
-margin: 6.5px 0px -4px 4px !important;
-}
+.comment .rate-widget {
+margin: 5px 0px 10px 90px !important;  
 }
