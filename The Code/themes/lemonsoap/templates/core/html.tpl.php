@@ -73,7 +73,7 @@
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main" class="element-focusable element-invisible"><?php print t('Skip to main content'); ?></a>
-    <a href="#main-navigation" class="element-focusable element-invisible"><?php print t('Skip to main  navigation'); ?></a>
+    <a href="#main-navigation" class="element-focusable element-invisible"><?php print t('Skip to main navigation'); ?></a>
   </div>
 <?php print $page_top; ?>
 
@@ -91,7 +91,7 @@ print $block['content'];
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 <!-- CrazyEgg Heatmapping Script -->
-  <script type="text/javascript">
+<script type="text/javascript">
 setTimeout(function(){var a=document.createElement("script");
 var b=document.getElementsByTagName("script")[0];
 a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0030/2710.js?"+Math.floor(new Date().getTime()/3600000);

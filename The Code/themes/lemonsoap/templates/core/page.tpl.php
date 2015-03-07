@@ -126,5 +126,4 @@
 
     </main><!-- /#main -->
   </div> <!-- /#main-wrapper -->
-<div id="backtotop"><a href='<?php print $front_page; ?>' title="Back to the Home page"><b>HOME</b></a> | <a href="#" title="To the top of this page"><b>BACK TO TOP</b></a></div>
 </div></div></div> <!-- /#page, /#page-wrapper -->
