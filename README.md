@@ -127,7 +127,6 @@ Installed and configured around 50 modules over the course of working on the cur
 * Custom child theme built off the Drupal Bootstrap theme framework (using [Kalatheme](https://www.drupal.org/project/kalatheme))
 * Drupal layout modules: [Panoply](https://www.drupal.org/project/panopoly), [Radix](https://www.drupal.org/project/radix), [Panels](https://www.drupal.org/project/panels)
 *[Flat UI kit](https://designmodo.github.io/Flat-UI/) by Designmodo
-*The background photograph (on pages except the book pages) was taken by me, courtesy of the Special Collections and University Archives at the University of Victoria Libraries. I've released it as CC0, so you can do whatever you'd like with it (but please download it, don't hotlink!).  
 * CC-BY vector graphics for the front page and annotation upvoting function: 
   * [metal funnel by IconEden](http://www.veryicon.com/icons/system/fresh-addon/funnel.html) 
   * [highlighter by PSDgraphics.com](http://www.freepik.com/free-psd/psd-yellow-highlighter-pen-icon_567694.htm)
