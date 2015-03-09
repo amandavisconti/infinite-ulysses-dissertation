@@ -285,6 +285,10 @@ padding: 10px 20px 0px 20px;
 margin: -55px 0px 0px 120px;
 }
 
+.page-taxonomy .fa-star {
+z-index: 9000;
+}
+
 .page-taxonomy .content .form-item {
 float: right;
 }
@@ -457,7 +461,7 @@ ul.nice-menu a {
 padding: 0.3em 5px 0.3em 5px;
 }
 
-.menu-1610 a, .menu-2 a {
+.menu-1610 a, .menu-2 a, .menu-3254 a {
 padding: 15px 5px 15px 5px !important; 
 margin-top: -12px !important;
 color: #FFFFFF !important;
@@ -469,7 +473,7 @@ margin-top: -12px !important;
 color: #FFFFFF !important;
 }
 
-.menu-1610 a:hover, .menu-2 a:hover {
+.menu-1610 a:hover, .menu-2 a:hover, .menu-3254 a:hover {
 background: #16a085 !important;
 border: 1px solid #16a085 !important;
 }
@@ -951,6 +955,15 @@ vertical-align: middle;
 white-space: nowrap;
 }
 
+.gn-menu .view-my-bookmarks-view .view-empty {
+padding-left: 50px;
+  padding-right: 30px;
+}
+
+.node-type-page .pane-most-popular-book-pages div {
+padding-left: 5px;
+}
+
 /* Colors ************************************************/
 
 ul.nav-pills {
@@ -1010,7 +1023,7 @@ padding: 19px;
 margin-top: 23px;
 }
 
-.menu-1610 a, .menu-1632 a, .menu-2 a, .menu-15 a {
+.menu-1610 a, .menu-1632 a, .menu-2 a, .menu-15 a, .menu-3254 a {
 -moz-user-select: none;
 background-color: #2780e3;
 border: 1px solid #2780e3;
@@ -1100,6 +1113,44 @@ right: 0;
 .menu-path-user-login a, .menu-path-user-logout  {
 z-index: 450;
 position: relative;
+}
+
+#block-block-16 {
+     background: none repeat scroll 0% 0% #c0392b;
+     color: #ffffff;
+     font-size: 1.5em;
+     font-weight: bold;
+     padding: 5px 2px 1px;
+  margin-left: 30px;
+}
+
+#block-block-16 a {
+     color: #ecf0f1;
+     text-decoration: underline;
+}
+
+.page-tour #content {
+     margin-bottom: 30px;
+}
+
+.skin-default a {
+     background-color: #2780e3;
+     border: 1px solid #2780e3;
+     color: #ffffff;
+     cursor: pointer;
+     padding: 30px 18px 15px;
+}
+
+.skin-default a:hover {
+     background-color: #2780e3;
+}
+
+.skin-default a:hover {
+     background-color: #27ae60;
+}
+
+.page-tour {
+background: #FFFFFF !important;
 }
 
 /************************************************************************/
@@ -1303,6 +1354,7 @@ width: 68px !important; }
 @media (max-width: 991px) { 
 /*****************/
 /*****************/
+#block-block-16 {display: none;}
 .node-type-book .col-md-4 .flag-wrapper.flag-my-bookmarks, .node-type-book .col-md-4, .node-type-book .col-md-8 {visibility: hidden;}
 #narrowbrowserwarning {visibility: visible; width: 300px; height: auto; position: fixed; float: left; top: 60px; left: 40px; margin-bottom: 0px;}
 .node-annotation.node-type-book form label {visibility: hidden;}
@@ -1377,15 +1429,25 @@ margin-top: 37px !important;
 #nice-menu-3 {
 margin-top: 300px !important; 
 }
-body:not(.page-user-login):not(.node-type-annotation):not(.node-type-book) #mini-panel-headerminipanel .pane-block-14 {
+body:not(.page-user-login):not(.node-type-annotation):not(.node-type-book):not(.page-tour) #mini-panel-headerminipanel .pane-block-14 {
 margin: -13px 0px 0px 30px !important; 
 }
-.page-user-login #mini-panel-headerminipanel .pane-block-14, .node-type-annotation #mini-panel-headerminipanel .pane-block-14, .node-type-book #mini-panel-headerminipanel .pane-block-14 {
+.page-user-login #mini-panel-headerminipanel .pane-block-14, .node-type-annotation #mini-panel-headerminipanel .pane-block-14, .node-type-book #mini-panel-headerminipanel .pane-block-14, .page-tour #mini-panel-headerminipanel .pane-block-14 {
 margin: 2px 0px 0px 30px !important; 
 }
-.page-user-login #nice-menu-3, .node-type-annotation #nice-menu-3, .node-type-book #nice-menu-3 {
+.page-user-login #nice-menu-3, .node-type-annotation #nice-menu-3, .node-type-book #nice-menu-3, .page-tour #nice-menu-3 {
 margin: 0px 0px 0px 30px !important; 
 }  
+.page-tour .view-content {
+display: none;
+}
+.page-tour #top-content {
+margin-top: 30px;
+margin-left: 30px;
+}
+.page-tour #top-content:after {
+content: "This tour requires a browser with more horizontal space.";
+}
 }
 
 
@@ -1394,7 +1456,7 @@ margin: 0px 0px 0px 30px !important;
 @media (max-width: 855px) {
 /*****************/
 /*****************/
-.page-user-login #mini-panel-headerminipanel .pane-block-14, .node-type-annotation #mini-panel-headerminipanel .pane-block-14, .node-type-book #mini-panel-headerminipanel .pane-block-14 {
+.page-user-login #mini-panel-headerminipanel .pane-block-14, .node-type-annotation #mini-panel-headerminipanel .pane-block-14, .node-type-book #mini-panel-headerminipanel .pane-block-14, .page-tour #mini-panel-headerminipanel .pane-block-14 {
 margin: -13px 0px 0px 30px !important; 
 }  
 }
