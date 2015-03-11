@@ -144,6 +144,11 @@ The most up-to-date list of textual corrections can be found on the [Text page](
 * University of Maryland English Department Summer Fellowship (2014)
 * University of Maryland University Fellowship (2010-2013)
 * Funding as a graduate research assistant and course instructor from the University of Maryland English Department (Summer 2011 and Winter 2012), iSchool (2010-2011), Digital Cultures and Creativity Honors College (Fall 2012), and MITH (Summer 2011-Winter 2013, Fall 2013-Spring 2014)
+
+##Analytics
+* Crazy Egg
+* Inspectlet
+* Google Analytics
     
 #I want to use this!
 You can! That is, you will be able to, easily, once the code is polished and documented (and a piece of the code provided by a colleague is made public). This is a dissertational project, and some of the work ater I've successfully defended will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. There will be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public). You may wish to check out [my page on Infinite Ulysses IP & Copyright](http://www.infiniteulysses.com/content/ip-and-copyright) to understand what you can reuse (and how).
