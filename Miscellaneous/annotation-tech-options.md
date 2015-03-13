@@ -1,5 +1,7 @@
-# Annotation technology I considered for building off or used as a design precedent for Infinite Ulysses
-This is a dumped bookmark folder, so there may be redundancies!
+# Annotation technology brain dump
+A bunch of links to things I considered when designing the annotation system for InfiniteUlysses.com (both tools to build on top of and general annotation deisgn precedents). This is a dumped bookmark folder, so there may be redundancies!
+
+I ended up using Annotator.js + its Drupal modularizations + custom code from Michael Widner of Lacuna Stories + my own custom code, by the way. But many of these are fantastic choices for other project requirements!
 
 * [Drupal nodes to comments module](http://drupalcode.org/project/nodecomment.git/blob/refs/heads/6.x-3.x:/README.txt)
 * [patrickmj/Open-Review](https://github.com/patrickmj/Open-Review)
