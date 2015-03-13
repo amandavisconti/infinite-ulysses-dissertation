@@ -1,5 +1,5 @@
 # Annotation technology brain dump
-A bunch of links to things I considered when designing the annotation system for InfiniteUlysses.com (both tools to build on top of and general annotation deisgn precedents). This is a dumped bookmark folder, so there may be redundancies!
+A bunch of links to things I considered when designing the annotation system for [InfiniteUlysses.com](http://www.InfiniteUlysses.com) (both tools to build on top of and general annotation deisgn precedents). This is a dumped bookmark folder, so there may be redundancies!
 
 I ended up using Annotator.js + its Drupal modularizations + custom code from Michael Widner of Lacuna Stories + my own custom code, by the way. But many of these are fantastic choices for other project requirements!
 
