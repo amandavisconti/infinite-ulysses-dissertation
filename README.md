@@ -44,7 +44,8 @@ Infinite Ulysses is a dissertational project of designing, building, and user-te
 - [x] Alpha-testing: Open site to committee, Ulysses Seen, friends (November-December 2014)
 - [x] Beta testing I (individual volunteers; January 2015)
 - [x] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
-- [ ] Article draft providing project narrative (text and website; available by May 2015)
+- [x] Article draft providing project narrative (text and website; available by May 2015)
+- [ ] Dissertation based around Infinite Ulysses defended (April 2015)
 - [ ] Site 1.0 release on Bloomsday 2015 (June 16, 2015)
 - [ ] Installation profile for easy set-up of a site with all the above implemented (Summer 2015?)
 - [ ] Code/set-up documentation and thoroughly comment code for understanding by others (Summer 2015?)
@@ -146,12 +147,14 @@ The most up-to-date list of textual corrections can be found on the [Text page](
 * Funding as a graduate research assistant and course instructor from the University of Maryland English Department (Summer 2011 and Winter 2012), iSchool (2010-2011), Digital Cultures and Creativity Honors College (Fall 2012), and MITH (Summer 2011-Winter 2013, Fall 2013-Spring 2014)
 
 ##Analytics
-* Crazy Egg
-* Inspectlet
-* Google Analytics
+* Crazy Egg (March 2015 only)
+* Inspectlet (March 2015 only)
+* Google Analytics (January 2015 onward)
     
 #I want to use this!
-You can! That is, you will be able to, easily, once the code is polished and documented (and a piece of the code provided by a colleague is made public). This is a dissertational project, and some of the work ater I've successfully defended will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. There will be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public). You may wish to check out [my page on Infinite Ulysses IP & Copyright](http://www.infiniteulysses.com/content/ip-and-copyright) to understand what you can reuse (and how).
+You can! That is, you will be able to, easily, once the code is polished and documented (and a piece of the code provided by a colleague is made public). I'm currently working on abstracting the code for use on otehr sites and drafting user-friendly documentation; Romantic Circles and the Shelley-Godwin Archive are testing this code out on development servers. Please [contact me](http://amandavisconti.com/#contact) if you're interested in using any part of this project on an existing site, or just want to play around with the code on a new site.
+
+This is a dissertational project, and some of the work ater I've successfully defended will be packaging the code and creating user-friendly documentation so that others may make their own copy of the site (if that floats your boat) or otherwise mimic or build off this work. There will be many updates to the code over the next year (and beyond), as well as user-testing (both analysis and raw data to be made public). You may wish to check out [my page on Infinite Ulysses IP & Copyright](http://www.infiniteulysses.com/content/ip-and-copyright) to understand what you can reuse (and how).
 
 ##Documentation
 This will eventually link you to resources to turn this repo into a participatory digital edition site of your own (probably over Summer 2015).
