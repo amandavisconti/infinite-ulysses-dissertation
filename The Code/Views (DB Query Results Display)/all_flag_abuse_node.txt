@@ -1,0 +1,163 @@
+$view = new view();
+$view->name = 'all_flag_abuse_node';
+$view->description = 'View for flag: Node Abuse';
+$view->tag = 'flag.abuse';
+$view->base_table = 'node';
+$view->human_name = '';
+$view->core = 0;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Defaults */
+$handler = $view->new_display('default', 'Defaults', 'default');
+$handler->display->display_options['title'] = 'Node abuse';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  3 => '3',
+);
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['style_plugin'] = 'table';
+$handler->display->display_options['style_options']['grouping'] = 'type';
+$handler->display->display_options['style_options']['columns'] = array(
+  'name_1' => 'name_1',
+  'type' => 'type',
+  'title' => 'title',
+  'name' => 'name',
+  'body' => 'body',
+  'edit_node' => 'edit_node',
+  'delete_node' => 'edit_node',
+  'ops' => 'edit_node',
+);
+$handler->display->display_options['style_options']['default'] = '-1';
+$handler->display->display_options['style_options']['info'] = array(
+  'name_1' => array(
+    'sortable' => 1,
+    'separator' => '',
+  ),
+  'type' => array(
+    'sortable' => 1,
+    'separator' => '',
+  ),
+  'title' => array(
+    'sortable' => 1,
+    'separator' => '',
+  ),
+  'name' => array(
+    'sortable' => 1,
+    'separator' => '',
+  ),
+  'body' => array(
+    'separator' => '',
+  ),
+  'edit_node' => array(
+    'separator' => ' | ',
+  ),
+  'delete_node' => array(
+    'separator' => '',
+  ),
+  'ops' => array(
+    'separator' => '',
+  ),
+);
+$handler->display->display_options['style_options']['override'] = FALSE;
+/* No results behavior: Global: Text area */
+$handler->display->display_options['empty']['text']['id'] = 'area';
+$handler->display->display_options['empty']['text']['table'] = 'views';
+$handler->display->display_options['empty']['text']['field'] = 'area';
+$handler->display->display_options['empty']['text']['content'] = 'No content has been reported.';
+$handler->display->display_options['empty']['text']['format'] = '1';
+/* Relationship: Flags: abuse_node */
+$handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
+$handler->display->display_options['relationships']['flag_content_rel']['table'] = 'node';
+$handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
+$handler->display->display_options['relationships']['flag_content_rel']['label'] = 'abuse_node';
+$handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'abuse_node';
+$handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
+/* Relationship: Flags: User */
+$handler->display->display_options['relationships']['uid']['id'] = 'uid';
+$handler->display->display_options['relationships']['uid']['table'] = 'flagging';
+$handler->display->display_options['relationships']['uid']['field'] = 'uid';
+$handler->display->display_options['relationships']['uid']['relationship'] = 'flag_content_rel';
+$handler->display->display_options['relationships']['uid']['label'] = 'user';
+/* Relationship: Content: Author */
+$handler->display->display_options['relationships']['uid_1']['id'] = 'uid_1';
+$handler->display->display_options['relationships']['uid_1']['table'] = 'node';
+$handler->display->display_options['relationships']['uid_1']['field'] = 'uid';
+/* Field: User: Name */
+$handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+$handler->display->display_options['fields']['name_1']['table'] = 'users';
+$handler->display->display_options['fields']['name_1']['field'] = 'name';
+$handler->display->display_options['fields']['name_1']['relationship'] = 'uid';
+$handler->display->display_options['fields']['name_1']['label'] = 'Report by';
+/* Field: Content: Type */
+$handler->display->display_options['fields']['type']['id'] = 'type';
+$handler->display->display_options['fields']['type']['table'] = 'node';
+$handler->display->display_options['fields']['type']['field'] = 'type';
+$handler->display->display_options['fields']['type']['exclude'] = TRUE;
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+/* Field: User: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'users';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['relationship'] = 'uid_1';
+$handler->display->display_options['fields']['name']['label'] = 'Author';
+/* Field: Content: Edit link */
+$handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+$handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+$handler->display->display_options['fields']['edit_node']['label'] = 'Actions';
+$handler->display->display_options['fields']['edit_node']['text'] = 'edit';
+/* Field: Content: Delete link */
+$handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['label'] = '';
+$handler->display->display_options['fields']['delete_node']['text'] = 'remove';
+/* Field: Flags: Flag link */
+$handler->display->display_options['fields']['ops']['id'] = 'ops';
+$handler->display->display_options['fields']['ops']['table'] = 'flagging';
+$handler->display->display_options['fields']['ops']['field'] = 'ops';
+$handler->display->display_options['fields']['ops']['relationship'] = 'flag_content_rel';
+$handler->display->display_options['fields']['ops']['label'] = '';
+$handler->display->display_options['fields']['ops']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['ops']['link_type'] = 'confirm';
+/* Field: Content: Tags */
+$handler->display->display_options['fields']['annotation_tags']['id'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['table'] = 'field_data_annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['field'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['element_type'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['delta_offset'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['field_api_classes'] = TRUE;
+/* Field: Content: Text */
+$handler->display->display_options['fields']['text']['id'] = 'text';
+$handler->display->display_options['fields']['text']['table'] = 'field_data_text';
+$handler->display->display_options['fields']['text']['field'] = 'text';
+$handler->display->display_options['fields']['text']['element_type'] = '0';
+$handler->display->display_options['fields']['text']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['text']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['text']['field_api_classes'] = TRUE;
+/* Field: Flags: Clear flags */
+$handler->display->display_options['fields']['clear_link']['id'] = 'clear_link';
+$handler->display->display_options['fields']['clear_link']['table'] = 'flagging';
+$handler->display->display_options['fields']['clear_link']['field'] = 'clear_link';
+$handler->display->display_options['fields']['clear_link']['relationship'] = 'flag_content_rel';
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page_1');
+$handler->display->display_options['path'] = 'admin/content/flags/abuse_node';
+$handler->display->display_options['menu']['type'] = 'default tab';
+$handler->display->display_options['menu']['title'] = 'Reported node abuse';
+$handler->display->display_options['menu']['weight'] = '0';
+$handler->display->display_options['tab_options']['type'] = 'normal';
+$handler->display->display_options['tab_options']['title'] = 'Reported abuse';
+$handler->display->display_options['tab_options']['weight'] = '';

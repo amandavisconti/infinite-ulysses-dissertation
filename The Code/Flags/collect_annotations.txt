@@ -1,0 +1,36 @@
+$flags = array();
+// Exported flag: "Collect annotations".
+$flags['collect_annotations'] = array (
+  'entity_type' => 'node',
+  'title' => 'Collect annotations',
+  'global' => '0',
+  'types' => 
+  array (
+    0 => 'annotation',
+  ),
+  'flag_short' => 'Favorite',
+  'flag_long' => 'Add this annotation to your favorites collection',
+  'flag_message' => '',
+  'unflag_short' => 'Unfavorite',
+  'unflag_long' => 'Remove this annotation from your favorites',
+  'unflag_message' => '',
+  'unflag_denied_text' => '',
+  'link_type' => 'toggle',
+  'weight' => '-6',
+  'show_in_links' => 
+  array (
+    'full' => 0,
+    'teaser' => 0,
+    'rss' => 0,
+    'print' => 0,
+    'featured' => 0,
+    'token' => 0,
+  ),
+  'show_as_field' => 1,
+  'show_on_form' => 0,
+  'access_author' => '',
+  'show_contextual_link' => 0,
+  'i18n' => 0,
+  'api_version' => 3,
+);
+return $flags;

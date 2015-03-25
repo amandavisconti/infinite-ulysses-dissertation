@@ -1,0 +1,24 @@
+{ "rules_grant_author_points_when_their_content_is_upvoted" : {
+    "LABEL" : "Grant Author Points when Their Annotation Is Upvoted",
+    "PLUGIN" : "reaction rule",
+    "OWNER" : "rules",
+    "REQUIRES" : [ "voting_rules", "userpoints_rules" ],
+    "ON" : { "voting_rules_insert_node" : [] },
+    "IF" : [
+      { "voting_rules_condition_check_vote_value" : { "vote" : [ "vote" ], "operator" : "\u003E", "value" : "0" } }
+    ],
+    "DO" : [
+      { "userpoints_action_grant_points" : {
+          "user" : [ "node:author" ],
+          "points" : "1",
+          "tid" : "0",
+          "entity" : [ "" ],
+          "description" : "An annotation you authored was upvoted",
+          "operation" : "Insert",
+          "display" : 0,
+          "moderate" : "approved"
+        }
+      }
+    ]
+  }
+}

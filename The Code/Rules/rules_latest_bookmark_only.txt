@@ -1,0 +1,18 @@
+{ "rules_latest_bookmark_only" : {
+    "LABEL" : "Latest Bookmark Only",
+    "PLUGIN" : "reaction rule",
+    "OWNER" : "rules",
+    "REQUIRES" : [ "flag" ],
+    "ON" : { "flag_flagged_my_bookmarks" : [] },
+    "DO" : [
+      { "flag_trim" : {
+          "flag" : "my_bookmarks",
+          "flagging_user" : [ "flagging_user" ],
+          "cutoff_size" : "1",
+          "trim_newest" : 0,
+          "permission_check" : 0
+        }
+      }
+    ]
+  }
+}

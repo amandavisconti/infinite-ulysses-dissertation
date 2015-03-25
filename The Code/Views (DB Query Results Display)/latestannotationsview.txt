@@ -1,0 +1,202 @@
+$view = new view();
+$view->name = 'latestannotationsview';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'users';
+$view->human_name = 'Latest Annotations';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Latest Annotations';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'access user profiles';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'list';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['inline'] = array(
+  'name' => 'name',
+  'text' => 'text',
+  'annotation_tags' => 'annotation_tags',
+  'view_node' => 'view_node',
+  'quote' => 'quote',
+);
+$handler->display->display_options['row_options']['hide_empty'] = TRUE;
+/* Relationship: User: Representative node */
+$handler->display->display_options['relationships']['uid_representative']['id'] = 'uid_representative';
+$handler->display->display_options['relationships']['uid_representative']['table'] = 'users';
+$handler->display->display_options['relationships']['uid_representative']['field'] = 'uid_representative';
+$handler->display->display_options['relationships']['uid_representative']['required'] = TRUE;
+$handler->display->display_options['relationships']['uid_representative']['subquery_sort'] = 'node.changed';
+$handler->display->display_options['relationships']['uid_representative']['subquery_view'] = '';
+$handler->display->display_options['relationships']['uid_representative']['subquery_namespace'] = '';
+/* Field: User: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'users';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = '';
+$handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+/* Field: Content: Quote */
+$handler->display->display_options['fields']['quote']['id'] = 'quote';
+$handler->display->display_options['fields']['quote']['table'] = 'field_data_quote';
+$handler->display->display_options['fields']['quote']['field'] = 'quote';
+$handler->display->display_options['fields']['quote']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['quote']['label'] = '';
+$handler->display->display_options['fields']['quote']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['quote']['alter']['text'] = ' commented on the text "[quote]';
+$handler->display->display_options['fields']['quote']['alter']['max_length'] = '70';
+$handler->display->display_options['fields']['quote']['alter']['trim'] = TRUE;
+$handler->display->display_options['fields']['quote']['element_type'] = '0';
+$handler->display->display_options['fields']['quote']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['quote']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['quote']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['quote']['field_api_classes'] = TRUE;
+/* Field: Content: Quote */
+$handler->display->display_options['fields']['quote_1']['id'] = 'quote_1';
+$handler->display->display_options['fields']['quote_1']['table'] = 'field_data_quote';
+$handler->display->display_options['fields']['quote_1']['field'] = 'quote';
+$handler->display->display_options['fields']['quote_1']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['quote_1']['label'] = '';
+$handler->display->display_options['fields']['quote_1']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['quote_1']['alter']['text'] = '"';
+$handler->display->display_options['fields']['quote_1']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['quote_1']['hide_alter_empty'] = FALSE;
+/* Field: Content: Tags */
+$handler->display->display_options['fields']['annotation_tags']['id'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['table'] = 'field_data_annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['field'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['annotation_tags']['label'] = '';
+$handler->display->display_options['fields']['annotation_tags']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['alter']['text'] = '[annotation_tags]';
+$handler->display->display_options['fields']['annotation_tags']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['alter']['max_length'] = '70';
+$handler->display->display_options['fields']['annotation_tags']['alter']['trim'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['element_type'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['hide_empty'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['delta_offset'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['field_api_classes'] = TRUE;
+/* Field: Content: Link */
+$handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['view_node']['label'] = '';
+$handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['view_node']['alter']['text'] = 'link';
+$handler->display->display_options['fields']['view_node']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['relationship'] = 'uid_representative';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['relationship'] = 'uid_representative';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'annotation' => 'annotation',
+);
+/* Filter criterion: Content: Private (private) */
+$handler->display->display_options['filters']['private_value']['id'] = 'private_value';
+$handler->display->display_options['filters']['private_value']['table'] = 'field_data_private';
+$handler->display->display_options['filters']['private_value']['field'] = 'private_value';
+$handler->display->display_options['filters']['private_value']['relationship'] = 'uid_representative';
+$handler->display->display_options['filters']['private_value']['operator'] = 'not';
+$handler->display->display_options['filters']['private_value']['value'] = array(
+  1 => '1',
+);
+/* Filter criterion: User: Roles */
+$handler->display->display_options['filters']['rid_1']['id'] = 'rid_1';
+$handler->display->display_options['filters']['rid_1']['table'] = 'users_roles';
+$handler->display->display_options['filters']['rid_1']['field'] = 'rid';
+$handler->display->display_options['filters']['rid_1']['value'] = array(
+  5 => '5',
+  4 => '4',
+  3 => '3',
+);
+$handler->display->display_options['filters']['rid_1']['reduce_duplicates'] = TRUE;
+
+/* Display: Latest Annotations */
+$handler = $view->new_display('block', 'Latest Annotations', 'block');
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: User: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'users';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = '';
+$handler->display->display_options['fields']['name']['exclude'] = TRUE;
+$handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+$handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+/* Field: Content: Text */
+$handler->display->display_options['fields']['text']['id'] = 'text';
+$handler->display->display_options['fields']['text']['table'] = 'field_data_text';
+$handler->display->display_options['fields']['text']['field'] = 'text';
+$handler->display->display_options['fields']['text']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['text']['label'] = '';
+$handler->display->display_options['fields']['text']['exclude'] = TRUE;
+$handler->display->display_options['fields']['text']['alter']['text'] = '"[text]';
+$handler->display->display_options['fields']['text']['alter']['max_length'] = '200';
+$handler->display->display_options['fields']['text']['alter']['trim'] = TRUE;
+$handler->display->display_options['fields']['text']['element_type'] = '0';
+$handler->display->display_options['fields']['text']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['text']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['text']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['text']['hide_empty'] = TRUE;
+$handler->display->display_options['fields']['text']['field_api_classes'] = TRUE;
+/* Field: Content: Tags */
+$handler->display->display_options['fields']['annotation_tags']['id'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['table'] = 'field_data_annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['field'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['annotation_tags']['label'] = '';
+$handler->display->display_options['fields']['annotation_tags']['exclude'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['alter']['text'] = '[annotation_tags]';
+$handler->display->display_options['fields']['annotation_tags']['alter']['max_length'] = '70';
+$handler->display->display_options['fields']['annotation_tags']['alter']['trim'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['element_type'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['hide_empty'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['delta_offset'] = '0';
+$handler->display->display_options['fields']['annotation_tags']['delta_first_last'] = TRUE;
+/* Field: Content: Link */
+$handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['view_node']['label'] = '';
+$handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+$handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['view_node']['alter']['text'] = '([view_node])';
+$handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+/* Field: Content: Quote */
+$handler->display->display_options['fields']['quote']['id'] = 'quote';
+$handler->display->display_options['fields']['quote']['table'] = 'field_data_quote';
+$handler->display->display_options['fields']['quote']['field'] = 'quote';
+$handler->display->display_options['fields']['quote']['relationship'] = 'uid_representative';
+$handler->display->display_options['fields']['quote']['label'] = '';
+$handler->display->display_options['fields']['quote']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['quote']['alter']['text'] = '[name] commented on the text "[quote]": "[text]" [annotation_tags] [view_node]';
+$handler->display->display_options['fields']['quote']['alter']['strip_tags'] = TRUE;
+$handler->display->display_options['fields']['quote']['alter']['preserve_tags'] = '<a>';
+$handler->display->display_options['fields']['quote']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['quote']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['quote']['hide_alter_empty'] = FALSE;

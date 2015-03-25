@@ -1,0 +1,18 @@
+{ "rules_mark_flagged_anno_as_private" : {
+    "LABEL" : "Mark flagged anno as private",
+    "PLUGIN" : "reaction rule",
+    "OWNER" : "rules",
+    "REQUIRES" : [ "rules", "flag" ],
+    "ON" : { "flag_flagged_abuse_node" : [] },
+    "IF" : [
+      { "node_is_of_type" : {
+          "node" : [ "flagged-node" ],
+          "type" : { "value" : { "annotation" : "annotation" } }
+        }
+      }
+    ],
+    "DO" : [
+      { "data_set" : { "data" : [ "flagged-node:private" ], "value" : "1" } }
+    ]
+  }
+}

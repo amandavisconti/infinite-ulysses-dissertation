@@ -1,0 +1,79 @@
+$view = new view();
+$view->name = 'most_annotated_book_pages';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Most Annotated Book Pages';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Most Annotated Book Pages';
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['group_by'] = TRUE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'table';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['content'] = 'Pages of <em>Ulysses</em> and how many annotations have been added to each page. Note that <em>Infinite Ulysses</em> page numbers match up to the 1922 Paris Shakespeare & Co first printing. Only pages with annotations are shown.';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Relationship: Entity Reference: Referencing entity */
+$handler->display->display_options['relationships']['reverse_annotation_reference_node']['id'] = 'reverse_annotation_reference_node';
+$handler->display->display_options['relationships']['reverse_annotation_reference_node']['table'] = 'node';
+$handler->display->display_options['relationships']['reverse_annotation_reference_node']['field'] = 'reverse_annotation_reference_node';
+$handler->display->display_options['relationships']['reverse_annotation_reference_node']['required'] = TRUE;
+/* Relationship: Book: Parent */
+$handler->display->display_options['relationships']['nid']['id'] = 'nid';
+$handler->display->display_options['relationships']['nid']['table'] = 'book_parent';
+$handler->display->display_options['relationships']['nid']['field'] = 'nid';
+/* Relationship: Book: Top level book */
+$handler->display->display_options['relationships']['bid']['id'] = 'bid';
+$handler->display->display_options['relationships']['bid']['table'] = 'book';
+$handler->display->display_options['relationships']['bid']['field'] = 'bid';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+$handler->display->display_options['fields']['title_1']['table'] = 'node';
+$handler->display->display_options['fields']['title_1']['field'] = 'title';
+$handler->display->display_options['fields']['title_1']['relationship'] = 'nid';
+$handler->display->display_options['fields']['title_1']['label'] = 'Episode of Ulysses';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = 'Book page:';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Field: COUNT(Content: Nid) */
+$handler->display->display_options['fields']['nid']['id'] = 'nid';
+$handler->display->display_options['fields']['nid']['table'] = 'node';
+$handler->display->display_options['fields']['nid']['field'] = 'nid';
+$handler->display->display_options['fields']['nid']['group_type'] = 'count';
+$handler->display->display_options['fields']['nid']['label'] = 'Total number of annotations on page';
+/* Sort criterion: COUNT(Content: Nid) */
+$handler->display->display_options['sorts']['nid']['id'] = 'nid';
+$handler->display->display_options['sorts']['nid']['table'] = 'node';
+$handler->display->display_options['sorts']['nid']['field'] = 'nid';
+$handler->display->display_options['sorts']['nid']['group_type'] = 'count';
+$handler->display->display_options['sorts']['nid']['order'] = 'DESC';
+$handler->display->display_options['sorts']['nid']['expose']['label'] = 'Number of annotations on page';
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'book' => 'book',
+);
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'most-annotated-book-pages';

@@ -1,0 +1,42 @@
+$flags = array();
+// Exported flag: "Node Abuse".
+$flags['abuse_node'] = array (
+  'entity_type' => 'node',
+  'title' => 'Node Abuse',
+  'global' => 0,
+  'types' => 
+  array (
+    0 => 'annotation',
+  ),
+  'flag_short' => 'Flag for moderation',
+  'flag_long' => 'Flag for abuse/spam/needs moderation',
+  'flag_message' => 'Thanks for flagging this item. It was flagged and hidden from public display pending moderator review.',
+  'unflag_short' => 'Unflag for moderation',
+  'unflag_long' => 'Remove flag marking item as abuse/spam/needs moderation',
+  'unflag_message' => 'You have unflagged an item (indicated it does not need moderation).',
+  'unflag_denied_text' => 'Flagged and hidden from public display pending moderator review.',
+  'link_type' => 'toggle',
+  'weight' => '-7',
+  'show_in_links' => 
+  array (
+    'full' => 0,
+    'teaser' => 0,
+    'rss' => 0,
+    'print' => 0,
+    'featured' => 0,
+    'token' => 0,
+  ),
+  'show_as_field' => 1,
+  'show_on_form' => 0,
+  'access_author' => '',
+  'show_contextual_link' => 0,
+  'i18n' => 0,
+  'module' => 'flag_abuse',
+  'locked' => 
+  array (
+    'name' => 'name',
+    'global' => 'global',
+  ),
+  'api_version' => 3,
+);
+return $flags;

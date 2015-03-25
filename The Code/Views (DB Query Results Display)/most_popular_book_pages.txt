@@ -1,0 +1,191 @@
+$view = new view();
+$view->name = 'most_popular_book_pages';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Most popular book pages';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'views_delimited_list';
+$handler->display->display_options['style_options']['long_count'] = '3';
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['inline'] = array(
+  'title_1' => 'title_1',
+);
+$handler->display->display_options['row_options']['separator'] = ', ';
+$handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+/* Header: Global: Unfiltered text */
+$handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+$handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+$handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
+$handler->display->display_options['header']['area_text_custom']['label'] = 'Today\'s most popular pages of Ulysses:';
+$handler->display->display_options['header']['area_text_custom']['content'] = 'Today, the most popular pages in the book were: ';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+$handler->display->display_options['fields']['title_1']['table'] = 'node';
+$handler->display->display_options['fields']['title_1']['field'] = 'title';
+$handler->display->display_options['fields']['title_1']['label'] = '';
+$handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['title_1']['alter']['text'] = '<span class="toppageitem">[title_1]</span>';
+$handler->display->display_options['fields']['title_1']['alter']['trim_whitespace'] = TRUE;
+$handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+/* Sort criterion: Google Analytics Counter: Pageview Total */
+$handler->display->display_options['sorts']['pageview_total']['id'] = 'pageview_total';
+$handler->display->display_options['sorts']['pageview_total']['table'] = 'google_analytics_counter_storage';
+$handler->display->display_options['sorts']['pageview_total']['field'] = 'pageview_total';
+$handler->display->display_options['sorts']['pageview_total']['order'] = 'DESC';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'book' => 'book',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['operator'] = '!=';
+$handler->display->display_options['filters']['nid']['value']['value'] = '85';
+$handler->display->display_options['filters']['nid']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_3']['id'] = 'nid_3';
+$handler->display->display_options['filters']['nid_3']['table'] = 'node';
+$handler->display->display_options['filters']['nid_3']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_3']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_3']['value']['value'] = '915';
+$handler->display->display_options['filters']['nid_3']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_4']['id'] = 'nid_4';
+$handler->display->display_options['filters']['nid_4']['table'] = 'node';
+$handler->display->display_options['filters']['nid_4']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_4']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_4']['value']['value'] = '916';
+$handler->display->display_options['filters']['nid_4']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_5']['id'] = 'nid_5';
+$handler->display->display_options['filters']['nid_5']['table'] = 'node';
+$handler->display->display_options['filters']['nid_5']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_5']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_5']['value']['value'] = '917';
+$handler->display->display_options['filters']['nid_5']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_6']['id'] = 'nid_6';
+$handler->display->display_options['filters']['nid_6']['table'] = 'node';
+$handler->display->display_options['filters']['nid_6']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_6']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_6']['value']['value'] = '918';
+$handler->display->display_options['filters']['nid_6']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_7']['id'] = 'nid_7';
+$handler->display->display_options['filters']['nid_7']['table'] = 'node';
+$handler->display->display_options['filters']['nid_7']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_7']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_7']['value']['value'] = '919';
+$handler->display->display_options['filters']['nid_7']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_8']['id'] = 'nid_8';
+$handler->display->display_options['filters']['nid_8']['table'] = 'node';
+$handler->display->display_options['filters']['nid_8']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_8']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_8']['value']['value'] = '920';
+$handler->display->display_options['filters']['nid_8']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_9']['id'] = 'nid_9';
+$handler->display->display_options['filters']['nid_9']['table'] = 'node';
+$handler->display->display_options['filters']['nid_9']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_9']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_9']['value']['value'] = '921';
+$handler->display->display_options['filters']['nid_9']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_2']['id'] = 'nid_2';
+$handler->display->display_options['filters']['nid_2']['table'] = 'node';
+$handler->display->display_options['filters']['nid_2']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_2']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_2']['value']['value'] = '922';
+$handler->display->display_options['filters']['nid_2']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_10']['id'] = 'nid_10';
+$handler->display->display_options['filters']['nid_10']['table'] = 'node';
+$handler->display->display_options['filters']['nid_10']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_10']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_10']['value']['value'] = '923';
+$handler->display->display_options['filters']['nid_10']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_1']['id'] = 'nid_1';
+$handler->display->display_options['filters']['nid_1']['table'] = 'node';
+$handler->display->display_options['filters']['nid_1']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_1']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_1']['value']['value'] = '924';
+$handler->display->display_options['filters']['nid_1']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_11']['id'] = 'nid_11';
+$handler->display->display_options['filters']['nid_11']['table'] = 'node';
+$handler->display->display_options['filters']['nid_11']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_11']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_11']['value']['value'] = '1145';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_12']['id'] = 'nid_12';
+$handler->display->display_options['filters']['nid_12']['table'] = 'node';
+$handler->display->display_options['filters']['nid_12']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_12']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_12']['value']['value'] = '895';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_13']['id'] = 'nid_13';
+$handler->display->display_options['filters']['nid_13']['table'] = 'node';
+$handler->display->display_options['filters']['nid_13']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_13']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_13']['value']['value'] = '910';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_14']['id'] = 'nid_14';
+$handler->display->display_options['filters']['nid_14']['table'] = 'node';
+$handler->display->display_options['filters']['nid_14']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_14']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_14']['value']['value'] = '911';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_15']['id'] = 'nid_15';
+$handler->display->display_options['filters']['nid_15']['table'] = 'node';
+$handler->display->display_options['filters']['nid_15']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_15']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_15']['value']['value'] = '912';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_16']['id'] = 'nid_16';
+$handler->display->display_options['filters']['nid_16']['table'] = 'node';
+$handler->display->display_options['filters']['nid_16']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_16']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_16']['value']['value'] = '913';
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid_17']['id'] = 'nid_17';
+$handler->display->display_options['filters']['nid_17']['table'] = 'node';
+$handler->display->display_options['filters']['nid_17']['field'] = 'nid';
+$handler->display->display_options['filters']['nid_17']['operator'] = '!=';
+$handler->display->display_options['filters']['nid_17']['value']['value'] = '914';
+/* Filter criterion: Content: Title */
+$handler->display->display_options['filters']['title']['id'] = 'title';
+$handler->display->display_options['filters']['title']['table'] = 'node';
+$handler->display->display_options['filters']['title']['field'] = 'title';
+$handler->display->display_options['filters']['title']['operator'] = '!=';
+$handler->display->display_options['filters']['title']['value'] = 'tour';
+
+/* Display: Block */
+$handler = $view->new_display('block', 'Block', 'block');

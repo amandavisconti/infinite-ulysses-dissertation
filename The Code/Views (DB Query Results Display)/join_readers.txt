@@ -1,0 +1,85 @@
+$view = new view();
+$view->name = 'join_readers';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'users';
+$view->human_name = 'Join readers';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['group_by'] = TRUE;
+$handler->display->display_options['access']['type'] = 'none';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['query']['options']['disable_sql_rewrite'] = TRUE;
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['inline'] = array(
+  'text' => 'text',
+  'annotation_tags' => 'annotation_tags',
+);
+$handler->display->display_options['row_options']['separator'] = ' ';
+/* Relationship: Taxonomy term: Content using Tags */
+$handler->display->display_options['relationships']['reverse_annotation_tags_node']['id'] = 'reverse_annotation_tags_node';
+$handler->display->display_options['relationships']['reverse_annotation_tags_node']['table'] = 'taxonomy_term_data';
+$handler->display->display_options['relationships']['reverse_annotation_tags_node']['field'] = 'reverse_annotation_tags_node';
+/* Relationship: User: Content authored */
+$handler->display->display_options['relationships']['uid']['id'] = 'uid';
+$handler->display->display_options['relationships']['uid']['table'] = 'users';
+$handler->display->display_options['relationships']['uid']['field'] = 'uid';
+/* Field: COUNT(DISTINCT User: Name) */
+$handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+$handler->display->display_options['fields']['name_1']['table'] = 'users';
+$handler->display->display_options['fields']['name_1']['field'] = 'name';
+$handler->display->display_options['fields']['name_1']['group_type'] = 'count_distinct';
+$handler->display->display_options['fields']['name_1']['label'] = '';
+$handler->display->display_options['fields']['name_1']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['name_1']['alter']['text'] = 'Join our <strong>[name_1]</strong> members in <a href="http://www.infiniteulysses.com/user/register">creating a site account</a> for the best reading experience!<br><br>';
+$handler->display->display_options['fields']['name_1']['element_label_colon'] = FALSE;
+/* Field: COUNT(DISTINCT Content: Text) */
+$handler->display->display_options['fields']['text']['id'] = 'text';
+$handler->display->display_options['fields']['text']['table'] = 'field_data_text';
+$handler->display->display_options['fields']['text']['field'] = 'text';
+$handler->display->display_options['fields']['text']['relationship'] = 'uid';
+$handler->display->display_options['fields']['text']['group_type'] = 'count_distinct';
+$handler->display->display_options['fields']['text']['label'] = '';
+$handler->display->display_options['fields']['text']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['text']['alter']['text'] = 'Readers have authored <strong>[text]</strong> annotations on <em>Ulysses</em>';
+$handler->display->display_options['fields']['text']['element_type'] = '0';
+$handler->display->display_options['fields']['text']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['text']['element_wrapper_type'] = '0';
+$handler->display->display_options['fields']['text']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['text']['separator'] = ', ';
+/* Field: COUNT(DISTINCT Content: Tags) */
+$handler->display->display_options['fields']['annotation_tags']['id'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['table'] = 'field_data_annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['field'] = 'annotation_tags';
+$handler->display->display_options['fields']['annotation_tags']['relationship'] = 'uid';
+$handler->display->display_options['fields']['annotation_tags']['group_type'] = 'count_distinct';
+$handler->display->display_options['fields']['annotation_tags']['label'] = '';
+$handler->display->display_options['fields']['annotation_tags']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['annotation_tags']['alter']['text'] = 'and applied <strong>[annotation_tags]</strong> unique tags on those annotations; tagging marks spoilers, definitions, language translation, questions needing an answer, or topics such as humor, mythology, Shakespeare, political history, and intertextuality.';
+$handler->display->display_options['fields']['annotation_tags']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['annotation_tags']['separator'] = ', ';
+/* Filter criterion: User: Roles */
+$handler->display->display_options['filters']['rid']['id'] = 'rid';
+$handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+$handler->display->display_options['filters']['rid']['field'] = 'rid';
+$handler->display->display_options['filters']['rid']['operator'] = 'not';
+$handler->display->display_options['filters']['rid']['value'] = array(
+  6 => '6',
+);
+
+/* Display: Block */
+$handler = $view->new_display('block', 'Block', 'block');
