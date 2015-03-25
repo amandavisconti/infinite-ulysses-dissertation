@@ -1,0 +1,73 @@
+.rate-widget-thumbs_up_down ul {
+  list-style: none;
+  overflow: hidden;
+  margin: -22px 0px 0px 0px !important;
+  height: 45px;
+}
+.rate-widget-thumbs_up_down ul li {
+  padding: 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  width: 40px;
+  float: left;
+  list-style: none;
+  background-image: none;
+  text-align: center;
+}
+.rate-widget-thumbs_up_down ul li a {
+  display: block;
+  float: left;
+}
+.rate-widget-thumbs_up_down .percent {
+  float: left;
+  margin: -12px 0px 0px 0px;
+}
+.rate-thumbs-up-down-btn-up {
+  display: inline-block;
+  background: url(nonclickedthumb-up.png) no-repeat 0 0px;
+  width: 15px;
+  height: 19px;
+  margin: 0px 15px 15px 0px;
+}
+.rate-user .rate-thumbs-up-down-btn-up {
+  background: url(nonclickedthumb-up.png) no-repeat 0 0px;
+  float: right;
+}
+.rate-user .rate-thumbs-up-down-btn-up.rate-voted {
+  background: url(clickedthumb-up.png) no-repeat 0 0px;
+}
+.rate-widget-thumbs_up_down .thumb-up a {
+  float: right;
+}
+.rate-thumbs-up-down-btn-down {
+  display: inline-block;
+  background: url(nonclickedthumb-down.png) no-repeat 0 0px;
+  width: 15px;
+  height: 19px;
+  margin: 0px 15px 15px 0px;
+}
+.rate-user .rate-thumbs-up-down-btn-down {
+  background: url(nonclickedthumb-down.png) no-repeat 0 0px;
+}
+.rate-user .rate-thumbs-up-down-btn-down.rate-voted {
+  background: url(clickedthumb-down.png) no-repeat 0 0px;
+}
+.rate-thumbs-up-down-rating-up {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-top: 3px;
+}
+.rate-thumbs-up-down-rating-down {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  padding-top: 3px;
+}
+
+.rate-widget {
+margin: 0px 0px 0px 120px !important;  
+}
+
+.comment .rate-widget {
+margin: 5px 0px 10px 90px !important;  
+}

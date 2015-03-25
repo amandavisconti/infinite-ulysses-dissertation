@@ -87,7 +87,7 @@ text-decoration: none;
 		position: fixed;
 		top: 55px;
 		bottom: 0;
-		left: 0;
+		left: -50px; /*Amanda*/
 		overflow: hidden;
 		border-bottom: 1px solid #c6d0da;
 		background: white;
@@ -102,7 +102,7 @@ text-decoration: none;
 .gn-scroller {
 		position: absolute;
 		overflow-y: auto;
-		width: 280px;
+		width: 390px;
 		height: 100%;
 }
 
@@ -226,7 +226,7 @@ input.gn-search:focus {
 }
 
 .gn-menu-wrapper.gn-open-all {
-		width: 280px
+		width: 360px
 }
 
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
