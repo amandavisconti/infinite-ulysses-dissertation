@@ -1,0 +1,473 @@
+$handler = new stdClass();
+$handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+$handler->api_version = 1;
+$handler->name = 'node_view_panel_context_2';
+$handler->task = 'node_view';
+$handler->subtask = '';
+$handler->handler = 'panel_context';
+$handler->weight = 1;
+$handler->conf = array(
+  'title' => 'Book page',
+  'no_blocks' => 0,
+  'pipeline' => 'ipe',
+  'body_classes_to_remove' => '',
+  'body_classes_to_add' => '',
+  'css_id' => '',
+  'css' => '',
+  'contexts' => array(),
+  'relationships' => array(),
+  'access' => array(
+    'plugins' => array(
+      0 => array(
+        'name' => 'node_type',
+        'settings' => array(
+          'type' => array(
+            'book' => 'book',
+          ),
+        ),
+        'context' => 'argument_entity_id:node_1',
+        'not' => FALSE,
+      ),
+    ),
+    'logic' => 'and',
+  ),
+);
+$display = new panels_display();
+$display->layout = 'radix_burr_flipped';
+$display->layout_settings = array();
+$display->panel_settings = array(
+  'style_settings' => array(
+    'default' => NULL,
+    'contentmain' => NULL,
+    'column1' => array(
+      'devices' => array(
+        'hidden-xs' => 0,
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'well' => 'well',
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+      ),
+    ),
+    'column2' => array(
+      'devices' => array(
+        'hidden-xs' => 0,
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'well' => 'well',
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+      ),
+    ),
+    'column3' => NULL,
+    'left' => NULL,
+    'middle' => NULL,
+    'right' => NULL,
+    'sidebar' => NULL,
+  ),
+  'sidebar' => array(
+    'style' => 'naked',
+  ),
+  'column1' => array(
+    'style' => 'kalacustomize',
+  ),
+  'column2' => array(
+    'style' => 'kalacustomize',
+  ),
+  'contentmain' => array(
+    'style' => 'naked',
+  ),
+);
+$display->cache = array();
+$display->title = '';
+$display->uuid = '559f0e16-f4a1-454c-b46d-56139f9a1a06';
+$display->content = array();
+$display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-8ff5426b-b922-4675-8b32-1f2d74d1314f';
+  $pane->panel = 'contentmain';
+  $pane->type = 'block';
+  $pane->subtype = 'book_helper-book-helper-inline-navigation';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 'hidden-xs',
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array(
+    'css_id' => 'topbooknavigation',
+    'css_class' => 'ui-group-buttons',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '8ff5426b-b922-4675-8b32-1f2d74d1314f';
+  $display->content['new-8ff5426b-b922-4675-8b32-1f2d74d1314f'] = $pane;
+  $display->panels['contentmain'][0] = 'new-8ff5426b-b922-4675-8b32-1f2d74d1314f';
+  $pane = new stdClass();
+  $pane->pid = 'new-dda47a69-ed92-458e-a258-c65abcdddc99';
+  $pane->panel = 'contentmain';
+  $pane->type = 'page_title';
+  $pane->subtype = 'page_title';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'markup' => 'h1',
+    'class' => '',
+    'id' => '',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 'hidden-xs',
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array(
+    'css_id' => 'topbookcurrentpage',
+    'css_class' => 'topbookcurrentpageclass',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'dda47a69-ed92-458e-a258-c65abcdddc99';
+  $display->content['new-dda47a69-ed92-458e-a258-c65abcdddc99'] = $pane;
+  $display->panels['contentmain'][1] = 'new-dda47a69-ed92-458e-a258-c65abcdddc99';
+  $pane = new stdClass();
+  $pane->pid = 'new-a42d4732-a0d0-44ea-8ad5-b2d2478935f2';
+  $pane->panel = 'contentmain';
+  $pane->type = 'node_content';
+  $pane->subtype = 'node_content';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'links' => 0,
+    'no_extras' => 1,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'identifier' => '',
+    'link' => 0,
+    'leave_node_title' => 0,
+    'build_mode' => 'full',
+    'context' => 'argument_entity_id:node_1',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 'hidden-xs',
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = 'a42d4732-a0d0-44ea-8ad5-b2d2478935f2';
+  $display->content['new-a42d4732-a0d0-44ea-8ad5-b2d2478935f2'] = $pane;
+  $display->panels['contentmain'][2] = 'new-a42d4732-a0d0-44ea-8ad5-b2d2478935f2';
+  $pane = new stdClass();
+  $pane->pid = 'new-ddc0da77-4865-4f08-a689-f5fb73c745d7';
+  $pane->panel = 'contentmain';
+  $pane->type = 'block';
+  $pane->subtype = 'book_helper-book-helper-inline-navigation';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 'hidden-xs',
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array(
+    'css_id' => 'bottombooknavigation',
+    'css_class' => '',
+  );
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $pane->uuid = 'ddc0da77-4865-4f08-a689-f5fb73c745d7';
+  $display->content['new-ddc0da77-4865-4f08-a689-f5fb73c745d7'] = $pane;
+  $display->panels['contentmain'][3] = 'new-ddc0da77-4865-4f08-a689-f5fb73c745d7';
+  $pane = new stdClass();
+  $pane->pid = 'new-c7fe399a-88f5-422f-9143-b2adb8707990';
+  $pane->panel = 'contentmain';
+  $pane->type = 'page_title';
+  $pane->subtype = 'page_title';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'markup' => 'h1',
+    'class' => '',
+    'id' => '',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 'hidden-xs',
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array(
+    'css_id' => 'bottombookcurrentpage',
+    'css_class' => '',
+  );
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $pane->uuid = 'c7fe399a-88f5-422f-9143-b2adb8707990';
+  $display->content['new-c7fe399a-88f5-422f-9143-b2adb8707990'] = $pane;
+  $display->panels['contentmain'][4] = 'new-c7fe399a-88f5-422f-9143-b2adb8707990';
+  $pane = new stdClass();
+  $pane->pid = 'new-9b79390f-c54f-42d3-89c6-a85fa8b6c147';
+  $pane->panel = 'contentmain';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Please switch devices',
+    'title' => 'Please switch devices',
+    'body' => 'Your browser window is currently too small; please widen it or switch to a device with a wider viewing screen. Due to dissertation time constraints and browser space constraints, book pages aren\'t currently available on phones, some tablets, or at narrower browser sizes. Please use the site with a higher resolution tablet (and/or try flipping from vertical to horizontal orientation), laptop, or desktop computer to read Ulysses on this site for now. I\'m hoping to address tablet design by Summer 2015.',
+    'format' => 'full_html',
+    'substitute' => 0,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 0,
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'well' => 'well',
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array(
+    'css_id' => 'narrowbrowserwarning',
+    'css_class' => '',
+  );
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $pane->uuid = '9b79390f-c54f-42d3-89c6-a85fa8b6c147';
+  $display->content['new-9b79390f-c54f-42d3-89c6-a85fa8b6c147'] = $pane;
+  $display->panels['contentmain'][5] = 'new-9b79390f-c54f-42d3-89c6-a85fa8b6c147';
+  $pane = new stdClass();
+  $pane->pid = 'new-6f9fe8d9-7adf-425b-a4dc-27129081d816';
+  $pane->panel = 'sidebar';
+  $pane->type = 'flag_link';
+  $pane->subtype = 'node';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'flag_name' => 'my_bookmarks',
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 1,
+    'override_title_text' => 'Move bookmark here',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 0,
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+        'well' => 0,
+      ),
+    ),
+    'style' => 'kalacustomize',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '6f9fe8d9-7adf-425b-a4dc-27129081d816';
+  $display->content['new-6f9fe8d9-7adf-425b-a4dc-27129081d816'] = $pane;
+  $display->panels['sidebar'][0] = 'new-6f9fe8d9-7adf-425b-a4dc-27129081d816';
+  $pane = new stdClass();
+  $pane->pid = 'new-124d34e2-615a-40a1-bd51-5434cc72a08f';
+  $pane->panel = 'sidebar';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'The Annotation Filter',
+    'title' => 'Filter Displayed Highlights',
+    'body' => '<div id="theannotationfilter""></div>',
+    'format' => 'full_html',
+    'substitute' => 0,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'style' => 'kalacustomize',
+    'settings' => array(
+      'devices' => array(
+        'hidden-xs' => 0,
+        'hidden-sm' => 0,
+        'hidden-md' => 0,
+        'hidden-lg' => 0,
+      ),
+      'pane_style' => array(
+        'well' => 'well',
+        'pull-left' => 0,
+        'pull-right' => 0,
+        'clearfix' => 0,
+        'jumbotron' => 0,
+      ),
+    ),
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => '',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = '124d34e2-615a-40a1-bd51-5434cc72a08f';
+  $display->content['new-124d34e2-615a-40a1-bd51-5434cc72a08f'] = $pane;
+  $display->panels['sidebar'][1] = 'new-124d34e2-615a-40a1-bd51-5434cc72a08f';
+  $pane = new stdClass();
+  $pane->pid = 'new-480ff118-f03b-4c4a-a911-8c47711fbce8';
+  $pane->panel = 'sidebar';
+  $pane->type = 'views';
+  $pane->subtype = 'annosidebar';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_pager_settings' => 0,
+    'use_pager' => 0,
+    'nodes_per_page' => '5',
+    'pager_id' => '0',
+    'offset' => '0',
+    'more_link' => 0,
+    'feed_icons' => 0,
+    'panel_args' => 0,
+    'link_to_view' => 0,
+    'args' => '',
+    'url' => '',
+    'display' => 'annosidebar',
+    'context' => array(
+      0 => '',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Prioritize Annotation',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'style' => 'naked',
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = '480ff118-f03b-4c4a-a911-8c47711fbce8';
+  $display->content['new-480ff118-f03b-4c4a-a911-8c47711fbce8'] = $pane;
+  $display->panels['sidebar'][2] = 'new-480ff118-f03b-4c4a-a911-8c47711fbce8';
+$display->hide_title = PANELS_TITLE_FIXED;
+$display->title_pane = '0';
+$handler->conf['display'] = $display;
