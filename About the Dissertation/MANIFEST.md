@@ -1,4 +1,4 @@
-An ongoing manifest of the work my dissertation comprises, with explanations of the what and why behind formats unusual in literary studies. (Happy to take feedback if something isn't explained clearly enough, via [@Literature_Geek](http://www.twitter.com/Literature_Geek) or [my contact form](http://www.infiniteulysses.com/contact).)
+A manifest of the work my dissertation comprises, with explanations of the what and why behind formats unusual in literary studies. A link to the final dissertation website will be added here post-defense; this site links out to all the pieces of the submitted dissertation in an exploration-friendly manner.
 
 Note: creating design wireframes, writing, code, and other web development activities are **both similar and different** to chapter-writing in terms of quantifying output:
   + Like chapter-writing drafts, with code **there's a lot of work that doesn't make it into the final product**. In my case, the final product doesn't include things like [example Drupal modules I built](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/Old%2C%20defunct%20code%20in%20all%20states) to learn things like how to make the Annotator tool communicate with the Drupal database. 
@@ -159,6 +159,11 @@ With co-author Dr. Kathie Gossett, book proposal, book outline, and example chap
 I submitted an 18-page dissertation prospectus PDF at the beginning of my dissertation, containing plans for the project, a literature review, and a bibliography.
 
 **Where to find it:** https://github.com/amandavisconti/infinite-ulysses-public/tree/master/Miscellaneous/Prospectus
+
+###Dissertation whitepaper
+I created an analytic discussion of the dissertation project's process and product in the form of a whitepaper. This format was chosen to help me analyze my scholarly building work and provide a narrative of the project for others to read, while not doubling my labor by requiring the traditional 4-5 chapters of written work in addition to the other efforts described on this page.
+
+**Where to find it:** [to be released after dissertation defense]
 
 ##Scholarly Editing
 ###Typographical formatting, proofing and error correction, and data formatting on the digital text of Ulysses
