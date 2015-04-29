@@ -31,4 +31,6 @@ These find/replace paths will obviously depend on what page structure you starte
 
 ![Screenshot of spreadsheet used to compare annotation location paths](https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-public/master/Technical%20Instructions/RangeSpreadsheetExample.png)
 
-Using this information, you can now go to your old website and export all your annotations, use these finds/replaces on the file holding all the annotations, and import it to the new site. Your highlights should show up correctly.
+The colors show how I lumped together parts of the path that needed to be replaced by other parts (green was replaced with red, dark blue replaced by light blue). The start and end offset lines should stay the same.
+
+5. Using this information, you can now go to your old website and export all your annotations, use these finds/replaces on the file holding all the annotations, and import it to the new site. Your highlights should show up correctly.
