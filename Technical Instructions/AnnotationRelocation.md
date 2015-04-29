@@ -27,6 +27,8 @@ These find/replace paths will obviously depend on what page structure you starte
 1. Export a single annotation from your old site (i.e. the site with the old page structure still intact) using Drupal's node export.
 2. You'll now need access to your new site (i.e. the same page of text but with the new page structure; to make this easiest, I created a local site from which all existing annotations had been deleted). Highlight the same text as you did in the previous step to create a duplicate annotation. Export this single annotation from the new site using Drupal's node export.
 3. If you're moving to a different URL (e.g. I was bringing annotations from my live site to one with a local URL), search for uri in the node export and alter it to fit the new site's URL.
-4. Now we're going to compare the two annotation exports to figure out what needs to be changed. You'll be looking at the ranges array (begins "'ranges' => array(") to compare the text stored as "value" (just ignore the safe value that's below it). To make comparison easy, I inserted a line break in front of each \/ and then pasted these into a spreadsheet. 
+4. Now we're going to compare the two annotation exports to figure out what needs to be changed. You'll be looking at the ranges array (begins "'ranges' => array(") to compare the text stored as "value" (just ignore the safe value that's below it). To make comparison easy, I inserted a line break in front of each \/ and then pasted these into a spreadsheet:
+
+![Screenshot of spreadsheet used to compare annotation location paths](https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-public/master/Technical%20Instructions/RangeSpreadsheetExample.png)
 
 Using this information, you can now go to your old website and export all your annotations, use these finds/replaces on the file holding all the annotations, and import it to the new site. Your highlights should show up correctly.
