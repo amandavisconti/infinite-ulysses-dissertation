@@ -171,7 +171,13 @@ function kalatheme_process_page(&$variables) {
       drupal_add_js($base['scheme'] . ":" . KALATHEME_BOOTSTRAP_JS, 'external');
       // Add the CSS.
       $css = ($library === 'default') ? KALATHEME_BOOTSTRAP_CSS : kalatheme_get_bootswatch_theme($library)->cssCdn;
+      //drupal_add_css($base['scheme'] . ":" . $css, 'external'); // Fixed re: https://github.com/drupalprojects/kalatheme/issues/176
+      if (strpos($css, 'http') <> 0) {
       drupal_add_css($base['scheme'] . ":" . $css, 'external');
+      }
+      else {
+      drupal_add_css($css, 'external');
+      }
     }
   }
   $font_awesome_active = FALSE;
