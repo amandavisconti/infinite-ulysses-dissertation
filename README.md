@@ -45,7 +45,7 @@ Infinite Ulysses is a dissertational project of designing, building, and user-te
 - [x] Beta testing I (individual volunteers; January 2015)
 - [x] Beta testing II (groups, classes, book clubs; Late January 2015 throughout Spring 2015)
 - [x] Article draft providing project narrative (text and website; available by May 2015)
-- [ ] Dissertation based around Infinite Ulysses defended (April 2015)
+- [x] Dissertation based around Infinite Ulysses defended (April 2015)
 - [ ] Site 1.0 release on Bloomsday 2015 (June 16, 2015)
 - [ ] Installation profile for easy set-up of a site with all the above implemented (Summer 2015?)
 - [ ] Code/set-up documentation and thoroughly comment code for understanding by others (Summer 2015?)
