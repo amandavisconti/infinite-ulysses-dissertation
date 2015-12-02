@@ -3,7 +3,7 @@ A manifest of the work my dissertation comprises, with explanations of the what 
 Note: creating design wireframes, writing, code, and other web development activities are **both similar and different** to chapter-writing in terms of quantifying output:
   + Like chapter-writing drafts, with code **there's a lot of work that doesn't make it into the final product**. In my case, the final product doesn't include things like [example Drupal modules I built](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/Old%2C%20defunct%20code%20in%20all%20states) to learn things like how to make the Annotator tool communicate with the Drupal database. 
 
-  + **Better code is quite often more concise code** (i.e. less lines of code). This may or may not be the case with chapter-writing; in cases where you're shooting for a chapter length in some word count range (e.g. 20 pages), improving your writing is more likely to not impact the overall word count.
+  + **Better code is quite often more concise code** (i.e. fewer lines of code). This may or may not be the case with chapter-writing; in cases where you're shooting for a chapter length in some word count range (e.g. 20 pages), improving your writing is more likely to not impact the overall word count.
 
 # Dissertation efforts:
 * [Design/appearance](#designappearance)
