@@ -33,7 +33,7 @@
 #What's Infinite Ulysses?
 This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://literaturegeek.com/2014/04/20/dissertation-quick-video/) to learn more about the site and the resarch project behind it:
 
-<a href="http:/player.vimeo.com/video/92430744" target="_blank"><img src="https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-public/master/Miscellaneous/videoscreenshot.png" 
+<a href="http:/player.vimeo.com/video/92430744" target="_blank"><img src="https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-dissertation/master/Miscellaneous/videoscreenshot.png" 
 alt="3-minute video explaining the Infinite Ulysses project" width="500" height="375" border="0" /></a>
 
 This repo will eventually offer Drupal modules, site theming, documentation, and an installation profile to quickly pop up your own participatory digital edition.
@@ -67,14 +67,14 @@ Initial configuration on a Drupal site is currently a bit involved. Tags can be 
 ###Better Annotation Drupalization
 I'm currently using improved versions of these two modules, created by Michael Widner (@mwidner) of Stanford's Lacuna Stories project and graciously shared with me (yay digital humanities community!). That code is not yet shared publicly, as the Lacuna Stories project has not yet made their code public (but plans to do so). Until that code is made public, it won't appear in this repository. 
 
-Where I've made changes to Michael's code, [I'll include a note in the repository](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code) that records my work without revealing his code.
+Where I've made changes to Michael's code, [I'll include a note in the repository](https://github.com/amandavisconti/infinite-ulysses-dissertation/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code) that records my work without revealing his code.
 
 ###Highlighted Anno(tation)s Module
-["highlighted_annos"](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/modules/custom/highlighted_annos) is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
+["highlighted_annos"](https://github.com/amandavisconti/infinite-ulysses-dissertation/tree/master/The%20Code/modules/custom/highlighted_annos) is a custom module I created to further modify the Annotator.js Drupalization for Infinite Ulysses' needs; the module updates what annotations are displayed in a sidebar when you click on a particular instance of highlighted text. 
 
 By replacing the Annotator.js pop-up annotation display with a Views (Drupal SQL query module) block, I was able to alter both the design and functionality of the annotation feature (e.g. adding display of and interaction with a rating widget, commenting on annotations, tagging by users other than the annotation's author with separation of "my tags" from "all tags" on a given annotation for the current logged-in user). I was also able to improve the display of annotations when there were multiple annotations for a given highlight, adding an option to sort displayed annotations by highest- or lowest-rated, oldest or newest date, or most commented-on.
 
-[The module](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/modules/custom/highlighted_annos) includes three files:
+[The module](https://github.com/amandavisconti/infinite-ulysses-dissertation/tree/master/The%20Code/modules/custom/highlighted_annos) includes three files:
 * highlighted_annos.info file: Contains basic module metadata (e.g. Drupal version, author)
 * highlighted_annos.js: A 22-line jQuery (a Javascript library) file; handles the user's input (the "client side" code handling everything that happens in your browser before information is sent to my website's server)
 * highlighted_annos.module file: A 67-line PHP file handling information once it's passed from the "client side" to my website's server. Accomplishes tasks including:
@@ -89,7 +89,7 @@ This module is dependent on changes I made to Annotator.js (see below).
 ###My Modifications of Annotator.js
 Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See (this section of this repo's README)[https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md#functionality] for more on what Annotator.js does and who was responsible for what parts of its functionality.
 
-I committed the original Annotator.js library files, then made my next commit hold all my changes (up to 2/6/2015); this will allow you to see a nice comparison of modifications I made to the Annotator.js library by visiting [this commit page](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064). Note that I may have made changes to these files subsequent to that commit (e.g. tidying things up a bit when time allows), but the most important code changes are visible in that commit.
+I committed the original Annotator.js library files, then made my next commit hold all my changes (up to 2/6/2015); this will allow you to see a nice comparison of modifications I made to the Annotator.js library by visiting [this commit page](https://github.com/amandavisconti/infinite-ulysses-dissertation/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064). Note that I may have made changes to these files subsequent to that commit (e.g. tidying things up a bit when time allows), but the most important code changes are visible in that commit.
 
 ####Annotator.min.css
 Use of the Mac FileMerge file comparison tool shows I made 21 changes to this CSS file, including changing the mouse cursor to a hand when hovering over a highlight, browser prefixes (required to make certain browsers use a CSS rule; e.g. -moz, -webkit), removing a lot of unneeded elements (e.g. gradients on the annotation filter buttons), and most importantly removing display of the Annotator.js viewer (a pop-up that I replaced with my annotation sidebar).
@@ -97,7 +97,7 @@ Use of the Mac FileMerge file comparison tool shows I made 21 changes to this CS
 ####Annotator-full.min.js
 Use of the Mac FileMerge file comparison tool shows I made 25 changes to this Javascript file. Many of the key modifications are marked with a comment (// or /* */) and the word "Amanda", usually followed by a short explanation. The main reasons for modifying this file were small tweaks such as removing use of the Annotator.js Viewer (the pop-up for viewing existing annotations) in favor of my sidebar, and changing behavior from on mouse hover to on mouse click. 
 
-These were mostly one- or two-line changes; the biggest change is from lines 1847-1855, which I've commented [on this page to make them easy to look at](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064#commitcomment-9632201). This code reacts to a user clicking on a highlighted piece of text by *adding the ID numbers (NIDs) 
+These were mostly one- or two-line changes; the biggest change is from lines 1847-1855, which I've commented [on this page to make them easy to look at](https://github.com/amandavisconti/infinite-ulysses-dissertation/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064#commitcomment-9632201). This code reacts to a user clicking on a highlighted piece of text by *adding the ID numbers (NIDs) 
 *for all annotations referencing that highlight (i.e. the one or more annotations that might be associated with a highlighted piece of text) 
 *into a list ("array"), 
 *entering them into an invisible form field, and 
@@ -105,7 +105,7 @@ These were mostly one- or two-line changes; the biggest change is from lines 184
 This makes the list of annotations associated with a highlight available to the website's server through my Highlighted Anno(tation)s module, described above.
 
 ###My changes to Michael Widner's Lacuna Stories code:
-These were mostly small changes to text wording, although I did fix one site-breaking [issue](https://github.com/LacunaStories/Drupal-Master/issues/5) in the annotation.install file that Widner incorporated back into his code. You can find notes on what I changed in his code [here](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code), and I'll share the full code once it's been released.
+These were mostly small changes to text wording, although I did fix one site-breaking [issue](https://github.com/LacunaStories/Drupal-Master/issues/5) in the annotation.install file that Widner incorporated back into his code. You can find notes on what I changed in his code [here](https://github.com/amandavisconti/infinite-ulysses-dissertation/blob/master/The%20Code/Changes%20to%20Lacuna%20Stories%20Private%20Code), and I'll share the full code once it's been released.
 
 ### Other Drupal modules
 *These are linked to their information pages on Drupal.org; you can read about the latest code contributors to each there.*
