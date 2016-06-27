@@ -31,7 +31,7 @@
   * [Caveat emptor: in-progress code](#caveat-emptor-in-progress-code)
 
 #What's Infinite Ulysses?
-This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://literaturegeek.com/2014/04/20/dissertation-quick-video/) to learn more about the site and the resarch project behind it:
+This repo contains the code I created, modified, or otherwise built off to make [the Infinite Ulysses digital edition](http://www.infiniteulysses.com). Check out [this quick 3-minute video about the project](http://literaturegeek.com/2014/04/20/dissertation-quick-video) to learn more about the site and the resarch project behind it:
 
 <a href="http:/player.vimeo.com/video/92430744" target="_blank"><img src="https://raw.githubusercontent.com/amandavisconti/infinite-ulysses-dissertation/master/Miscellaneous/videoscreenshot.png" 
 alt="3-minute video explaining the Infinite Ulysses project" width="500" height="375" border="0" /></a>
