@@ -87,7 +87,7 @@ Peter Schuelke's [post](http://www.metaltoad.com/blog/passing-multiple-values-th
 This module is dependent on changes I made to Annotator.js (see below).
 
 ###My Modifications of Annotator.js
-Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See (this section of this repo's README)[https://github.com/amandavisconti/infinite-ulysses-dissertation/blob/master/README.md#functionality] for more on what Annotator.js does and who was responsible for what parts of its functionality.
+Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See [this section of this repo's README](https://github.com/amandavisconti/infinite-ulysses-dissertation/blob/master/README.md#functionality) for more on what Annotator.js does and who was responsible for what parts of its functionality.
 
 I committed the original Annotator.js library files, then made my next commit hold all my changes (up to 2/6/2015); this will allow you to see a nice comparison of modifications I made to the Annotator.js library by visiting [this commit page](https://github.com/amandavisconti/infinite-ulysses-dissertation/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064). Note that I may have made changes to these files subsequent to that commit (e.g. tidying things up a bit when time allows), but the most important code changes are visible in that commit.
 
