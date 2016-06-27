@@ -1,7 +1,7 @@
 A manifest of the work my dissertation comprises, with explanations of the what and why behind formats unusual in literary studies. A link to the final dissertation website will be added here post-defense; this site links out to all the pieces of the submitted dissertation in an exploration-friendly manner.
 
 Note: creating design wireframes, writing, code, and other web development activities are **both similar and different** to chapter-writing in terms of quantifying output:
-  + Like chapter-writing drafts, with code **there's a lot of work that doesn't make it into the final product**. In my case, the final product doesn't include things like [example Drupal modules I built](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code/Old%2C%20defunct%20code%20in%20all%20states) to learn things like how to make the Annotator tool communicate with the Drupal database. 
+  + Like chapter-writing drafts, with code **there's a lot of work that doesn't make it into the final product**. In my case, the final product doesn't include things like [example Drupal modules I built](https://github.com/amandavisconti/infinite-ulysses-dissertation/tree/master/The%20Code/Old%2C%20defunct%20code%20in%20all%20states) to learn things like how to make the Annotator tool communicate with the Drupal database. 
 
   + **Better code is quite often more concise code** (i.e. fewer lines of code). This may or may not be the case with chapter-writing; in cases where you're shooting for a chapter length in some word count range (e.g. 20 pages), improving your writing is more likely to not impact the overall word count.
 
