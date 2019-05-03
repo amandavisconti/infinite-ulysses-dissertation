@@ -78,7 +78,7 @@ This module is dependent on changes I made to Annotator.js (see below).
 **Where to find it:** [This repository's "The Code" folder](https://github.com/amandavisconti/infinite-ulysses-public/tree/master/The%20Code)
 
 ### My Modifications of Annotator.js (CSS and Javascript code)
-Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See (this section of this repo's README)[https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md#functionality] for more on what Annotator.js does and who was responsible for what parts of its functionality.
+Annotator.js is the foundation for the site's highlight-and-annotate functionality; it lets you highlight text and add an annotation to it. See [this section of this repo's README](https://github.com/amandavisconti/infinite-ulysses-public/blob/master/README.md#functionality) for more on what Annotator.js does and who was responsible for what parts of its functionality.
 
 I committed the original Annotator.js library files, then made my next commit hold all my changes (up to 2/6/2015); this will allow you to see a nice comparison of modifications I made to the Annotator.js library by visiting [this commit page](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064). Note that I may have made changes to these files subsequent to that commit (e.g. tidying things up a bit when time allows), but the most important code changes are visible in that commit.
 
@@ -86,13 +86,14 @@ I committed the original Annotator.js library files, then made my next commit ho
 Use of the Mac FileMerge file comparison tool shows I made **21 changes** to this CSS file, including changing the mouse cursor to a hand when hovering over a highlight, browser prefixes (required to make certain browsers use a CSS rule; e.g. -moz, -webkit), removing a lot of unneeded elements (e.g. gradients on the annotation filter buttons), and most importantly removing display of the Annotator.js viewer (a pop-up that I replaced with my annotation sidebar).
 
 #### Annotator-full.min.js
-Use of the Mac FileMerge file comparison tool shows I made **25 changes** to this Javascript file. Many of the key modifications are marked with a comment (// or /* */) and the word "Amanda", usually followed by a short explanation. The main reasons for modifying this file were small tweaks such as removing use of the Annotator.js Viewer (the pop-up for viewing existing annotations) in favor of my sidebar, and changing behavior from on mouse hover to on mouse click. 
+Use of the Mac FileMerge file comparison tool shows I made **25 changes** to this Javascript file. Many of the key modifications are marked with a comment (`// or /* */`) and the word "Amanda", usually followed by a short explanation. The main reasons for modifying this file were small tweaks such as removing use of the Annotator.js Viewer (the pop-up for viewing existing annotations) in favor of my sidebar, and changing behavior from on mouse hover to on mouse click. 
 
-These were mostly one- or two-line changes; the biggest change is from lines 1847-1855, which I've commented [on this page to make them easy to look at](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064#commitcomment-9632201). This code reacts to a user clicking on a highlighted piece of text by *adding the ID numbers (NIDs) 
-*for all annotations referencing that highlight (i.e. the one or more annotations that might be associated with a highlighted piece of text) 
-*into a list ("array"), 
-*entering them into an invisible form field, and 
-*submitting that form.
+These were mostly one- or two-line changes; the biggest change is from lines 1847-1855, which I've commented [on this page to make them easy to look at](https://github.com/amandavisconti/infinite-ulysses-public/commit/58ec43f29b4b27c41c9131ba56bd954fe3fc4064#commitcomment-9632201). This code reacts to a user clicking on a highlighted piece of text by  
+* adding the ID numbers (NIDs)  
+* for all annotations referencing that highlight (i.e. the one or more annotations that might be associated with a highlighted piece of text)  
+* into a list ("array"), 
+* entering them into an invisible form field, and  
+* submitting that form.  
 This makes the list of annotations associated with a highlight available to the website's server through my Highlighted Anno(tation)s module, described above.
 
 **Where to find it:** 
@@ -137,9 +138,9 @@ These will be linked to their information pages on Drupal.org; you can read abou
 Installed and configured around 50 modules over the course of working on the current Drupal site; kept about 20 on the current site.
 
 ### Accepted commits to others' code projects
-I made two fixes to other people's code that they then incorporated back into their own copy of the code:
-* accepted commit to another DH GitHub repo (currently in [a private repo](https://github.com/LacunaStories/Drupal-Master/commit/a2b3d1c317625e7427de11b549a8b6e653442af3))
-* 1 accepted patch to a Drupal module (Annotation; [patch issue here](https://www.drupal.org/node/2329271))
+I made two fixes to other people's code that they then incorporated back into their own copy of the code:  
+* accepted commit to another DH GitHub repo (currently in [a private repo](https://github.com/LacunaStories/Drupal-Master/commit/a2b3d1c317625e7427de11b549a8b6e653442af3))  
+* 1 accepted patch to a Drupal module (Annotation; [patch issue here](https://www.drupal.org/node/2329271))  
 
 ## Research writing
 ### LiteratureGeek.com blog posts
@@ -152,7 +153,7 @@ Written statement of scholarly values as they apply to the dissertation.
 
 **Where to find it:** http://www.literaturegeek.com/values/
 
-### Book proposal on the digital dissertation process with University of Michigan Press [Practices in the Digital Humanities series](http://www.digitalculture.org/books/book-series/practices-in-the-digital-humanities)
+### Book proposal on the digital dissertation process with University of Michigan Press [Practices in the Digital Humanities series](http://www.digitalculture.org/books/book-series/practices-in-the-digital-humanities)  
 With co-author Dr. Kathie Gossett, book proposal, book outline, and example chapter thinking through the digital dissertation process from designing your format to fit your research questions through the defense.
 
 **Where to find it:** More info once proposal accepted.
@@ -165,7 +166,7 @@ I submitted an 18-page dissertation prospectus PDF at the beginning of my disser
 ### Dissertation whitepaper
 I created an analytic discussion of the dissertation project's process and product in the form of a whitepaper. This format was chosen to help me analyze my scholarly building work and provide a narrative of the project for others to read, while not doubling my labor by requiring the traditional 4-5 chapters of written work in addition to the other efforts described on this page.
 
-**Where to find it:** [to be released after dissertation defense]
+**Where to find it:** http://dr.amandavisconti.com/#whitepaper
 
 ## Scholarly Editing
 ### Typographical formatting, proofing and error correction, and data formatting on the digital text of Ulysses
@@ -184,10 +185,10 @@ This site builds off the digital plaintext transcription of the 1922 first print
 * April 2015: [MITH Digital Dialogue](http://mith.umd.edu/digitaldialogues))
 Written preparation for talks aimed at various audiences (Joycean, digital humanities scholars, digital dissertation students and advisors, digital humanities/public)
 
-###3 service panel talks supporting UMD English graduate students
+### 3 service panel talks supporting UMD English graduate students
 Synthesis of dissertational experience and writing of presentation notes for three panels: "What Does a 21st Century Dissertation Look Like?", "Social Media for Humanities Researchers", "Preparing for Your Ph.D. Exams"
 
-###Introduction to the Infinite Ulysses Project video
+### Introduction to the Infinite Ulysses Project video
 A three-minute overview of my research project aimed at a public audience. Condenses my research questions and translates their exigence for the public. Combines spoken text and still images.
 
 **Where to find it:** http://vimeo.com/92430744
